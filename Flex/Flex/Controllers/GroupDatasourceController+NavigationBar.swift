@@ -30,7 +30,7 @@ extension GroupDatasourceController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         let navBarSeparatorView = UIView()
-        navBarSeparatorView.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+        navBarSeparatorView.backgroundColor = Constants.Colors.backgroundGrey
         
         view.addSubview(navBarSeparatorView)
         

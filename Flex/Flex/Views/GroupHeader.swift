@@ -19,7 +19,7 @@ class HeaderCell: UICollectionViewCell {
         let items = ["MY GROUPS", "JOINED"]
         let segment = UISegmentedControl(items: items)
         segment.selectedSegmentIndex = 0
-        segment.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        segment.backgroundColor = Constants.Colors.mainBlue
         segment.tintColor = .white
         segment.translatesAutoresizingMaskIntoConstraints = false
         return segment

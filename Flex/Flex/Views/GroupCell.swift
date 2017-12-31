@@ -54,7 +54,7 @@ class GroupCell: UICollectionViewCell {
     
     let bluelineSeperator: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        view.backgroundColor = Constants.Colors.mainBlue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
