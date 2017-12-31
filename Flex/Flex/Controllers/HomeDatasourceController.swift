@@ -8,18 +8,35 @@
 
 import UIKit
 
-//class HeaderCell: UICollectitionViewCell {
-//
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupViews()
-//    }
-//
-//
-//    func setupViews() {
-//
-//    }
-//}
+class HeaderCell: UICollectionViewCell {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
+    let segmentedView: UISegmentedControl = {
+        let items = ["MY GROUPS", "JOINED"]
+        let segment = UISegmentedControl(items: items)
+        segment.selectedSegmentIndex = 0
+        segment.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
+        segment.tintColor = .white
+        segment.translatesAutoresizingMaskIntoConstraints = false
+        return segment
+    }()
+    
+    func setupViews() {
+        addSubview(segmentedView)
+        
+        segmentedView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        segmentedView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        segmentedView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        segmentedView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
 
 class ScheduleCell: UICollectionViewCell {
     
@@ -49,22 +66,23 @@ class ScheduleCell: UICollectionViewCell {
     }
 }
 
-class HomeController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+class HomeDatasourceController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
     let headerId = "headerId"
-    let footerId = "footerId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView?.backgroundColor = .white
         collectionView?.register(ScheduleCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView?.register(UICollectionViewCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
-        collectionView?.register(UICollectionViewCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerId)
+        collectionView?.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        
+        setupNavigationBarItems()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -73,26 +91,16 @@ class HomeController: UICollectionViewController,UICollectionViewDelegateFlowLay
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 50)
+        return CGSize(width: view.frame.width, height: 235)
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        if kind == UICollectionElementKindSectionHeader {
-            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath)
-            header.backgroundColor = .white
-            return header
-        } else {
-            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerId, for: indexPath)
-            footer.backgroundColor = .blue
-            return footer
-        }
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath)
+        header.backgroundColor = .clear
+        return header
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 50)
+        return CGSize(width: view.frame.width, height: 40)
     }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 100)
-    }
-    
 }

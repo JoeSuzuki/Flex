@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
-		FF251C521FF844E20067AD40 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* HomeController.swift */; };
+		FF251C521FF844E20067AD40 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* HomeDatasourceController.swift */; };
 		FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C561FF844E20067AD40 /* Assets.xcassets */; };
 		FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */; };
+		FF251C811FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF251C511FF844E20067AD40 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FF251C511FF844E20067AD40 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
 		FF251C561FF844E20067AD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF251C591FF844E20067AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF251C5B1FF844E20067AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF251C801FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+NavigationBar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,8 @@
 		FF251C7F1FF864D60067AD40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C511FF844E20067AD40 /* HomeController.swift */,
+				FF251C511FF844E20067AD40 /* HomeDatasourceController.swift */,
+				FF251C801FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF251C521FF844E20067AD40 /* HomeController.swift in Sources */,
+				FF251C521FF844E20067AD40 /* HomeDatasourceController.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
+				FF251C811FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
