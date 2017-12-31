@@ -14,6 +14,8 @@
 		FF251C811FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift */; };
 		FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C831FF8C42F0067AD40 /* GroupHeader.swift */; };
 		FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C851FF8C46C0067AD40 /* GroupCell.swift */; };
+		FF251C891FF8C62B0067AD40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C881FF8C62B0067AD40 /* User.swift */; };
+		FF251C8B1FF8C71D0067AD40 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8A1FF8C71D0067AD40 /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		FF251C801FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupDatasourceController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF251C831FF8C42F0067AD40 /* GroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
 		FF251C851FF8C46C0067AD40 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		FF251C881FF8C62B0067AD40 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF251C8A1FF8C71D0067AD40 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				FF251C4F1FF844E20067AD40 /* AppDelegate.swift */,
 				FF251C7F1FF864D60067AD40 /* Controllers */,
+				FF251C871FF8C5FF0067AD40 /* Models */,
 				FF251C821FF8C3390067AD40 /* Views */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
@@ -85,6 +90,16 @@
 			);
 			name = Views;
 			path = Flex/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		FF251C871FF8C5FF0067AD40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF251C881FF8C62B0067AD40 /* User.swift */,
+				FF251C8A1FF8C71D0067AD40 /* Group.swift */,
+			);
+			name = Models;
+			path = Flex/Models;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -158,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF251C8B1FF8C71D0067AD40 /* Group.swift in Sources */,
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupDatasourceController.swift in Sources */,
+				FF251C891FF8C62B0067AD40 /* User.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
 				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift in Sources */,
