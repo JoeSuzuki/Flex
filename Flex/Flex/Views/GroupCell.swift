@@ -53,13 +53,6 @@ class GroupCell: UICollectionViewCell {
         return label
     }()
     
-    let bluelineSeperator: UIView = {
-        let view = UIView()
-        view.backgroundColor = Constants.Colors.mainBlue
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
     func setupViews() {
         backgroundColor = .white
         
@@ -68,7 +61,6 @@ class GroupCell: UICollectionViewCell {
         addSubview(detailsView)
         addSubview(groupNameLabel)
         addSubview(groupCreaterNameLabel)
-        addSubview(bluelineSeperator)
         
         groupImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         groupImageView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
@@ -83,7 +75,7 @@ class GroupCell: UICollectionViewCell {
 //      lightBlueView.widthAnchor.constraint(equalToConstant: 40).isActive = true
         
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
-        detailsView.bottomAnchor.constraint(equalTo: bluelineSeperator.topAnchor).isActive = true
+        detailsView.bottomAnchor.constraint(equalTo: self.topAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
         
@@ -96,12 +88,6 @@ class GroupCell: UICollectionViewCell {
         groupCreaterNameLabel.bottomAnchor.constraint(equalTo: detailsView.bottomAnchor).isActive = true
         groupCreaterNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
         groupCreaterNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true
-        
-        bluelineSeperator.topAnchor.constraint(equalTo: groupCreaterNameLabel.bottomAnchor).isActive = true
-        bluelineSeperator.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        bluelineSeperator.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        bluelineSeperator.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        bluelineSeperator.heightAnchor.constraint(equalToConstant: 12).isActive = true
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

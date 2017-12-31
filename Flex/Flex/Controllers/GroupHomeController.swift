@@ -15,8 +15,9 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
-        collectionView?.backgroundColor = .white
+        collectionView?.backgroundColor = Constants.Colors.mainBlue
         collectionView?.register(GroupCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(GroupHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
