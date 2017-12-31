@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeaderCell: UICollectionViewCell {
+class GroupHeaderCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

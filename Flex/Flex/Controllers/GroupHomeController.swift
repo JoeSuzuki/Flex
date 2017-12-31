@@ -1,5 +1,5 @@
 //
-//  HomeController.swift
+//  GroupHomeController.swift
 //  Flex
 //
 //  Created by Joe Suzuki on 12/30/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupDatasourceController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
     let headerId = "headerId"
@@ -18,7 +18,7 @@ class GroupDatasourceController: UICollectionViewController,UICollectionViewDele
         
         collectionView?.backgroundColor = .white
         collectionView?.register(GroupCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView?.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView?.register(GroupHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         setupNavigationBarItems()
     }

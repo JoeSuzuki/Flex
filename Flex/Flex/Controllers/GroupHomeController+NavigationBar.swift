@@ -1,5 +1,5 @@
 //
-//  HomeDatasourceController+NavigationBar.swift
+//  GroupHomeController+NavigationBar.swift
 //  Flex
 //
 //  Created by Joe Suzuki on 12/31/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension GroupDatasourceController {
+extension GroupHomeController {
     
     func setupNavigationBarItems() {
         setupRightNavItems()

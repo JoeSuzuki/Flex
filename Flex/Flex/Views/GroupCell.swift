@@ -19,6 +19,7 @@ class GroupCell: UICollectionViewCell {
         let groupView = UIImageView()
         groupView.image = #imageLiteral(resourceName: "search")
         groupView.layer.cornerRadius = 5
+        groupView.contentMode = .scaleAspectFit
         groupView.clipsToBounds = true
         groupView.translatesAutoresizingMaskIntoConstraints = false
         return groupView
@@ -26,7 +27,7 @@ class GroupCell: UICollectionViewCell {
     
     let lightBlueView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.5)
+        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -63,7 +64,7 @@ class GroupCell: UICollectionViewCell {
         backgroundColor = .white
         
         addSubview(groupImageView)
-        //        addSubview(lightBlueView)
+//        addSubview(lightBlueView)
         addSubview(detailsView)
         addSubview(groupNameLabel)
         addSubview(groupCreaterNameLabel)
@@ -74,12 +75,12 @@ class GroupCell: UICollectionViewCell {
         groupImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         groupImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         
-        //        lightBlueView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        //        lightBlueView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
-        //        lightBlueView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        //        lightBlueView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        //        lightBlueView.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        //        lightBlueView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+//        lightBlueView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+//        lightBlueView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
+//        lightBlueView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+//        lightBlueView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+//        lightBlueView.heightAnchor.constraint(equalToConstant: 120).isActive = true
+//      lightBlueView.widthAnchor.constraint(equalToConstant: 40).isActive = true
         
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         detailsView.bottomAnchor.constraint(equalTo: bluelineSeperator.topAnchor).isActive = true
@@ -100,7 +101,7 @@ class GroupCell: UICollectionViewCell {
         bluelineSeperator.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         bluelineSeperator.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         bluelineSeperator.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        bluelineSeperator.heightAnchor.constraint(equalToConstant: 4).isActive = true
+        bluelineSeperator.heightAnchor.constraint(equalToConstant: 12).isActive = true
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
