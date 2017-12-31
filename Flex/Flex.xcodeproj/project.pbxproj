@@ -7,150 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2C624707245686510DEFDF8 /* Pods_Flex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97581C93C32C6996C523BC61 /* Pods_Flex.framework */; };
-		FF251C001FF755120067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251BFF1FF755120067AD40 /* AppDelegate.swift */; };
-		FF251C021FF755120067AD40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C011FF755120067AD40 /* ViewController.swift */; };
-		FF251C071FF755130067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C061FF755130067AD40 /* Assets.xcassets */; };
-		FF251C0A1FF755130067AD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF251C081FF755130067AD40 /* LaunchScreen.storyboard */; };
-		FF251C131FF77C0B0067AD40 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C121FF77C0B0067AD40 /* HomeDatasourceController.swift */; };
-		FF251C151FF77CF30067AD40 /* HomeDatasourceController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C141FF77CF30067AD40 /* HomeDatasourceController+NavigationBar.swift */; };
-		FF251C1A1FF781610067AD40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C191FF781610067AD40 /* User.swift */; };
-		FF251C1C1FF7843A0067AD40 /* GroupHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C1B1FF7843A0067AD40 /* GroupHeaderFooter.swift */; };
-		FF251C1E1FF786410067AD40 /* HomeGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C1D1FF786410067AD40 /* HomeGroupCell.swift */; };
-		FF251C201FF78AB90067AD40 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C1F1FF78AB90067AD40 /* HomeDatasource.swift */; };
-		FF251C221FF78AD80067AD40 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C211FF78AD80067AD40 /* Group.swift */; };
+		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
+		FF251C521FF844E20067AD40 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* HomeController.swift */; };
+		FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C561FF844E20067AD40 /* Assets.xcassets */; };
+		FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		333053CAE9F999E0D3C70497 /* Pods-Flex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.debug.xcconfig"; sourceTree = "<group>"; };
-		56CAC6E9E827AB22C8128E6E /* Pods-Flex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.release.xcconfig"; sourceTree = "<group>"; };
-		97581C93C32C6996C523BC61 /* Pods_Flex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF251BFC1FF755120067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF251BFF1FF755120067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF251C011FF755120067AD40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF251C061FF755130067AD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FF251C091FF755130067AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FF251C0B1FF755130067AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF251C121FF77C0B0067AD40 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
-		FF251C141FF77CF30067AD40 /* HomeDatasourceController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+NavigationBar.swift"; sourceTree = "<group>"; };
-		FF251C191FF781610067AD40 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FF251C1B1FF7843A0067AD40 /* GroupHeaderFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeaderFooter.swift; sourceTree = "<group>"; };
-		FF251C1D1FF786410067AD40 /* HomeGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroupCell.swift; sourceTree = "<group>"; };
-		FF251C1F1FF78AB90067AD40 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
-		FF251C211FF78AD80067AD40 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF251C511FF844E20067AD40 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FF251C561FF844E20067AD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF251C591FF844E20067AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF251C5B1FF844E20067AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FF251BF91FF755120067AD40 /* Frameworks */ = {
+		FF251C491FF844E20067AD40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C624707245686510DEFDF8 /* Pods_Flex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6ADFED9974B5508768700240 /* Frameworks */ = {
+		FF251C431FF844E20067AD40 = {
 			isa = PBXGroup;
 			children = (
-				97581C93C32C6996C523BC61 /* Pods_Flex.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D5577605616865C49E5774B1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				333053CAE9F999E0D3C70497 /* Pods-Flex.debug.xcconfig */,
-				56CAC6E9E827AB22C8128E6E /* Pods-Flex.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FF251BF31FF755120067AD40 = {
-			isa = PBXGroup;
-			children = (
-				FF251BFE1FF755120067AD40 /* Flex */,
-				FF251BFD1FF755120067AD40 /* Products */,
-				D5577605616865C49E5774B1 /* Pods */,
-				6ADFED9974B5508768700240 /* Frameworks */,
+				FF251C4E1FF844E20067AD40 /* Flex */,
+				FF251C4D1FF844E20067AD40 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FF251BFD1FF755120067AD40 /* Products */ = {
+		FF251C4D1FF844E20067AD40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF251BFC1FF755120067AD40 /* Flex.app */,
+				FF251C4C1FF844E20067AD40 /* Flex.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF251BFE1FF755120067AD40 /* Flex */ = {
+		FF251C4E1FF844E20067AD40 /* Flex */ = {
 			isa = PBXGroup;
 			children = (
-				FF251BFF1FF755120067AD40 /* AppDelegate.swift */,
-				FF251C011FF755120067AD40 /* ViewController.swift */,
-				FF251C061FF755130067AD40 /* Assets.xcassets */,
-				FF251C181FF7807B0067AD40 /* Models */,
-				FF251C171FF7806F0067AD40 /* Services */,
-				FF251C161FF780660067AD40 /* Views */,
-				FF251C111FF77BFC0067AD40 /* Controllers */,
-				FF251C081FF755130067AD40 /* LaunchScreen.storyboard */,
-				FF251C0B1FF755130067AD40 /* Info.plist */,
+				FF251C4F1FF844E20067AD40 /* AppDelegate.swift */,
+				FF251C7F1FF864D60067AD40 /* Controllers */,
+				FF251C561FF844E20067AD40 /* Assets.xcassets */,
+				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
+				FF251C5B1FF844E20067AD40 /* Info.plist */,
 			);
 			path = Flex;
 			sourceTree = "<group>";
 		};
-		FF251C111FF77BFC0067AD40 /* Controllers */ = {
+		FF251C7F1FF864D60067AD40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C121FF77C0B0067AD40 /* HomeDatasourceController.swift */,
-				FF251C141FF77CF30067AD40 /* HomeDatasourceController+NavigationBar.swift */,
+				FF251C511FF844E20067AD40 /* HomeController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		FF251C161FF780660067AD40 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FF251C1B1FF7843A0067AD40 /* GroupHeaderFooter.swift */,
-				FF251C1D1FF786410067AD40 /* HomeGroupCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FF251C171FF7806F0067AD40 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		FF251C181FF7807B0067AD40 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FF251C191FF781610067AD40 /* User.swift */,
-				FF251C211FF78AD80067AD40 /* Group.swift */,
-				FF251C1F1FF78AB90067AD40 /* HomeDatasource.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF251BFB1FF755120067AD40 /* Flex */ = {
+		FF251C4B1FF844E20067AD40 /* Flex */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF251C0E1FF755130067AD40 /* Build configuration list for PBXNativeTarget "Flex" */;
+			buildConfigurationList = FF251C5E1FF844E20067AD40 /* Build configuration list for PBXNativeTarget "Flex" */;
 			buildPhases = (
-				C1A6D5F9A1B2585B138A5CC7 /* [CP] Check Pods Manifest.lock */,
-				FF251BF81FF755120067AD40 /* Sources */,
-				FF251BF91FF755120067AD40 /* Frameworks */,
-				FF251BFA1FF755120067AD40 /* Resources */,
-				1F7EC459F611522982C4831F /* [CP] Embed Pods Frameworks */,
-				D38C1AE0439E9C07AD58A54A /* [CP] Copy Pods Resources */,
+				FF251C481FF844E20067AD40 /* Sources */,
+				FF251C491FF844E20067AD40 /* Frameworks */,
+				FF251C4A1FF844E20067AD40 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -158,26 +86,26 @@
 			);
 			name = Flex;
 			productName = Flex;
-			productReference = FF251BFC1FF755120067AD40 /* Flex.app */;
+			productReference = FF251C4C1FF844E20067AD40 /* Flex.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FF251BF41FF755120067AD40 /* Project object */ = {
+		FF251C441FF844E20067AD40 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Joe Suzuki";
 				TargetAttributes = {
-					FF251BFB1FF755120067AD40 = {
+					FF251C4B1FF844E20067AD40 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = FF251BF71FF755120067AD40 /* Build configuration list for PBXProject "Flex" */;
+			buildConfigurationList = FF251C471FF844E20067AD40 /* Build configuration list for PBXProject "Flex" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -185,106 +113,45 @@
 				en,
 				Base,
 			);
-			mainGroup = FF251BF31FF755120067AD40;
-			productRefGroup = FF251BFD1FF755120067AD40 /* Products */;
+			mainGroup = FF251C431FF844E20067AD40;
+			productRefGroup = FF251C4D1FF844E20067AD40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF251BFB1FF755120067AD40 /* Flex */,
+				FF251C4B1FF844E20067AD40 /* Flex */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FF251BFA1FF755120067AD40 /* Resources */ = {
+		FF251C4A1FF844E20067AD40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF251C0A1FF755130067AD40 /* LaunchScreen.storyboard in Resources */,
-				FF251C071FF755130067AD40 /* Assets.xcassets in Resources */,
+				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
+				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1F7EC459F611522982C4831F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LBTAComponents/LBTAComponents.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTAComponents.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C1A6D5F9A1B2585B138A5CC7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Flex-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D38C1AE0439E9C07AD58A54A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		FF251BF81FF755120067AD40 /* Sources */ = {
+		FF251C481FF844E20067AD40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF251C221FF78AD80067AD40 /* Group.swift in Sources */,
-				FF251C021FF755120067AD40 /* ViewController.swift in Sources */,
-				FF251C131FF77C0B0067AD40 /* HomeDatasourceController.swift in Sources */,
-				FF251C001FF755120067AD40 /* AppDelegate.swift in Sources */,
-				FF251C201FF78AB90067AD40 /* HomeDatasource.swift in Sources */,
-				FF251C1E1FF786410067AD40 /* HomeGroupCell.swift in Sources */,
-				FF251C1C1FF7843A0067AD40 /* GroupHeaderFooter.swift in Sources */,
-				FF251C1A1FF781610067AD40 /* User.swift in Sources */,
-				FF251C151FF77CF30067AD40 /* HomeDatasourceController+NavigationBar.swift in Sources */,
+				FF251C521FF844E20067AD40 /* HomeController.swift in Sources */,
+				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FF251C081FF755130067AD40 /* LaunchScreen.storyboard */ = {
+		FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FF251C091FF755130067AD40 /* Base */,
+				FF251C591FF844E20067AD40 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -292,7 +159,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FF251C0C1FF755130067AD40 /* Debug */ = {
+		FF251C5C1FF844E20067AD40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -349,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		FF251C0D1FF755130067AD40 /* Release */ = {
+		FF251C5D1FF844E20067AD40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,9 +266,8 @@
 			};
 			name = Release;
 		};
-		FF251C0F1FF755130067AD40 /* Debug */ = {
+		FF251C5F1FF844E20067AD40 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 333053CAE9F999E0D3C70497 /* Pods-Flex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,9 +281,8 @@
 			};
 			name = Debug;
 		};
-		FF251C101FF755130067AD40 /* Release */ = {
+		FF251C601FF844E20067AD40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56CAC6E9E827AB22C8128E6E /* Pods-Flex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,25 +299,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF251BF71FF755120067AD40 /* Build configuration list for PBXProject "Flex" */ = {
+		FF251C471FF844E20067AD40 /* Build configuration list for PBXProject "Flex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF251C0C1FF755130067AD40 /* Debug */,
-				FF251C0D1FF755130067AD40 /* Release */,
+				FF251C5C1FF844E20067AD40 /* Debug */,
+				FF251C5D1FF844E20067AD40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF251C0E1FF755130067AD40 /* Build configuration list for PBXNativeTarget "Flex" */ = {
+		FF251C5E1FF844E20067AD40 /* Build configuration list for PBXNativeTarget "Flex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF251C0F1FF755130067AD40 /* Debug */,
-				FF251C101FF755130067AD40 /* Release */,
+				FF251C5F1FF844E20067AD40 /* Debug */,
+				FF251C601FF844E20067AD40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FF251BF41FF755120067AD40 /* Project object */;
+	rootObject = FF251C441FF844E20067AD40 /* Project object */;
 }
