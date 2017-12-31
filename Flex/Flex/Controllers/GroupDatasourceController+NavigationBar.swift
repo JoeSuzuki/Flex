@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension HomeDatasourceController {
+extension GroupDatasourceController {
     
     func setupNavigationBarItems() {
         setupRightNavItems()

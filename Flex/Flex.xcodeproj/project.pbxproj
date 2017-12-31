@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
-		FF251C521FF844E20067AD40 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* HomeDatasourceController.swift */; };
+		FF251C521FF844E20067AD40 /* GroupDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* GroupDatasourceController.swift */; };
 		FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C561FF844E20067AD40 /* Assets.xcassets */; };
 		FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */; };
-		FF251C811FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift */; };
+		FF251C811FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift */; };
+		FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C831FF8C42F0067AD40 /* GroupHeader.swift */; };
+		FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C851FF8C46C0067AD40 /* GroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF251C511FF844E20067AD40 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		FF251C511FF844E20067AD40 /* GroupDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDatasourceController.swift; sourceTree = "<group>"; };
 		FF251C561FF844E20067AD40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF251C591FF844E20067AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF251C5B1FF844E20067AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF251C801FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDatasourceController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FF251C801FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupDatasourceController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FF251C831FF8C42F0067AD40 /* GroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
+		FF251C851FF8C46C0067AD40 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			children = (
 				FF251C4F1FF844E20067AD40 /* AppDelegate.swift */,
 				FF251C7F1FF864D60067AD40 /* Controllers */,
+				FF251C821FF8C3390067AD40 /* Views */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
@@ -66,11 +71,21 @@
 		FF251C7F1FF864D60067AD40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C511FF844E20067AD40 /* HomeDatasourceController.swift */,
-				FF251C801FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift */,
+				FF251C511FF844E20067AD40 /* GroupDatasourceController.swift */,
+				FF251C801FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
+		};
+		FF251C821FF8C3390067AD40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF251C831FF8C42F0067AD40 /* GroupHeader.swift */,
+				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
+			);
+			name = Views;
+			path = Flex/Views;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -143,9 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF251C521FF844E20067AD40 /* HomeDatasourceController.swift in Sources */,
+				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
+				FF251C521FF844E20067AD40 /* GroupDatasourceController.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
-				FF251C811FF8AC0A0067AD40 /* HomeDatasourceController+NavigationBar.swift in Sources */,
+				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
+				FF251C811FF8AC0A0067AD40 /* GroupDatasourceController+NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
