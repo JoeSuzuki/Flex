@@ -38,7 +38,7 @@ extension HomeDatasourceController {
         navBarSeparatorView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
         navBarSeparatorView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
         navBarSeparatorView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-        navBarSeparatorView.heightAnchor.constraint(equalToConstant: 0.5)
+        navBarSeparatorView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
     }
     
     private func setupLeftNavItems() {
