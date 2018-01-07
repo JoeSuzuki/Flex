@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    
+
     convenience public init(r: CGFloat, g: CGFloat, b: CGFloat) {
         self.init(r: r, g: g, b: b, a: 1)
     }
