@@ -30,7 +30,7 @@ extension GroupHomeController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         let navBarSeparatorView = UIView()
-        navBarSeparatorView.backgroundColor = Constants.Colors.backgroundGrey
+        navBarSeparatorView.backgroundColor = UIColor.main.backgroundGrey
         
         view.addSubview(navBarSeparatorView)
         

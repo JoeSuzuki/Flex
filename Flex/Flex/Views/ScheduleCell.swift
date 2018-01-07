@@ -53,11 +53,11 @@ class ScheduleCell: UICollectionViewCell {
     let seeMoreButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 5
-        button.layer.borderColor = Constants.Colors.mainBlue.cgColor
+        button.layer.borderColor = UIColor.main.mainBlue.cgColor
         button.layer.borderWidth = 1
         button.setTitle("See more", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.setTitleColor(Constants.Colors.mainBlue, for: .normal)
+        button.setTitleColor(UIColor.main.mainBlue, for: .normal)
         button.setImage(#imageLiteral(resourceName: "search"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)

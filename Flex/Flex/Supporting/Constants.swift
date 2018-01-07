@@ -9,9 +9,6 @@
 import UIKit
 
 struct Constants {
-    struct Colors {
-        static let mainBlue = UIColor(r: 90, g: 200, b: 250)
-        static let backgroundGrey = UIColor(r: 230, g: 230, b: 230)
-    }
 }
+
 
