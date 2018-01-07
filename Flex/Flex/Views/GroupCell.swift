@@ -75,7 +75,7 @@ class GroupCell: UICollectionViewCell {
 //      lightBlueView.widthAnchor.constraint(equalToConstant: 40).isActive = true
         
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
-        detailsView.bottomAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
         

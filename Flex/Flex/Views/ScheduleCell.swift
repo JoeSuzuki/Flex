@@ -26,7 +26,7 @@ class ScheduleCell: UICollectionViewCell {
     }()
 
     func setupViews() {
-        backgroundColor = .green
+//        backgroundColor = .green
         
         addSubview(groupImageView)
         
