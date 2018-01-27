@@ -6,7 +6,7 @@
 //  Copyright © 2017 Joe Suzuki. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct User {
     let name: String
@@ -14,5 +14,5 @@ struct User {
     let age: String
     let sex: String
     let email: String
-    let profileImageUrl: UIImage
+    let profileImageUrl: String
 }
