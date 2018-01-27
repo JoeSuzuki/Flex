@@ -6,7 +6,7 @@
 //  Copyright © 2017 Joe Suzuki. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 struct Group {
     let ownerName: String
@@ -15,5 +15,5 @@ struct Group {
     let startCloseTime: [Date: Date]
     let openDay: [String]
     let groupBio: String
-    let groupImage: UIImage
+    let groupImage: String
 }

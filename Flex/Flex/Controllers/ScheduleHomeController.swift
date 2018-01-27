@@ -15,7 +15,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView?.backgroundColor = UIColor.main.mainBlue
+        collectionView?.backgroundColor = .white
         collectionView?.register(ScheduleCell.self, forCellWithReuseIdentifier: cellId)
         
         setupNavigationBarItems()
