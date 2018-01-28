@@ -81,8 +81,9 @@ class GroupCell: UICollectionViewCell {
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
-        
-        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
+        detailsView.heightAnchor.constraint(equalToConstant: 45).isActive = true
+
+        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:4).isActive = true
         groupNameLabel.bottomAnchor.constraint(equalTo: groupCreaterNameLabel.topAnchor).isActive = true
         groupNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
         groupNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true
