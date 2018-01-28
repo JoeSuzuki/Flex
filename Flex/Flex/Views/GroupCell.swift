@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GroupCell: UICollectionViewCell {
     
@@ -17,7 +18,9 @@ class GroupCell: UICollectionViewCell {
     
     let groupImageView: UIImageView = {
         let groupView = UIImageView()
-        groupView.image = #imageLiteral(resourceName: "search")
+//        groupView.image = #imageLiteral(resourceName: "search")
+        let url = URL(string: "https://avatars1.githubusercontent.com/u/23642941?s=460&v=4")
+        groupView.kf.setImage(with: url)
         groupView.layer.cornerRadius = 5
         groupView.contentMode = .scaleAspectFit
         groupView.clipsToBounds = true
