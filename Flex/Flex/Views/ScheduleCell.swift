@@ -126,7 +126,7 @@ class ScheduleCell: UICollectionViewCell {
         headerNameLabel.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
         headerNameLabel.leftAnchor.constraint(equalTo: stackView.leftAnchor).isActive = true
         headerNameLabel.rightAnchor.constraint(equalTo: headerTimeLabel.leftAnchor).isActive = true
-        headerNameLabel.widthAnchor.constraint(equalTo: stackView.frame.width, multiplier: 0.5).isActive = true
+//        headerNameLabel.widthAnchor.constraint(equalTo: stackView.frame.width, multiplier: 0.5).isActive = true
         
         headerTimeLabel.topAnchor.constraint(equalTo: stackView.topAnchor).isActive = true
         headerTimeLabel.bottomAnchor.constraint(equalTo: stackView.bottomAnchor).isActive = true
