@@ -17,8 +17,8 @@ extension GroupHomeController {
     }
     
     private func setupRemainNavItems() {
-        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "search"))
-        tittleImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Flex"))
+        tittleImageView.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
         tittleImageView.contentMode = .scaleAspectFit
         
         navigationItem.titleView = tittleImageView
