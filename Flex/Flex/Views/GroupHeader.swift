@@ -21,6 +21,7 @@ class GroupHeaderCell: UICollectionViewCell {
         segment.selectedSegmentIndex = 0
         segment.backgroundColor = UIColor.main.mainBlue
         segment.tintColor = .white
+        segment.removeBorders()
         segment.translatesAutoresizingMaskIntoConstraints = false
         return segment
     }()
