@@ -60,7 +60,7 @@ class GroupCell: UICollectionViewCell {
         backgroundColor = .white
         
         addSubview(groupImageView)
-//        addSubview(lightBlueView)
+        addSubview(lightBlueView)
         addSubview(detailsView)
         addSubview(groupNameLabel)
         addSubview(groupCreaterNameLabel)
@@ -70,12 +70,10 @@ class GroupCell: UICollectionViewCell {
         groupImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         groupImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         
-//        lightBlueView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-//        lightBlueView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
-//        lightBlueView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-//        lightBlueView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-//        lightBlueView.heightAnchor.constraint(equalToConstant: 120).isActive = true
-//      lightBlueView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        lightBlueView.topAnchor.constraint(equalTo: groupImageView.topAnchor, constant: 160).isActive = true
+        lightBlueView.bottomAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
+        lightBlueView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor, constant: 300).isActive = true
+        lightBlueView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
         
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
