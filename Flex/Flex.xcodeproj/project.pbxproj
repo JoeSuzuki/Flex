@@ -19,6 +19,7 @@
 		FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */; };
 		FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
+		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6B9E1FF8DBE80052654F /* Constants.swift */; };
 		FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */; };
 		FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */; };
@@ -42,6 +43,7 @@
 		FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTwo.swift; sourceTree = "<group>"; };
 		FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwo.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
+		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF8C6B9E1FF8DBE80052654F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeController.swift; sourceTree = "<group>"; };
 		FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */,
 				FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */,
+				FF5078F0203108740016D484 /* Time.swift */,
 			);
 			name = Models;
 			path = Flex/Models;
@@ -292,6 +295,7 @@
 			files = (
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */,
+				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
