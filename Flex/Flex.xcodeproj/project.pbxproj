@@ -15,8 +15,6 @@
 		FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */; };
 		FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C831FF8C42F0067AD40 /* GroupHeader.swift */; };
 		FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C851FF8C46C0067AD40 /* GroupCell.swift */; };
-		FF251C891FF8C62B0067AD40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C881FF8C62B0067AD40 /* User.swift */; };
-		FF251C8B1FF8C71D0067AD40 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8A1FF8C71D0067AD40 /* Group.swift */; };
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
 		FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */; };
 		FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */; };
@@ -40,8 +38,6 @@
 		FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF251C831FF8C42F0067AD40 /* GroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
 		FF251C851FF8C46C0067AD40 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		FF251C881FF8C62B0067AD40 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FF251C8A1FF8C71D0067AD40 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTwo.swift; sourceTree = "<group>"; };
 		FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwo.swift; sourceTree = "<group>"; };
@@ -140,8 +136,6 @@
 		FF251C871FF8C5FF0067AD40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C881FF8C62B0067AD40 /* User.swift */,
-				FF251C8A1FF8C71D0067AD40 /* Group.swift */,
 				FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */,
 				FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */,
 			);
@@ -296,14 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF251C8B1FF8C71D0067AD40 /* Group.swift in Sources */,
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
 				FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */,
-				FF251C891FF8C62B0067AD40 /* User.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
 				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
