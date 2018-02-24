@@ -12,7 +12,7 @@ class GroupTwo {
     let ownerName: String
     let groupName: String
     let location: String
-    let time = Time(12,34,44)
+    let time = Date()
     let startCloseTime: [Date: Date]
     let openDays: [String]
     let groupBio: String
