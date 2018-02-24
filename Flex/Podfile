@@ -7,5 +7,10 @@ target 'Flex' do
 
   # Pods for Flex
   pod 'Kingfisher', '~> 4.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
 end

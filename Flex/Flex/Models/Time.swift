@@ -21,6 +21,6 @@ class Time {
     }
     
     public func military() {
-        return [self.hour, self.minute, self.second]
+        return "self.hour self.minute self.second"
     }
 }
