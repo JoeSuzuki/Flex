@@ -49,7 +49,8 @@ extension GroupHomeController {
         followButton.setImage(#imageLiteral(resourceName: "Clock").withRenderingMode(.alwaysOriginal), for: .normal)
         followButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
         followButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
-
+        followButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
     }
     
@@ -61,4 +62,11 @@ extension GroupHomeController {
 
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
+    
+    @objc func buttonAction() {
+        let loginViewController = LoginViewController()
+        present(loginViewController, animated: true, completion: nil)
+    }
+    
+
 }
