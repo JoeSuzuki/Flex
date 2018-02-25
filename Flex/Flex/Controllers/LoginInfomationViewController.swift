@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  LoginInfomationViewController.swift
 //  Flex
 //
 //  Created by Joe Suzuki on 2/24/18.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-
+class LoginInfomationViewController: UIViewController {
+    
     let inputsContainerView: UIView = {
         //setup
         let view = UIView()
@@ -28,26 +28,15 @@ class LoginViewController: UIViewController {
         button.setTitleColor(UIColor.main.mainBlue, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.layer.cornerRadius = 5
-
-        button.addTarget(self, action: #selector(g), for: .touchUpInside)
+        
+        button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         return button
     }()
     
-    @objc func g() {
-        let loginInfomationViewController = LoginInfomationViewController()
-        present(loginInfomationViewController, animated: true, completion: nil)
-
-    }
     @objc func handleLoginRegister() {
-        if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
-            let loginInfomationViewController = LoginInfomationViewController()
-            self.navigationController?.pushViewController(loginInfomationViewController, animated: true)
-        } else {
-            let loginInfomationViewController = LoginInfomationViewController()
-            self.navigationController?.pushViewController(loginInfomationViewController, animated: true)
-        }
+        self.dismiss(animated: true, completion: nil)
     }
-
+    
     let nameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Name"
@@ -129,7 +118,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.main.mainBlue
+        view.backgroundColor = UIColor.main.backgroundGrey
         
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)
@@ -227,3 +216,4 @@ class LoginViewController: UIViewController {
         return .lightContent
     }
 }
+
