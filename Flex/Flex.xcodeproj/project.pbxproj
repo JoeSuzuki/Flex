@@ -18,8 +18,8 @@
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
 		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
 		FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3935F0204244B3004D5677 /* GoogleService-Info.plist */; };
-		FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */; };
-		FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */; };
+		FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* Group.swift */; };
+		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
 		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6B9E1FF8DBE80052654F /* Constants.swift */; };
@@ -44,8 +44,8 @@
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF3935F0204244B3004D5677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTwo.swift; sourceTree = "<group>"; };
-		FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwo.swift; sourceTree = "<group>"; };
+		FF3C4645201C5A3600D2EDAD /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
 		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF8C6B9E1FF8DBE80052654F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -145,8 +145,8 @@
 		FF251C871FF8C5FF0067AD40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */,
-				FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */,
+				FF3C4647201C5FBC00D2EDAD /* User.swift */,
+				FF3C4645201C5A3600D2EDAD /* Group.swift */,
 				FF5078F0203108740016D484 /* Time.swift */,
 			);
 			name = Models;
@@ -320,13 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
-				FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */,
+				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
-				FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */,
+				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
 				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,

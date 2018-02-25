@@ -8,7 +8,7 @@
 
 import Foundation
 
-class GroupTwo {
+class Group {
     let ownerName: String
     let groupName: String
     let location: String
