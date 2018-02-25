@@ -16,6 +16,8 @@
 		FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C831FF8C42F0067AD40 /* GroupHeader.swift */; };
 		FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C851FF8C46C0067AD40 /* GroupCell.swift */; };
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
+		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
+		FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3935F0204244B3004D5677 /* GoogleService-Info.plist */; };
 		FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */; };
 		FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
@@ -40,6 +42,8 @@
 		FF251C831FF8C42F0067AD40 /* GroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
 		FF251C851FF8C46C0067AD40 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
+		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FF3935F0204244B3004D5677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTwo.swift; sourceTree = "<group>"; };
 		FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwo.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
@@ -105,9 +109,11 @@
 				FF251C871FF8C5FF0067AD40 /* Models */,
 				FF251C821FF8C3390067AD40 /* Views */,
 				FF251C8C1FF8D7CF0067AD40 /* Extensions */,
+				FF3935EF204243D2004D5677 /* Services */,
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
+				FF3935F0204244B3004D5677 /* GoogleService-Info.plist */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
 			);
 			path = Flex;
@@ -120,6 +126,7 @@
 				FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */,
 				FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */,
 				FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */,
+				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +162,13 @@
 			name = Extensions;
 			path = Flex/Extensions;
 			sourceTree = SOURCE_ROOT;
+		};
+		FF3935EF204243D2004D5677 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
 		};
 		FF8C6B9D1FF8DBD40052654F /* Supporting */ = {
 			isa = PBXGroup;
@@ -229,6 +243,7 @@
 			files = (
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
+				FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +283,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -307,6 +322,7 @@
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */,
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
+				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
