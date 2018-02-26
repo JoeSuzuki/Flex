@@ -34,17 +34,12 @@ class LoginViewController: UIViewController {
     }()
     
     @objc func g() {
-        let loginInfomationViewController = LoginInfomationViewController()
-        present(loginInfomationViewController, animated: true, completion: nil)
 
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
-            let loginInfomationViewController = LoginInfomationViewController()
-            self.navigationController?.pushViewController(loginInfomationViewController, animated: true)
         } else {
-            let loginInfomationViewController = LoginInfomationViewController()
-            self.navigationController?.pushViewController(loginInfomationViewController, animated: true)
+       
         }
     }
 
