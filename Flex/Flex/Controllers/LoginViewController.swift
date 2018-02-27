@@ -29,12 +29,29 @@ class LoginViewController: UIViewController {
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.layer.cornerRadius = 5
 
-        button.addTarget(self, action: #selector(g), for: .touchUpInside)
+        if button.titleLabel?.text == "Register" {
+            button.addTarget(self, action: #selector(handleExtraInfomation), for: .touchUpInside)
+        } else {
+            
+        }
+        
         return button
     }()
     
-    @objc func g() {
-
+    @objc func handleExtraInfomation() {
+        guard nameTextField.text != nil else {
+            print("name is wrong")
+            return
+        }
+        guard let email = emailTextField.text else {
+            print("email is wrong")
+            return
+        }
+        guard let password = passwordTextField.text else {
+            print("password is wrong")
+            return
+        }
+        
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
