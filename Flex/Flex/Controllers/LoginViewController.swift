@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         if button.titleLabel?.text == "Register" {
             button.addTarget(self, action: #selector(handleExtraInfomation), for: .touchUpInside)
         } else {
-            
+            button.addTarget(self, action: #selector(loginFlow), for: .touchUpInside)
         }
         
         return button
@@ -51,7 +51,15 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
-        
+    }
+    @objc func loginFlow() {
+        guard let name = nameTextField.text else {
+            return
+        }
+        guard let password = passwordTextField.text else {
+            return
+        }
+
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
