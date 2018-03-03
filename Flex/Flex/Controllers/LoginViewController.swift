@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
     }()
     
     @objc func handleExtraInfomation() {
-        guard nameTextField.text != nil else {
+        guard let name = nameTextField.text else {
             print("name is wrong")
             return
         }
