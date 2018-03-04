@@ -28,21 +28,9 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let nameView: UIView = {
         let view = UIView()
-        view.backgroundColor = .purple
+        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }()
-    let headerNameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Name"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    let headerTimeLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Time"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
     }()
     let scheduleView: UIView = {
         let view = UIView()
@@ -88,8 +76,6 @@ class ScheduleCell: UICollectionViewCell {
         addSubview(timeNameView)
         addSubview(timeView)
         addSubview(nameView)
-//        addSubview(headerNameLabel)
-//        addSubview(headerTimeLabel)
         addSubview(scheduleView)
         addSubview(separatorView)
         
@@ -110,16 +96,6 @@ class ScheduleCell: UICollectionViewCell {
         timeView.leftAnchor.constraint(equalTo: nameView.rightAnchor).isActive = true
         timeView.rightAnchor.constraint(equalTo: timeNameView.rightAnchor).isActive = true
         timeView.widthAnchor.constraint(equalToConstant: timeNameView.frame.size.width / 2).isActive = true
-
-//        headerNameLabel.topAnchor.constraint(equalTo: nameView.topAnchor).isActive = true
-//        headerNameLabel.bottomAnchor.constraint(equalTo: nameView.bottomAnchor).isActive = true
-//        headerNameLabel.leftAnchor.constraint(equalTo: nameView.leftAnchor).isActive = true
-//        headerNameLabel.rightAnchor.constraint(equalTo: nameView.rightAnchor).isActive = true
-//
-//        headerTimeLabel.topAnchor.constraint(equalTo: timeView.topAnchor).isActive = true
-//        headerTimeLabel.bottomAnchor.constraint(equalTo: timeView.bottomAnchor).isActive = true
-//        headerTimeLabel.leftAnchor.constraint(equalTo: timeView.leftAnchor).isActive = true
-//        headerTimeLabel.rightAnchor.constraint(equalTo: timeView.rightAnchor).isActive = true
 
         scheduleView.topAnchor.constraint(equalTo: timeNameView.bottomAnchor).isActive = true
         scheduleView.bottomAnchor.constraint(equalTo: separatorView.topAnchor).isActive = true
