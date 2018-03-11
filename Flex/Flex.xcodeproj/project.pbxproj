@@ -18,6 +18,7 @@
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
 		FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA1204B9273008065E5 /* ProfileViewController.swift */; };
 		FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA3204B92E3008065E5 /* SettingViewController.swift */; };
+		FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */; };
 		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
 		FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3935F0204244B3004D5677 /* GoogleService-Info.plist */; };
 		FF3935F52044DAAA004D5677 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935F42044DAAA004D5677 /* UserService.swift */; };
@@ -47,6 +48,7 @@
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		FF26BAA1204B9273008065E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FF26BAA3204B92E3008065E5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF3935F0204244B3004D5677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF3935F42044DAAA004D5677 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				FF251C831FF8C42F0067AD40 /* GroupHeader.swift */,
 				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
+				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
 			);
 			name = Views;
 			path = Flex/Views;
@@ -330,6 +333,7 @@
 			files = (
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
+				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
