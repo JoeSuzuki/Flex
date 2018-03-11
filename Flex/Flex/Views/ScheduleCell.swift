@@ -49,8 +49,6 @@ class ScheduleCell: UICollectionViewCell {
         scheduleView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         scheduleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-
-
     }
     
     required init?(coder aDecoder: NSCoder) {
