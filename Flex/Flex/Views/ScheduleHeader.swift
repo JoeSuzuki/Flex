@@ -75,7 +75,6 @@ class ScheduleHeader: UICollectionViewCell {
         activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
         activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
         activityTimeLabel.textAlignment = .center
-
     }
 }
 
