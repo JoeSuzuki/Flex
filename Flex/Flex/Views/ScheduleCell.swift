@@ -16,7 +16,7 @@ class ScheduleCell: UICollectionViewCell {
     }
     let scheduleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -39,6 +39,54 @@ class ScheduleCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    let activityNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Dr. Dentist"
+        label.textColor = UIColor.main.mainBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    let activityTimeLabel: UILabel = {
+        let label = UILabel()
+        let time: [String] = ["12:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM", "12:00 PM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM", "6:00 AM", "7:00 AM", "8:00 AM", "9:00 AM","10:00 AM", "11:00 AM"
+
+        label.text = "\(time[0])"
+        label.textColor = UIColor.main.mainBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    fileprivate func setupLabels() {
+        
+        let activityNameContainerView = UIView()
+        let activityTimeButtonContainerView = UIView()
+        
+        let labelsStackView = UIStackView(arrangedSubviews: [activityNameContainerView, activityTimeButtonContainerView])
+        labelsStackView.axis = .horizontal
+        labelsStackView.distribution = .fillEqually
+        labelsStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        addSubview(labelsStackView)
+        labelsStackView.topAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
+        labelsStackView.bottomAnchor.constraint(equalTo: scheduleView.bottomAnchor).isActive = true
+        labelsStackView.leftAnchor.constraint(equalTo: scheduleView.leftAnchor).isActive = true
+        labelsStackView.rightAnchor.constraint(equalTo: scheduleView.rightAnchor).isActive = true
+        
+        addSubview(activityNameLabel)
+        addSubview(activityTimeLabel)
+        
+        activityNameLabel.topAnchor.constraint(equalTo: activityNameContainerView.topAnchor).isActive = true
+        activityNameLabel.bottomAnchor.constraint(equalTo: activityNameContainerView.bottomAnchor).isActive = true
+        activityNameLabel.leftAnchor.constraint(equalTo: activityNameContainerView.leftAnchor).isActive = true
+        activityNameLabel.rightAnchor.constraint(equalTo: activityNameContainerView.rightAnchor).isActive = true
+        activityNameLabel.textAlignment = .center
+        
+        activityTimeLabel.topAnchor.constraint(equalTo: activityTimeButtonContainerView.topAnchor).isActive = true
+        activityTimeLabel.bottomAnchor.constraint(equalTo: activityTimeButtonContainerView.bottomAnchor).isActive = true
+        activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
+        activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
+        activityTimeLabel.textAlignment = .center
+        
+    }
 
     func setupViews() {
         backgroundColor = .white
@@ -49,6 +97,8 @@ class ScheduleCell: UICollectionViewCell {
         scheduleView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         scheduleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        
+        setupLabels()
     }
     
     required init?(coder aDecoder: NSCoder) {

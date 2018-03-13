@@ -44,8 +44,9 @@ extension ScheduleHomeController {
     private func setupLeftNavItems() {
         let followButton = UIButton(type: .system)
         followButton.setImage(#imageLiteral(resourceName: "Clock").withRenderingMode(.alwaysOriginal), for: .normal)
-        followButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
-        followButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        followButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        followButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        followButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
     }
@@ -53,9 +54,14 @@ extension ScheduleHomeController {
     private func setupRightNavItems() {
         let searchButton = UIButton(type: .system)
         searchButton.setImage(#imageLiteral(resourceName: "Home").withRenderingMode(.alwaysOriginal), for: .normal)
-        searchButton.widthAnchor.constraint(equalToConstant: 34).isActive = true
-        searchButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
+        searchButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        searchButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
         
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
+    @objc func buttonAction() {
+        let loginViewController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
+        present(loginViewController, animated: true, completion: nil)
+    }
+
 }
