@@ -49,6 +49,8 @@ class ScheduleHeader: UICollectionViewCell {
         
         let activityNameContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
+        activityNameContainerView.backgroundColor = UIColor.main.backgroundGrey
+        activityTimeButtonContainerView.backgroundColor = UIColor.main.backgroundGrey
 
         let labelsStackView = UIStackView(arrangedSubviews: [activityNameContainerView, activityTimeButtonContainerView])
         labelsStackView.axis = .horizontal
@@ -64,14 +66,14 @@ class ScheduleHeader: UICollectionViewCell {
         addSubview(activityNameLabel)
         addSubview(activityTimeLabel)
         
-        activityNameLabel.topAnchor.constraint(equalTo: activityNameContainerView.topAnchor).isActive = true
-        activityNameLabel.bottomAnchor.constraint(equalTo: activityNameContainerView.bottomAnchor).isActive = true
+        activityNameLabel.topAnchor.constraint(equalTo: activityNameContainerView.topAnchor, constant: 3).isActive = true
+        activityNameLabel.bottomAnchor.constraint(equalTo: activityNameContainerView.bottomAnchor, constant: 3).isActive = true
         activityNameLabel.leftAnchor.constraint(equalTo: activityNameContainerView.leftAnchor).isActive = true
         activityNameLabel.rightAnchor.constraint(equalTo: activityNameContainerView.rightAnchor).isActive = true
         activityNameLabel.textAlignment = .center
         
-        activityTimeLabel.topAnchor.constraint(equalTo: activityTimeButtonContainerView.topAnchor).isActive = true
-        activityTimeLabel.bottomAnchor.constraint(equalTo: activityTimeButtonContainerView.bottomAnchor).isActive = true
+        activityTimeLabel.topAnchor.constraint(equalTo: activityTimeButtonContainerView.topAnchor, constant: 3).isActive = true
+        activityTimeLabel.bottomAnchor.constraint(equalTo: activityTimeButtonContainerView.bottomAnchor, constant: 3).isActive = true
         activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
         activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
         activityTimeLabel.textAlignment = .center
