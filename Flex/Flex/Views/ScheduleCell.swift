@@ -59,7 +59,7 @@ class ScheduleCell: UICollectionViewCell {
         
         let activityNameContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
-        activityTimeButtonContainerView.backgroundColor = UIColor.main.backgroundGrey
+//        activityTimeButtonContainerView.backgroundColor = UIColor.main.backgroundGrey
         
         let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, activityNameContainerView])
         labelsStackView.axis = .horizontal

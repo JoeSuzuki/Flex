@@ -19,6 +19,11 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         collectionView?.backgroundColor = .white
         collectionView?.register(ScheduleCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(ScheduleHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView!.collectionViewLayout = layout
 
         setupNavigationBarItems()
     }
@@ -33,7 +38,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 35)
+        return CGSize(width: view.frame.width, height: 45)
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
