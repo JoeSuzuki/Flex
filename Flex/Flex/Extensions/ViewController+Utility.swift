@@ -21,11 +21,10 @@ extension UIViewController : UIGestureRecognizerDelegate{
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
-        view.alpha = 0.9
-        view.backgroundColor = UIColor.gray
+        view.alpha = 0.7
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0{
-                self.view.frame.origin.y -= keyboardSize.height
+                self.view.frame.origin.y -= keyboardSize.height - 100
                 Keyboard.pushValue = keyboardSize.height
             }
         }
@@ -33,10 +32,9 @@ extension UIViewController : UIGestureRecognizerDelegate{
     
     @objc func keyboardWillHide(notification: NSNotification) {
         view.alpha = 1
-        view.backgroundColor = UIColor.white
         if ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
             if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += Keyboard.pushValue
+                self.view.frame.origin.y += Keyboard.pushValue - 100
             }
         }
     }
