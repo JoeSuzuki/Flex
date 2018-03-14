@@ -60,7 +60,8 @@ extension ScheduleHomeController {
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
     @objc func buttonAction() {
-        let loginViewController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
+//        let loginViewController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
+        let loginViewController = LoginViewController()
         present(loginViewController, animated: true, completion: nil)
     }
 

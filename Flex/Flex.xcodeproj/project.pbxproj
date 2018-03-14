@@ -30,6 +30,7 @@
 		FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */; };
 		FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */; };
 		FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA41FF992D40052654F /* ScheduleCell.swift */; };
+		FFA8BA832058A0E500F505A1 /* ViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* ViewController+Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeController.swift; sourceTree = "<group>"; };
 		FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF8C6BA41FF992D40052654F /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		FFA8BA822058A0E500F505A1 /* ViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Utility.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			children = (
 				FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */,
 				FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */,
+				FFA8BA822058A0E500F505A1 /* ViewController+Utility.swift */,
 			);
 			name = Extensions;
 			path = Flex/Extensions;
@@ -344,6 +347,7 @@
 				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
+				FFA8BA832058A0E500F505A1 /* ViewController+Utility.swift in Sources */,
 				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,

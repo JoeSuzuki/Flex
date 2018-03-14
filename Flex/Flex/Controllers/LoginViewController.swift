@@ -85,6 +85,7 @@ class LoginViewController: UIViewController {
     let emailTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Email"
+        textField.keyboardType = .emailAddress
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -160,6 +161,9 @@ class LoginViewController: UIViewController {
         setupLoginRegisterButton()
         setupProfileImageView()
         setupSegmentedControl()
+        
+        applyKeyboardDismisser()
+        applyKeyboardPush()
     }
     
     func setupSegmentedControl() {
