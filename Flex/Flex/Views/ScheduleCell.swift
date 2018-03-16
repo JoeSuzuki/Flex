@@ -16,7 +16,7 @@ class ScheduleCell: UICollectionViewCell {
     }
     let scheduleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -114,11 +114,11 @@ class ScheduleCell: UICollectionViewCell {
         scheduleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     
-        titleView.topAnchor.constraint(equalTo: self.topAnchor, constant: 4).isActive = true
+        titleView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
         titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
         titleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         titleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-//        titleView.heightAnchor.constraint(equalToConstant: 10.0).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 15.0).isActive = true
 
         timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor).isActive = true
         timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
