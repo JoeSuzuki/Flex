@@ -18,7 +18,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         
         collectionView?.backgroundColor = .white
         collectionView?.register(ScheduleCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView?.register(ScheduleHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
+//        collectionView?.register(ScheduleHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 0
@@ -38,7 +38,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 45)
+        return CGSize(width: view.frame.width / 2, height: 135)
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -47,7 +47,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         return header
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 33)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return CGSize(width: view.frame.width, height: 33)
+//    }
 }
