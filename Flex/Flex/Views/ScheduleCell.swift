@@ -39,6 +39,19 @@ class ScheduleCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    let titleView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    let timeTitle: UILabel = {
+        let label = UILabel()
+        label.text = "12:00 AM"
+        label.textColor = UIColor.main.mainBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     let activityNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Dr. Dentist"
@@ -93,11 +106,25 @@ class ScheduleCell: UICollectionViewCell {
         backgroundColor = .white
         
         addSubview(scheduleView)
+        addSubview(titleView)
+        addSubview(timeTitle)
         
-        scheduleView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        scheduleView.topAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
         scheduleView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         scheduleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    
+        titleView.topAnchor.constraint(equalTo: self.topAnchor, constant: 4).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
+        titleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        titleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+//        titleView.heightAnchor.constraint(equalToConstant: 10.0).isActive = true
+
+        timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor).isActive = true
+        timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
+        timeTitle.leftAnchor.constraint(equalTo: titleView.leftAnchor).isActive = true
+        timeTitle.rightAnchor.constraint(equalTo: titleView.rightAnchor).isActive = true
+        timeTitle.textAlignment = .center
         
         setupLabels()
     }
