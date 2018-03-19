@@ -35,12 +35,13 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.contentView.layer.cornerRadius = 5
+        cell.layer.cornerRadius = 5
+        cell.clipsToBounds = true
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width / 2, height: 135)
+        return CGSize(width: view.frame.width / 2, height: 225)
     }
     
 //    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
