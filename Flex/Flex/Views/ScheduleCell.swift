@@ -16,7 +16,7 @@ class ScheduleCell: UICollectionViewCell {
     }
     let scheduleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -41,13 +41,14 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let titleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     let timeTitle: UILabel = {
         let label = UILabel()
         label.text = "12:00 AM"
+        label.font = UIFont.boldSystemFont(ofSize: 17)
         label.textColor = UIColor.main.mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -115,10 +116,10 @@ class ScheduleCell: UICollectionViewCell {
         scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     
         titleView.topAnchor.constraint(equalTo: self.topAnchor, constant: 4).isActive = true
-        titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor, constant: 4).isActive = true
         titleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         titleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-//        titleView.heightAnchor.constraint(equalToConstant: 10.0).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 22.0).isActive = true
 
         timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor).isActive = true
         timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
