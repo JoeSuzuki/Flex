@@ -1,18 +1,51 @@
 //
-//  User.swift
+//  UserTwo.swift
 //  Flex
 //
-//  Created by Joe Suzuki on 12/31/17.
-//  Copyright © 2017 Joe Suzuki. All rights reserved.
+//  Created by Joe Suzuki on 1/27/18.
+//  Copyright © 2018 Joe Suzuki. All rights reserved.
 //
 
 import Foundation
+import FirebaseDatabase.FIRDataSnapshot
 
-struct User {
+class User {
     let name: String
+    let uid: String
     let username: String
     let age: String
     let sex: String
     let email: String
-    let profileImageUrl: String
+    let profileImageUrl: String?
+    
+    init(name: String, uid: String, username : String, age : String, sex : String, email : String) {
+        self.name = name
+        self.uid = uid
+        self.username = username
+        self.age = age
+        self.sex = sex
+        self.email = email
+        self.profileImageUrl = nil
+    }
+    
+    init?(snapshot: DataSnapshot) {
+        guard let dict = snapshot.value as? [String : Any],
+            let name = dict["name"] as? String,
+            let username = dict["username"] as? String,
+            let age = dict["age"] as? String,
+            let sex = dict["sex"] as? String,
+            let email = dict["email"] as? String
+            else { return nil }
+        if let url = dict["profileImageUrl"] as? String {
+            self.profileImageUrl = url
+        } else {
+            self.profileImageUrl = nil
+        }
+        self.uid = snapshot.key
+        self.name = name
+        self.username = username
+        self.age = age
+        self.sex = sex
+        self.email = email
+    }
 }

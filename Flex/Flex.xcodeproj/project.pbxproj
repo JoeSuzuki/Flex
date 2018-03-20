@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B39A5EBBC4CEDF98D68D44B /* Pods_Flex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B15A4AAE1331C825E915543 /* Pods_Flex.framework */; };
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
 		FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* GroupHomeController.swift */; };
 		FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C561FF844E20067AD40 /* Assets.xcassets */; };
@@ -14,18 +15,28 @@
 		FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */; };
 		FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C831FF8C42F0067AD40 /* GroupHeader.swift */; };
 		FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C851FF8C46C0067AD40 /* GroupCell.swift */; };
-		FF251C891FF8C62B0067AD40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C881FF8C62B0067AD40 /* User.swift */; };
-		FF251C8B1FF8C71D0067AD40 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8A1FF8C71D0067AD40 /* Group.swift */; };
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
-		FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */; };
-		FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */; };
+		FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA1204B9273008065E5 /* ProfileViewController.swift */; };
+		FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA3204B92E3008065E5 /* SettingViewController.swift */; };
+		FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */; };
+		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
+		FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3935F0204244B3004D5677 /* GoogleService-Info.plist */; };
+		FF3935F52044DAAA004D5677 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935F42044DAAA004D5677 /* UserService.swift */; };
+		FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* Group.swift */; };
+		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
+		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
+		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6B9E1FF8DBE80052654F /* Constants.swift */; };
 		FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */; };
 		FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */; };
 		FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA41FF992D40052654F /* ScheduleCell.swift */; };
+		FFA8BA832058A0E500F505A1 /* ViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* ViewController+Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B15A4AAE1331C825E915543 /* Pods_Flex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C635D1FDDFB9272FE0684716 /* Pods-Flex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5F12A739972D5391E239DA /* Pods-Flex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.release.xcconfig"; sourceTree = "<group>"; };
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF251C511FF844E20067AD40 /* GroupHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHomeController.swift; sourceTree = "<group>"; };
@@ -35,15 +46,22 @@
 		FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF251C831FF8C42F0067AD40 /* GroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
 		FF251C851FF8C46C0067AD40 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		FF251C881FF8C62B0067AD40 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FF251C8A1FF8C71D0067AD40 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
-		FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTwo.swift; sourceTree = "<group>"; };
-		FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwo.swift; sourceTree = "<group>"; };
+		FF26BAA1204B9273008065E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FF26BAA3204B92E3008065E5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
+		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FF3935F0204244B3004D5677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF3935F42044DAAA004D5677 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FF3C4645201C5A3600D2EDAD /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
+		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF8C6B9E1FF8DBE80052654F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeController.swift; sourceTree = "<group>"; };
 		FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF8C6BA41FF992D40052654F /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		FFA8BA822058A0E500F505A1 /* ViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Utility.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B39A5EBBC4CEDF98D68D44B /* Pods_Flex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48F43D1054829DB8329F043F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C635D1FDDFB9272FE0684716 /* Pods-Flex.debug.xcconfig */,
+				CF5F12A739972D5391E239DA /* Pods-Flex.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB4B23803CEA165F43A01ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B15A4AAE1331C825E915543 /* Pods_Flex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF251C431FF844E20067AD40 = {
 			isa = PBXGroup;
 			children = (
 				FF251C4E1FF844E20067AD40 /* Flex */,
 				FF251C4D1FF844E20067AD40 /* Products */,
+				48F43D1054829DB8329F043F /* Pods */,
+				CB4B23803CEA165F43A01ECC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +119,11 @@
 				FF251C871FF8C5FF0067AD40 /* Models */,
 				FF251C821FF8C3390067AD40 /* Views */,
 				FF251C8C1FF8D7CF0067AD40 /* Extensions */,
+				FF3935EF204243D2004D5677 /* Services */,
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
+				FF3935F0204244B3004D5677 /* GoogleService-Info.plist */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
 			);
 			path = Flex;
@@ -96,6 +136,9 @@
 				FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */,
 				FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */,
 				FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */,
+				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
+				FF26BAA3204B92E3008065E5 /* SettingViewController.swift */,
+				FF26BAA1204B9273008065E5 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,6 +149,7 @@
 				FF251C831FF8C42F0067AD40 /* GroupHeader.swift */,
 				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
+				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
 			);
 			name = Views;
 			path = Flex/Views;
@@ -114,10 +158,9 @@
 		FF251C871FF8C5FF0067AD40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C881FF8C62B0067AD40 /* User.swift */,
-				FF3C4647201C5FBC00D2EDAD /* UserTwo.swift */,
-				FF251C8A1FF8C71D0067AD40 /* Group.swift */,
-				FF3C4645201C5A3600D2EDAD /* GroupTwo.swift */,
+				FF3C4647201C5FBC00D2EDAD /* User.swift */,
+				FF3C4645201C5A3600D2EDAD /* Group.swift */,
+				FF5078F0203108740016D484 /* Time.swift */,
 			);
 			name = Models;
 			path = Flex/Models;
@@ -127,10 +170,20 @@
 			isa = PBXGroup;
 			children = (
 				FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */,
+				FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */,
+				FFA8BA822058A0E500F505A1 /* ViewController+Utility.swift */,
 			);
 			name = Extensions;
 			path = Flex/Extensions;
 			sourceTree = SOURCE_ROOT;
+		};
+		FF3935EF204243D2004D5677 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FF3935F42044DAAA004D5677 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
 		};
 		FF8C6B9D1FF8DBD40052654F /* Supporting */ = {
 			isa = PBXGroup;
@@ -148,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF251C5E1FF844E20067AD40 /* Build configuration list for PBXNativeTarget "Flex" */;
 			buildPhases = (
+				FDCD87812A9C5C4BE072D055 /* [CP] Check Pods Manifest.lock */,
 				FF251C481FF844E20067AD40 /* Sources */,
 				FF251C491FF844E20067AD40 /* Frameworks */,
 				FF251C4A1FF844E20067AD40 /* Resources */,
+				0617F6A908888B234D7533EB /* [CP] Embed Pods Frameworks */,
+				0A673328AFFBE405F1AF5B9D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,27 +258,99 @@
 			files = (
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
+				FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0617F6A908888B234D7533EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0A673328AFFBE405F1AF5B9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCD87812A9C5C4BE072D055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF251C481FF844E20067AD40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF251C8B1FF8C71D0067AD40 /* Group.swift in Sources */,
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
-				FF3C4646201C5A3600D2EDAD /* GroupTwo.swift in Sources */,
+				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
+				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
+				FF5078F1203108740016D484 /* Time.swift in Sources */,
+				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
+				FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
-				FF3C4648201C5FBC00D2EDAD /* UserTwo.swift in Sources */,
-				FF251C891FF8C62B0067AD40 /* User.swift in Sources */,
+				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
+				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
+				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
+				FFA8BA832058A0E500F505A1 /* ViewController+Utility.swift in Sources */,
 				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
+				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
 				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
 				FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */,
@@ -352,6 +480,7 @@
 		};
 		FF251C5F1FF844E20067AD40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C635D1FDDFB9272FE0684716 /* Pods-Flex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,6 +496,7 @@
 		};
 		FF251C601FF844E20067AD40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5F12A739972D5391E239DA /* Pods-Flex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

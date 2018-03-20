@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GroupCell: UICollectionViewCell {
     
@@ -17,7 +18,9 @@ class GroupCell: UICollectionViewCell {
     
     let groupImageView: UIImageView = {
         let groupView = UIImageView()
-        groupView.image = #imageLiteral(resourceName: "search")
+//        groupView.image = #imageLiteral(resourceName: "search")
+        let url = URL(string: "https://avatars1.githubusercontent.com/u/23642941?s=460&v=4")
+        groupView.kf.setImage(with: url)
         groupView.layer.cornerRadius = 5
         groupView.contentMode = .scaleAspectFit
         groupView.clipsToBounds = true
@@ -57,7 +60,7 @@ class GroupCell: UICollectionViewCell {
         backgroundColor = .white
         
         addSubview(groupImageView)
-//        addSubview(lightBlueView)
+        addSubview(lightBlueView)
         addSubview(detailsView)
         addSubview(groupNameLabel)
         addSubview(groupCreaterNameLabel)
@@ -67,19 +70,18 @@ class GroupCell: UICollectionViewCell {
         groupImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         groupImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         
-//        lightBlueView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-//        lightBlueView.bottomAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
-//        lightBlueView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-//        lightBlueView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-//        lightBlueView.heightAnchor.constraint(equalToConstant: 120).isActive = true
-//      lightBlueView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        lightBlueView.topAnchor.constraint(equalTo: groupImageView.topAnchor, constant: 160).isActive = true
+        lightBlueView.bottomAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
+        lightBlueView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor, constant: 250).isActive = true
+        lightBlueView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
         
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         detailsView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor).isActive = true
         detailsView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
-        
-        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor).isActive = true
+        detailsView.heightAnchor.constraint(equalToConstant: 45).isActive = true
+
+        groupNameLabel.topAnchor.constraint(equalTo: detailsView.topAnchor, constant:4).isActive = true
         groupNameLabel.bottomAnchor.constraint(equalTo: groupCreaterNameLabel.topAnchor).isActive = true
         groupNameLabel.leftAnchor.constraint(equalTo: detailsView.leftAnchor, constant: 4).isActive = true
         groupNameLabel.rightAnchor.constraint(equalTo: detailsView.rightAnchor).isActive = true

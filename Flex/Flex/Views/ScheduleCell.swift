@@ -14,53 +14,11 @@ class ScheduleCell: UICollectionViewCell {
         super.init(frame: frame)
         setupViews()
     }
-    let timeNameView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .yellow
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    let timeView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .green
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    let nameView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .purple
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    let headerNameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Name"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    let headerTimeLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Time"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
     let scheduleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }()
-    let scheduleNameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Dr. Andy Office"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-    let scheduleTimeLabel: UILabel = {
-        let label = UILabel()
-        label.text = "5:00"
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
     }()
     let seeMoreButton: UIButton = {
         let button = UIButton()
@@ -81,55 +39,95 @@ class ScheduleCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    let titleView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    let timeTitle: UILabel = {
+        let label = UILabel()
+        label.text = "12:00 AM"
+        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = UIColor.main.mainBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    let activityNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Dr. Dentist"
+        label.textColor = UIColor.main.mainBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    let activityTimeLabel: UILabel = {
+        let label = UILabel()
+//        let time: [String] = ["12:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM", "12:00 PM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM", "6:00 AM", "7:00 AM", "8:00 AM", "9:00 AM","10:00 AM", "11:00 AM"
+//
+        label.text = "12:00 AM"//"\(time[0])"
+        label.textColor = UIColor.main.mainBlue
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    fileprivate func setupLabels() {
+        
+        let activityNameContainerView = UIView()
+        let activityTimeButtonContainerView = UIView()
+//        activityTimeButtonContainerView.backgroundColor = UIColor.main.backgroundGrey
+        
+        let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, activityNameContainerView])
+        labelsStackView.axis = .horizontal
+        labelsStackView.distribution = .fillEqually
+        labelsStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        addSubview(labelsStackView)
+        labelsStackView.topAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
+        labelsStackView.bottomAnchor.constraint(equalTo: scheduleView.bottomAnchor).isActive = true
+        labelsStackView.leftAnchor.constraint(equalTo: scheduleView.leftAnchor).isActive = true
+        labelsStackView.rightAnchor.constraint(equalTo: scheduleView.rightAnchor).isActive = true
+        
+        addSubview(activityNameLabel)
+        addSubview(activityTimeLabel)
+        
+        activityNameLabel.topAnchor.constraint(equalTo: activityNameContainerView.topAnchor).isActive = true
+        activityNameLabel.bottomAnchor.constraint(equalTo: activityNameContainerView.bottomAnchor).isActive = true
+        activityNameLabel.leftAnchor.constraint(equalTo: activityNameContainerView.leftAnchor).isActive = true
+        activityNameLabel.rightAnchor.constraint(equalTo: activityNameContainerView.rightAnchor).isActive = true
+        activityNameLabel.textAlignment = .center
+        
+        activityTimeLabel.topAnchor.constraint(equalTo: activityTimeButtonContainerView.topAnchor).isActive = true
+        activityTimeLabel.bottomAnchor.constraint(equalTo: activityTimeButtonContainerView.bottomAnchor).isActive = true
+        activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
+        activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
+        activityTimeLabel.textAlignment = .center
+        
+    }
 
     func setupViews() {
         backgroundColor = .white
         
-        addSubview(timeNameView)
-        addSubview(timeView)
-        addSubview(nameView)
         addSubview(scheduleView)
-        addSubview(headerNameLabel)
-        addSubview(headerTimeLabel)
-        addSubview(separatorView)
-
-        timeNameView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        timeNameView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
-        timeNameView.leftAnchor.constraint(equalTo: scheduleView.leftAnchor).isActive = true
-        timeNameView.rightAnchor.constraint(equalTo: scheduleView.rightAnchor).isActive = true
-        timeNameView.heightAnchor.constraint(equalToConstant: 70).isActive = true
-
-        nameView.topAnchor.constraint(equalTo: timeNameView.topAnchor).isActive = true
-        nameView.bottomAnchor.constraint(equalTo: timeNameView.bottomAnchor).isActive = true
-        nameView.leftAnchor.constraint(equalTo: timeNameView.leftAnchor).isActive = true
-        nameView.rightAnchor.constraint(equalTo: timeView.leftAnchor).isActive = true
-
-        timeView.topAnchor.constraint(equalTo: timeNameView.topAnchor).isActive = true
-        timeView.bottomAnchor.constraint(equalTo: timeNameView.bottomAnchor).isActive = true
-        timeView.leftAnchor.constraint(equalTo: nameView.leftAnchor).isActive = true
-        timeView.rightAnchor.constraint(equalTo: timeNameView.rightAnchor).isActive = true
-
-        headerNameLabel.topAnchor.constraint(equalTo: nameView.topAnchor).isActive = true
-        headerNameLabel.bottomAnchor.constraint(equalTo: nameView.bottomAnchor).isActive = true
-        headerNameLabel.leftAnchor.constraint(equalTo: nameView.leftAnchor).isActive = true
-        headerNameLabel.rightAnchor.constraint(equalTo: nameView.rightAnchor).isActive = true
-
-        headerTimeLabel.topAnchor.constraint(equalTo: timeView.topAnchor).isActive = true
-        headerTimeLabel.bottomAnchor.constraint(equalTo: timeView.bottomAnchor).isActive = true
-        headerTimeLabel.leftAnchor.constraint(equalTo: timeView.leftAnchor).isActive = true
-        headerTimeLabel.rightAnchor.constraint(equalTo: timeView.rightAnchor).isActive = true
-
-        scheduleView.topAnchor.constraint(equalTo: timeNameView.bottomAnchor).isActive = true
-        scheduleView.bottomAnchor.constraint(equalTo: separatorView.topAnchor).isActive = true
-        scheduleView.leftAnchor.constraint(equalTo: separatorView.leftAnchor).isActive = true
-        scheduleView.rightAnchor.constraint(equalTo: separatorView.rightAnchor).isActive = true
+        addSubview(titleView)
+        addSubview(timeTitle)
         
-        separatorView.topAnchor.constraint(equalTo: scheduleView.bottomAnchor).isActive = true
-        separatorView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        separatorView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        separatorView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        separatorView.heightAnchor.constraint(equalToConstant: 10).isActive = true
+        scheduleView.topAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
+        scheduleView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        scheduleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+    
+        titleView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor, constant: 4).isActive = true
+        titleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        titleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 22.0).isActive = true
 
+        timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor).isActive = true
+        timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
+        timeTitle.leftAnchor.constraint(equalTo: titleView.leftAnchor).isActive = true
+        timeTitle.rightAnchor.constraint(equalTo: titleView.rightAnchor).isActive = true
+        timeTitle.textAlignment = .center
+        
+        setupLabels()
     }
     
     required init?(coder aDecoder: NSCoder) {
