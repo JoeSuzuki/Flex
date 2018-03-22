@@ -9,14 +9,15 @@
 import UIKit
 
 class ScheduleCell: UICollectionViewCell {
-    
+    let time: [String] = ["12:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM", "12:00 PM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM", "6:00 AM", "7:00 AM", "8:00 AM", "9:00 AM","10:00 AM", "11:00 AM"]
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
     }
     let scheduleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+//        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -41,7 +42,7 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let titleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .blue
+        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -62,9 +63,8 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let activityTimeLabel: UILabel = {
         let label = UILabel()
-//        let time: [String] = ["12:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM", "12:00 PM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM", "6:00 AM", "7:00 AM", "8:00 AM", "9:00 AM","10:00 AM", "11:00 AM"
-//
-        label.text = "12:00 AM"//"\(time[0])"
+        let time: [String] = ["12:00 AM", "1:00 PM", "2:00 PM", "3:00 PM", "4:00 PM", "5:00 PM", "6:00 PM", "7:00 PM", "8:00 PM", "9:00 PM", "10:00 PM", "11:00 PM", "12:00 PM", "1:00 AM", "2:00 AM", "3:00 AM", "4:00 AM", "5:00 AM", "6:00 AM", "7:00 AM", "8:00 AM", "9:00 AM","10:00 AM", "11:00 AM"]
+        label.text = "\(time[5])"
         label.textColor = UIColor.main.mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -100,7 +100,9 @@ class ScheduleCell: UICollectionViewCell {
         activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
         activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
         activityTimeLabel.textAlignment = .center
-        
+        time.forEach { (times) in
+            activityTimeLabel.text = times
+        }
     }
 
     func setupViews() {
@@ -116,13 +118,13 @@ class ScheduleCell: UICollectionViewCell {
         scheduleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
     
         titleView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor, constant: 4).isActive = true
+        titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
         titleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         titleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        titleView.heightAnchor.constraint(equalToConstant: 22.0).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 28.0).isActive = true
 
-        timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor).isActive = true
-        timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor).isActive = true
+        timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 4).isActive = true
+        timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 4).isActive = true
         timeTitle.leftAnchor.constraint(equalTo: titleView.leftAnchor).isActive = true
         timeTitle.rightAnchor.constraint(equalTo: titleView.rightAnchor).isActive = true
         timeTitle.textAlignment = .center

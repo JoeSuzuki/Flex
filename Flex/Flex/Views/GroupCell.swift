@@ -35,6 +35,15 @@ class GroupCell: UICollectionViewCell {
         return view
     }()
     
+    let openSpotsLabel: UILabel = {
+        let label = UILabel()
+        label.text = "50"
+        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
     let detailsView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -61,6 +70,7 @@ class GroupCell: UICollectionViewCell {
         
         addSubview(groupImageView)
         addSubview(lightBlueView)
+        addSubview(openSpotsLabel)
         addSubview(detailsView)
         addSubview(groupNameLabel)
         addSubview(groupCreaterNameLabel)
@@ -74,6 +84,13 @@ class GroupCell: UICollectionViewCell {
         lightBlueView.bottomAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         lightBlueView.leftAnchor.constraint(equalTo: groupImageView.leftAnchor, constant: 250).isActive = true
         lightBlueView.rightAnchor.constraint(equalTo: groupImageView.rightAnchor).isActive = true
+        
+        //
+        openSpotsLabel.topAnchor.constraint(equalTo: lightBlueView.topAnchor).isActive = true
+        openSpotsLabel.bottomAnchor.constraint(equalTo: lightBlueView.bottomAnchor).isActive = true
+        openSpotsLabel.leftAnchor.constraint(equalTo: lightBlueView.leftAnchor, constant: 4).isActive = true
+        openSpotsLabel.rightAnchor.constraint(equalTo: lightBlueView.rightAnchor).isActive = true
+        //
         
         detailsView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
         detailsView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
