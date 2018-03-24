@@ -50,7 +50,7 @@ class ScheduleCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "12:00 AM"
         label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.textColor = UIColor.main.mainBlue
+        label.textColor = .white //UIColor.main.mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

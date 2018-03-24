@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class LoginViewController: UIViewController {
 
@@ -107,7 +108,9 @@ class LoginViewController: UIViewController {
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "Bulb 2")
+        imageView.image = UIImage(named: "Clock")
+//        let url = URL(string: "url_of_your_image")
+//        imageView.kf.setImage(with: url)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         return imageView
