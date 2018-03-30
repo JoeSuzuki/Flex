@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 
 class LoginViewController: UIViewController {
-
+    
     let inputsContainerView: UIView = {
         //setup
         let view = UIView()
