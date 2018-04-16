@@ -31,9 +31,9 @@ class LoginViewController: UIViewController {
         button.layer.cornerRadius = 5
 
         if button.titleLabel?.text == "Register" {
-            button.addTarget(self, action: #selector(handleExtraInfomation), for: .touchUpInside)
+            button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         } else {
-            button.addTarget(self, action: #selector(loginFlow), for: .touchUpInside)
+            button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         }
         
         return button
@@ -52,6 +52,7 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
+        handleLoginRegister()
     }
     @objc func loginFlow() {
         guard let name = nameTextField.text else {
@@ -60,12 +61,12 @@ class LoginViewController: UIViewController {
         guard let password = passwordTextField.text else {
             return
         }
-
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
+            handleLogin()
         } else {
-       
+            handleLogin()
         }
     }
 
@@ -249,7 +250,10 @@ class LoginViewController: UIViewController {
         profileImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
-    
+    func handleLogin() {
+        self.dismiss(animated: true, completion: nil)
+    }
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

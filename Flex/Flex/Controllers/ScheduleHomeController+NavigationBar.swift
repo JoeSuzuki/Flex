@@ -61,7 +61,7 @@ extension ScheduleHomeController {
     }
     @objc func buttonAction() {
 //        let loginViewController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
-        let loginViewController = LoginViewController()
+        let loginViewController = LoginsViewController()
         present(loginViewController, animated: true, completion: nil)
     }
 
