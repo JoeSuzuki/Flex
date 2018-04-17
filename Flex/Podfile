@@ -12,6 +12,6 @@ target 'Flex' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'Eureka', '~> 3.0.0'
+  pod 'Eureka'
 
 end

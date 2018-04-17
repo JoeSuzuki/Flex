@@ -69,6 +69,8 @@ class LoginsViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @objc func handleRegister() {
-        self.dismiss(animated: true, completion: nil)
+        let handleRegisterController = HandleRegisterViewController()
+        present(handleRegisterController, animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
     }
 }
