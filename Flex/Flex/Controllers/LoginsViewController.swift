@@ -44,7 +44,7 @@ class LoginsViewController: UIViewController {
         //        let url = URL(string: "url_of_your_image")
         //        imageView.kf.setImage(with: url)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -56,10 +56,13 @@ class LoginsViewController: UIViewController {
         view.addSubview(registerButton)
         view.addSubview(logoImageView)
 
-        loginButton.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, size: .init(width: view.layer.frame.width / 2, height: view.layer.frame.height / 8))
-        registerButton.anchor(top: nil, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: nil, size: .init(width: view.layer.frame.width / 2, height: view.layer.frame.height / 8))
-        logoImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: registerButton.topAnchor, trailing: nil)
-        logoImageView.heightAnchor.constraint(equalToConstant: view.layer.frame.height / 8)
+        let height = view.layer.frame.height / 8
+        let width = view.layer.frame.width / 2
+
+        loginButton.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, size: .init(width: width, height: height))
+        registerButton.anchor(top: nil, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: nil, size: .init(width: width, height: height))
+        logoImageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, size: .init(width: 50, height: 50))
+//        logoImageView.heightAnchor.constraint(equalToConstant: view.layer.frame.height / 10)
 
     }
     @objc func handleLogin() {
