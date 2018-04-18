@@ -12,16 +12,14 @@ import FirebaseDatabase.FIRDataSnapshot
 class User {
     let name: String
     let uid: String
-    let username: String
     let age: String
     let sex: String
     let email: String
     let profileImageUrl: String?
     
-    init(name: String, uid: String, username : String, age : String, sex : String, email : String) {
+    init(name: String, uid: String, age : String, sex : String, email : String) {
         self.name = name
         self.uid = uid
-        self.username = username
         self.age = age
         self.sex = sex
         self.email = email
@@ -31,7 +29,6 @@ class User {
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             let name = dict["name"] as? String,
-            let username = dict["username"] as? String,
             let age = dict["age"] as? String,
             let sex = dict["sex"] as? String,
             let email = dict["email"] as? String
@@ -43,7 +40,6 @@ class User {
         }
         self.uid = snapshot.key
         self.name = name
-        self.username = username
         self.age = age
         self.sex = sex
         self.email = email

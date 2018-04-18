@@ -13,19 +13,25 @@ class HandleRegisterViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        form +++ Section("Section1")
-            <<< TextRow(){ row in
-                row.title = "Text Row"
-                row.placeholder = "Enter text here"
+        form +++ Section("Basic Info")
+            <<< NameRow(){ row in
+                row.title = "Name"
+                row.placeholder = "Enter your full name"
             }
-            <<< PhoneRow(){
-                $0.title = "Phone Row"
-                $0.placeholder = "And numbers here"
+            <<< ActionSheetRow<String>() {
+                $0.title = "Gender"
+                $0.selectorTitle = "Gender"
+                $0.options = ["Male","Female","Other"]
+                $0.value = "Male"
             }
-            +++ Section("Section2")
             <<< DateRow(){
-                $0.title = "Date Row"
+                $0.title = "Birthday"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
+            }
+            +++ Section("")
+            <<< EmailRow(){
+                $0.title = "Email"
+                $0.placeholder = "Enter your email"
         }
     }
 }
