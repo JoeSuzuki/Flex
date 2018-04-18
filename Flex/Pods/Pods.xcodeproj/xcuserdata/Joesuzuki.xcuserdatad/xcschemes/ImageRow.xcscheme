@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '802D9EE08DFFD29463DE86A014BA8F57'
-               BlueprintName = 'Pods-Flex'
+               BlueprintIdentifier = '37900E72EC972AF6ED5D988BD1F194A0'
+               BlueprintName = 'ImageRow'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-Flex.framework'>
+               BuildableName = 'ImageRow.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

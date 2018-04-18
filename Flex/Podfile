@@ -13,5 +13,5 @@ target 'Flex' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'Eureka'
-
+  pod 'ImageRow'
 end
