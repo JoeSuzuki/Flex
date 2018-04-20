@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Spruce
 
 class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
     let headerId = "headerId"
     
+    var timer: Timer?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -24,6 +27,19 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
         setupNavigationBarItems()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        collectionView?.spruce.prepare(with: [.fadeIn])
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(callAnimation), userInfo: nil, repeats: false)
+
+    }
+    @objc func callAnimation() {
+        collectionView?.spruce.animate([.fadeIn])
+    }
+
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
