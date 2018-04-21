@@ -14,6 +14,8 @@ class HandleRegisterViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Flex"
+
         form +++ Section("")
             <<< ImageRow() {
                 $0.title = "Profile Picture"
