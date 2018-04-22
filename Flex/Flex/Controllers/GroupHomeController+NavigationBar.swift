@@ -64,7 +64,7 @@ extension GroupHomeController {
     }
     
     @objc func buttonAction() {
-        let loginViewController = LoginsViewController()
+        let loginViewController = LoginViewController()
         present(loginViewController, animated: true, completion: nil)
     }
     

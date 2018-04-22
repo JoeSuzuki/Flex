@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 
 class LoginViewController: UIViewController {
+//    let user: [User]
     
     let inputsContainerView: UIView = {
         //setup
@@ -52,6 +53,7 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
+        
         handleLoginRegister()
     }
     @objc func loginFlow() {
