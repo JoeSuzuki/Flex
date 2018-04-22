@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 
 class LoginViewController: UIViewController {
-//    let user: [User]
+    var user: User?
     
     let inputsContainerView: UIView = {
         //setup
@@ -32,13 +32,20 @@ class LoginViewController: UIViewController {
         button.layer.cornerRadius = 5
 
         if button.titleLabel?.text == "Register" {
-            button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
+            button.addTarget(self, action: #selector(checkIfInfoExists), for: .touchUpInside)
         } else {
             button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         }
         
         return button
     }()
+    @objc func checkIfInfoExists() {
+        if nameTextField.text == "" || emailTextField.text == "" || passwordTextField.text == "" {
+            
+        } else {
+            handleExtraInfomation()
+        }
+    }
     
     @objc func handleExtraInfomation() {
         guard let name = nameTextField.text else {
@@ -53,7 +60,9 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
-        
+        user = User(name: name, uid: email, age: password, sex: nil, email: name)
+        print(user?.name)
+        print(user?.age)
         handleLoginRegister()
     }
     @objc func loginFlow() {

@@ -13,11 +13,11 @@ struct User {
     let name: String
     let uid: String
     let age: String
-    let sex: String
+    let sex: String?
     let email: String
     let profileImageUrl: String?
     
-    init(name: String, uid: String, age : String, sex : String, email : String) {
+    init(name: String, uid: String, age : String, sex : String?, email : String) {
         self.name = name
         self.uid = uid
         self.age = age
