@@ -59,6 +59,7 @@ extension GroupHomeController {
         searchButton.setImage(#imageLiteral(resourceName: "Home").withRenderingMode(.alwaysOriginal), for: .normal)
         searchButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        searchButton.addTarget(self, action: #selector(buttonActions), for: .touchUpInside)
 
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
@@ -68,5 +69,9 @@ extension GroupHomeController {
         present(loginViewController, animated: true, completion: nil)
     }
     
+    @objc func buttonActions() {
+        let loginViewController = PrivatePolicyController()
+        present(loginViewController, animated: true, completion: nil)
+    }
 
 }

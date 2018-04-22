@@ -26,6 +26,8 @@
 		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
 		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
+		FF788DFA208C7AF30011294C /* PrivatePolicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */; };
+		FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */ = {isa = PBXBuildFile; fileRef = FF788DFB208C7B8F0011294C /* privacy_policy.html */; };
 		FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6B9E1FF8DBE80052654F /* Constants.swift */; };
 		FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */; };
 		FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */; };
@@ -60,6 +62,8 @@
 		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
 		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePolicyController.swift; sourceTree = "<group>"; };
+		FF788DFB208C7B8F0011294C /* privacy_policy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = privacy_policy.html; path = Flex/privacy_policy.html; sourceTree = SOURCE_ROOT; };
 		FF8C6B9E1FF8DBE80052654F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeController.swift; sourceTree = "<group>"; };
 		FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
 				FF3935F0204244B3004D5677 /* GoogleService-Info.plist */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
+				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
 			);
 			path = Flex;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
 				FFB29B3720840C770010A692 /* LoginsViewController.swift */,
 				FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */,
+				FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */,
 				FF26BAA3204B92E3008065E5 /* SettingViewController.swift */,
 				FF26BAA1204B9273008065E5 /* ProfileViewController.swift */,
 			);
@@ -268,6 +274,7 @@
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
 				FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */,
+				FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +371,7 @@
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
 				FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */,
 				FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */,
+				FF788DFA208C7AF30011294C /* PrivatePolicyController.swift in Sources */,
 				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
 				FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */,
