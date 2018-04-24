@@ -71,6 +71,9 @@ extension GroupHomeController {
     
     @objc func buttonActions() {
         let loginViewController = PrivatePolicyController()
+        loginViewController.title = "Private Policy"
+        loginViewController.view.backgroundColor = .white
+
         present(loginViewController, animated: true, completion: nil)
     }
 
