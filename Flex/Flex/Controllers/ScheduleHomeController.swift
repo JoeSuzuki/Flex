@@ -38,12 +38,13 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         cell.layer.borderColor = UIColor.white.cgColor
         cell.layer.borderWidth = 1
 //        cell.layer.cornerRadius = 10
+        
         cell.clipsToBounds = true
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width / 2, height: 225)
+        return CGSize(width: view.frame.width / 2, height: 125)
     }
     
 //    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
