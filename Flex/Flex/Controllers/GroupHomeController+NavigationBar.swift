@@ -70,11 +70,11 @@ extension GroupHomeController {
     }
     
     @objc func buttonActions() {
-        let loginViewController = PrivatePolicyController()
-        loginViewController.title = "Private Policy"
-        loginViewController.view.backgroundColor = .white
+        let homeController = ScheduleHomeController(collectionViewLayout: UICollectionViewFlowLayout())
 
-        present(loginViewController, animated: true, completion: nil)
+//        let loginViewController = ScheduleHomeController()
+
+        present(UINavigationController(rootViewController: homeController), animated: true, completion: nil)
     }
 
 }

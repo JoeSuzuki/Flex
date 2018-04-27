@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         button.layer.cornerRadius = 5
 
         if button.titleLabel?.text == "Register" {
-            button.addTarget(self, action: #selector(checkIfInfoExists), for: .touchUpInside)
+            button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         } else {
             button.addTarget(self, action: #selector(handleLoginRegister), for: .touchUpInside)
         }
@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
         user = User(name: name, uid: email, age: password, sex: nil, email: name)
         print(user?.name)
         print(user?.age)
-        handleLoginRegister()
+        handleLogin()
     }
     @objc func loginFlow() {
         guard let name = nameTextField.text else {
@@ -77,7 +77,7 @@ class LoginViewController: UIViewController {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
             handleLogin()
         } else {
-            handleLogin()
+            checkIfInfoExists()
         }
     }
 

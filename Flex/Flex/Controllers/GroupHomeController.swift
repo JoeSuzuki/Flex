@@ -26,6 +26,7 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
         setupNavigationBarItems()
     }
 
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }

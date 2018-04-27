@@ -42,7 +42,7 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let titleView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
+        view.backgroundColor = UIColor.main.mainBlue //UIColor(r: 90, g: 200, b: 250, a: 0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
