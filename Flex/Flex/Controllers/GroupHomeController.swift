@@ -12,7 +12,9 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
     
     let cellId = "cellId"
     let headerId = "headerId"
-    
+    let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
+    let companeyArray = ["Suzuki", "Apple", "SpaceX"]
+
     var timer: Timer?
 
     override func viewDidLoad() {
@@ -28,11 +30,18 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
 
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return nameArray.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! GroupCell
+        for x in 0..<nameArray.count{
+            if indexPath.row == x {
+                cell.groupNameLabel.text = companeyArray[x]
+                cell.groupCreaterNameLabel.text = nameArray[x]
+            }
+            
+        }
         return cell
     }
     
