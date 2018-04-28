@@ -62,7 +62,7 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let activityTimeLabel: UILabel = {
         let label = UILabel()
-        label.text = "" //"\(timeDict[5])" //"\(time[5])"
+        label.text = "12:01" //"\(timeDict[5])" //"\(time[5])"
         label.textColor = UIColor.main.mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -98,10 +98,6 @@ class ScheduleCell: UICollectionViewCell {
         activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
         activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
         activityTimeLabel.textAlignment = .center
-//        time.forEach { (times) in
-//            activityTimeLabel.text = times
-//        }
-        
     }
 
     func setupViews() {

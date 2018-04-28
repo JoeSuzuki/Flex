@@ -42,6 +42,8 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         for x in timeDict{
             if timeDict[indexPath.row] == x {
                 cell.timeTitle.text = x
+                let currentDate = NSDate()
+                print(currentDate.hour)
             }
         }
         cell.clipsToBounds = true

@@ -36,6 +36,7 @@
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
 		FFEED1B52094153800ADDB08 /* ScheduleDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B42094153800ADDB08 /* ScheduleDatasource.swift */; };
+		FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */; };
 		FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
 		FFEED1B42094153800ADDB08 /* ScheduleDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDatasource.swift; sourceTree = "<group>"; };
+		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +191,7 @@
 				FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */,
 				FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */,
 				FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */,
+				FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */,
 				FFB29B3920840D890010A692 /* UIView+Utility .swift */,
 			);
 			name = Extensions;
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
+				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
 				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
