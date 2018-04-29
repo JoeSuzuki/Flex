@@ -11,16 +11,16 @@ import Foundation
 class Group {
     let ownerName: String
     let groupName: String
-    let location: String
+    let location: String?
     let time = Date()
-    let startCloseTime: [Date: Date]
-    let openDays: [String]
-    let groupBio: String
-    let groupImage: String
+    let startCloseTime: [Date: Date]?
+    let openDays: [String]?
+    let groupBio: String?
+    let groupImage: String?
     
-    init(groupName : String, location : String, startCloseTime : [Date: Date], openDays : [String], groupBio : String, groupImage : String) {
+    init(groupName : String, location : String?, startCloseTime : [Date: Date]?, openDays : [String]?, groupBio : String?, groupImage : String?) {
         self.ownerName = "joe"
-        self.groupName = groupImage
+        self.groupName = groupName
         self.location = location
         self.startCloseTime = startCloseTime
         self.openDays = openDays

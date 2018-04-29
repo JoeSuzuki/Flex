@@ -14,7 +14,8 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
     let headerId = "headerId"
     let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
     let companeyArray = ["Suzuki", "Apple", "SpaceX"]
-
+    var group = [Group]()
+    
     var timer: Timer?
 
     override func viewDidLoad() {
@@ -40,7 +41,6 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
                 cell.groupNameLabel.text = companeyArray[x]
                 cell.groupCreaterNameLabel.text = nameArray[x]
             }
-            
         }
         return cell
     }
@@ -50,7 +50,7 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath)
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath) as! GroupHeaderCell
         header.backgroundColor = .white
         return header
     }

@@ -56,7 +56,8 @@ extension ScheduleHomeController {
         searchButton.setImage(#imageLiteral(resourceName: "Home").withRenderingMode(.alwaysOriginal), for: .normal)
         searchButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        
+        searchButton.addTarget(self, action: #selector(buttonsAction), for: .touchUpInside)
+
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
     @objc func buttonAction() {
@@ -64,5 +65,7 @@ extension ScheduleHomeController {
         let loginViewController = LoginViewController()
         present(loginViewController, animated: true, completion: nil)
     }
-
+    @objc func buttonsAction() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
