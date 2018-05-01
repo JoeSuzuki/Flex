@@ -30,21 +30,5 @@ struct UserService {
             }
         }
     }
-
-    public func categoriesSetup(_ catergoryName: String) {
-        var db: Firestore!
-        db = Firestore.firestore()
-        
-        db.collection("categories").document("\(catergoryName)").setData([
-            "Joe Suzuki" : ["11", "joe"]
-        ]) { err in
-            if let err = err {
-                print("Error updating document: \(err)")
-            } else {
-                print("Document successfully updated")
-            }
-        }
-    }
-
 }
 
