@@ -28,6 +28,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         collectionView!.collectionViewLayout = layout
 
         setupNavigationBarItems()
+        UserService().categoriesSetup("technology")
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
