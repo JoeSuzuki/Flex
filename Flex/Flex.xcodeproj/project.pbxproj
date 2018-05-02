@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8B39A5EBBC4CEDF98D68D44B /* Pods_Flex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B15A4AAE1331C825E915543 /* Pods_Flex.framework */; };
+		FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */; };
+		FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18D2099582F0054B34D /* ProfileCell.swift */; };
+		FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18F209958450054B34D /* ProfileHeader.swift */; };
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
 		FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* GroupHomeController.swift */; };
 		FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C561FF844E20067AD40 /* Assets.xcassets */; };
@@ -36,7 +39,6 @@
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
-		FFEED1B52094153800ADDB08 /* ScheduleDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B42094153800ADDB08 /* ScheduleDatasource.swift */; };
 		FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */; };
 		FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,9 @@
 		0B15A4AAE1331C825E915543 /* Pods_Flex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C635D1FDDFB9272FE0684716 /* Pods-Flex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5F12A739972D5391E239DA /* Pods-Flex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.release.xcconfig"; sourceTree = "<group>"; };
+		FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FF0BC18D2099582F0054B34D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		FF0BC18F209958450054B34D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF251C511FF844E20067AD40 /* GroupHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHomeController.swift; sourceTree = "<group>"; };
@@ -75,7 +80,6 @@
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
-		FFEED1B42094153800ADDB08 /* ScheduleDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDatasource.swift; sourceTree = "<group>"; };
 		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +163,7 @@
 				FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */,
 				FF26BAA3204B92E3008065E5 /* SettingViewController.swift */,
 				FF26BAA1204B9273008065E5 /* ProfileViewController.swift */,
+				FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,6 +175,8 @@
 				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
 				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
+				FF0BC18D2099582F0054B34D /* ProfileCell.swift */,
+				FF0BC18F209958450054B34D /* ProfileHeader.swift */,
 			);
 			name = Views;
 			path = Flex/Views;
@@ -180,7 +187,6 @@
 			children = (
 				FF3C4647201C5FBC00D2EDAD /* User.swift */,
 				FF3C4645201C5A3600D2EDAD /* Group.swift */,
-				FFEED1B42094153800ADDB08 /* ScheduleDatasource.swift */,
 				FF5078F0203108740016D484 /* Time.swift */,
 			);
 			name = Models;
@@ -384,11 +390,13 @@
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
+				FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */,
 				FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
 				FF2B1C082097FB1400749210 /* GroupService.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
+				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
 				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
@@ -401,8 +409,8 @@
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
 				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
-				FFEED1B52094153800ADDB08 /* ScheduleDatasource.swift in Sources */,
 				FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */,
+				FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */,
 				FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

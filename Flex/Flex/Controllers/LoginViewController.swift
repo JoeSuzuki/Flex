@@ -60,9 +60,9 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
-        user = User(name: name, uid: email, age: password, email: name)
+        user = User(name: name, uid: email, dateOfBirth: password, email: name)
         print(user?.name)
-        print(user?.age)
+        print(user?.name)
         handleLogin()
     }
     @objc func loginFlow() {

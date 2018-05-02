@@ -1,14 +1,14 @@
 //
-//  GroupHomeController+NavigationBar.swift
+//  ProfileViewController+NavigationBar.swift
 //  Flex
 //
-//  Created by Joe Suzuki on 12/31/17.
-//  Copyright © 2017 Joe Suzuki. All rights reserved.
+//  Created by Joe Suzuki on 5/1/18.
+//  Copyright © 2018 Joe Suzuki. All rights reserved.
 //
 
 import UIKit
 
-extension GroupHomeController {
+extension ProfileViewController {
     
     func setupNavigationBarItems() {
         setupRightNavItems()
@@ -17,18 +17,18 @@ extension GroupHomeController {
     }
     
     private func setupRemainNavItems() {
-//        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysTemplate))
-//        tittleImageView.tintColor = .white
-//        tittleImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-//        tittleImageView.contentMode = .scaleAspectFit
-//        navigationItem.titleView = tittleImageView
+        //        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysTemplate))
+        //        tittleImageView.tintColor = .white
+        //        tittleImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        //        tittleImageView.contentMode = .scaleAspectFit
+        //        navigationItem.titleView = tittleImageView
         
         navigationItem.title = "Flex"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.white]
-
+        
         navigationController?.navigationBar.barTintColor = UIColor.main.mainBlue
         navigationController?.navigationBar.isTranslucent = false
-
+        
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
@@ -60,7 +60,7 @@ extension GroupHomeController {
         searchButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
         searchButton.addTarget(self, action: #selector(buttonActions), for: .touchUpInside)
-
+        
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }
     
@@ -70,11 +70,12 @@ extension GroupHomeController {
     }
     
     @objc func buttonActions() {
-        let homeController = ProfileViewController(collectionViewLayout: UICollectionViewFlowLayout())
-
-//        let loginViewController = ScheduleHomeController()
-
+        let homeController = ScheduleHomeController(collectionViewLayout: UICollectionViewFlowLayout())
+        
+        //        let loginViewController = ScheduleHomeController()
+        
         present(UINavigationController(rootViewController: homeController), animated: true, completion: nil)
     }
-
+    
 }
+

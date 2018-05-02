@@ -9,7 +9,6 @@
 import Foundation
 import Firebase
 
-
 struct UserService {
 
     public func setupBasicInfomation() {

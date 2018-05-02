@@ -9,10 +9,9 @@
 import Foundation
 import Firebase
 
-
 struct GroupService {
     
-    public func categoriesSetup(_ catergoryName: String) {
+    public func setupCategories(_ catergoryName: String) {
         var db: Firestore!
         db = Firestore.firestore()
         
