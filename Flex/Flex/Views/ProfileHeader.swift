@@ -32,7 +32,7 @@ class ProfileHeaderCell: UICollectionViewCell {
     }()
     let fullnameView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -46,7 +46,7 @@ class ProfileHeaderCell: UICollectionViewCell {
 
     let text2View: UIView = {
         let view = UIView()
-        view.backgroundColor = .clear
+        view.backgroundColor = .green
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -82,54 +82,62 @@ class ProfileHeaderCell: UICollectionViewCell {
         addSubview(text3View)
         addSubview(text3Label)
 
+        textContainerView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        textContainerView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        textContainerView.leftAnchor.constraint(equalTo: profileImageView.rightAnchor).isActive = true
+        textContainerView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        textContainerView.heightAnchor.constraint(equalToConstant: profileImageView.frame.height).isActive = true
+
+        let oneThirdHeight = textContainerView.frame.width
+//            .frame.width / 3
+        print(oneThirdHeight)
+        print(oneThirdHeight)
+        print(oneThirdHeight)
+        print(oneThirdHeight)
+        print(oneThirdHeight)
+        print(oneThirdHeight)
+
         profileImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
         profileImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
         profileImageView.rightAnchor.constraint(equalTo: textContainerView.leftAnchor, constant: -8).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
        
-        textContainerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
-        textContainerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 8).isActive = true
-        textContainerView.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 8).isActive = true
-        textContainerView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 8).isActive = true
-        textContainerView.widthAnchor.constraint(equalToConstant: self.frame.width  * 2 / 3).isActive = true
-        textContainerView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
-
         //
         fullnameView.topAnchor.constraint(equalTo: textContainerView.topAnchor).isActive = true
         fullnameView.leftAnchor.constraint(equalTo: textContainerView.leftAnchor).isActive = true
         fullnameView.rightAnchor.constraint(equalTo: textContainerView.rightAnchor).isActive = true
         fullnameView.bottomAnchor.constraint(equalTo: text2View.topAnchor).isActive = true
-        fullnameView.heightAnchor.constraint(equalToConstant: textContainerView.frame.height / 3).isActive = true
+        fullnameView.heightAnchor.constraint(equalToConstant: 5).isActive = true
 
         fullnameLabel.topAnchor.constraint(equalTo: fullnameView.topAnchor).isActive = true
         fullnameLabel.leftAnchor.constraint(equalTo: fullnameView.leftAnchor).isActive = true
         fullnameLabel.rightAnchor.constraint(equalTo: fullnameView.rightAnchor).isActive = true
-        fullnameLabel.leftAnchor.constraint(equalTo: fullnameView.leftAnchor).isActive = true
+        fullnameLabel.bottomAnchor.constraint(equalTo: fullnameView.bottomAnchor).isActive = true
 
         //
         text2View.topAnchor.constraint(equalTo: fullnameView.bottomAnchor).isActive = true
         text2View.leftAnchor.constraint(equalTo: textContainerView.leftAnchor).isActive = true
         text2View.rightAnchor.constraint(equalTo: textContainerView.rightAnchor).isActive = true
         text2View.bottomAnchor.constraint(equalTo: text3View.topAnchor).isActive = true
-        text2View.heightAnchor.constraint(equalToConstant: textContainerView.frame.height / 3).isActive = true
+        text2View.heightAnchor.constraint(equalToConstant: 5).isActive = true
 
         text2Label.topAnchor.constraint(equalTo: text2View.topAnchor).isActive = true
         text2Label.leftAnchor.constraint(equalTo: text2View.leftAnchor).isActive = true
         text2Label.rightAnchor.constraint(equalTo: text2View.rightAnchor).isActive = true
-        text2Label.leftAnchor.constraint(equalTo: text2View.leftAnchor).isActive = true
+        text2Label.bottomAnchor.constraint(equalTo: text2View.bottomAnchor).isActive = true
 
         //
         text3View.topAnchor.constraint(equalTo: text2View.bottomAnchor).isActive = true
         text3View.bottomAnchor.constraint(equalTo: textContainerView.bottomAnchor).isActive = true
         text3View.leftAnchor.constraint(equalTo: textContainerView.leftAnchor).isActive = true
         text3View.rightAnchor.constraint(equalTo: textContainerView.rightAnchor).isActive = true
-        text3View.heightAnchor.constraint(equalToConstant: textContainerView.frame.height / 3).isActive = true
+        text3View.heightAnchor.constraint(equalToConstant: 5).isActive = true
 
         text3Label.topAnchor.constraint(equalTo: text3View.topAnchor).isActive = true
         text3Label.leftAnchor.constraint(equalTo: text3View.leftAnchor).isActive = true
         text3Label.rightAnchor.constraint(equalTo: text3View.rightAnchor).isActive = true
-        text3Label.leftAnchor.constraint(equalTo: text3View.leftAnchor).isActive = true
+        text3Label.bottomAnchor.constraint(equalTo: text3View.bottomAnchor).isActive = true
 
     }
     required init?(coder aDecoder: NSCoder) {
