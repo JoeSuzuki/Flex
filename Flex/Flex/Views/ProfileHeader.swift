@@ -17,7 +17,7 @@ class ProfileHeaderCell: UICollectionViewCell {
     
     let textContainerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -32,7 +32,7 @@ class ProfileHeaderCell: UICollectionViewCell {
     }()
     let fullnameView: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -46,7 +46,7 @@ class ProfileHeaderCell: UICollectionViewCell {
 
     let text2View: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -60,7 +60,7 @@ class ProfileHeaderCell: UICollectionViewCell {
 
     let text3View: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -84,20 +84,24 @@ class ProfileHeaderCell: UICollectionViewCell {
 
         profileImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
         profileImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 8).isActive = true
-//        profileImageView.rightAnchor.constraint(equalTo: textContainerView.leftAnchor, constant: 8).isActive = true
+        profileImageView.rightAnchor.constraint(equalTo: textContainerView.leftAnchor, constant: -8).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
        
-        textContainerView.topAnchor.constraint(equalTo: profileImageView.topAnchor, constant: 8).isActive = true
+        textContainerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
+        textContainerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 8).isActive = true
         textContainerView.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 8).isActive = true
         textContainerView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 8).isActive = true
-        
+        textContainerView.widthAnchor.constraint(equalToConstant: self.frame.width  * 2 / 3).isActive = true
+        textContainerView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
+
         //
         fullnameView.topAnchor.constraint(equalTo: textContainerView.topAnchor).isActive = true
         fullnameView.leftAnchor.constraint(equalTo: textContainerView.leftAnchor).isActive = true
         fullnameView.rightAnchor.constraint(equalTo: textContainerView.rightAnchor).isActive = true
-        fullnameView.heightAnchor.constraint(equalToConstant: textContainerView.frame.width / 5).isActive = true
-        
+        fullnameView.bottomAnchor.constraint(equalTo: text2View.topAnchor).isActive = true
+        fullnameView.heightAnchor.constraint(equalToConstant: textContainerView.frame.height / 3).isActive = true
+
         fullnameLabel.topAnchor.constraint(equalTo: fullnameView.topAnchor).isActive = true
         fullnameLabel.leftAnchor.constraint(equalTo: fullnameView.leftAnchor).isActive = true
         fullnameLabel.rightAnchor.constraint(equalTo: fullnameView.rightAnchor).isActive = true
@@ -107,7 +111,8 @@ class ProfileHeaderCell: UICollectionViewCell {
         text2View.topAnchor.constraint(equalTo: fullnameView.bottomAnchor).isActive = true
         text2View.leftAnchor.constraint(equalTo: textContainerView.leftAnchor).isActive = true
         text2View.rightAnchor.constraint(equalTo: textContainerView.rightAnchor).isActive = true
-        text2View.heightAnchor.constraint(equalToConstant: textContainerView.frame.width / 5).isActive = true
+        text2View.bottomAnchor.constraint(equalTo: text3View.topAnchor).isActive = true
+        text2View.heightAnchor.constraint(equalToConstant: textContainerView.frame.height / 3).isActive = true
 
         text2Label.topAnchor.constraint(equalTo: text2View.topAnchor).isActive = true
         text2Label.leftAnchor.constraint(equalTo: text2View.leftAnchor).isActive = true
@@ -119,7 +124,7 @@ class ProfileHeaderCell: UICollectionViewCell {
         text3View.bottomAnchor.constraint(equalTo: textContainerView.bottomAnchor).isActive = true
         text3View.leftAnchor.constraint(equalTo: textContainerView.leftAnchor).isActive = true
         text3View.rightAnchor.constraint(equalTo: textContainerView.rightAnchor).isActive = true
-        text3View.heightAnchor.constraint(equalToConstant: textContainerView.frame.width / 5).isActive = true
+        text3View.heightAnchor.constraint(equalToConstant: textContainerView.frame.height / 3).isActive = true
 
         text3Label.topAnchor.constraint(equalTo: text3View.topAnchor).isActive = true
         text3Label.leftAnchor.constraint(equalTo: text3View.leftAnchor).isActive = true
