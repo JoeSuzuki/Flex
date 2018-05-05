@@ -48,7 +48,7 @@ class ProfileViewController: UICollectionViewController,UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath) as! ProfileHeaderCell
-        header.backgroundColor = .white
+        header.backgroundColor = .white //UIColor(r: 90, g: 200, b: 250, a: 0.1)
         return header
     }
     

@@ -17,22 +17,21 @@ class ProfileHeaderCell: UICollectionViewCell {
     
     let textContainerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .clear
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "Clock")
+        imageView.image = UIImage(named: "Flex")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .blue
-        imageView.layer.cornerRadius = 24
         return imageView
     }()
     let fullnameView: UIView = {
         let view = UIView()
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -40,13 +39,14 @@ class ProfileHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "Joe Suzuki"
         label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
     let text2View: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -54,13 +54,14 @@ class ProfileHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "joe"
         label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 17)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
     let text3View: UIView = {
         let view = UIView()
-        view.backgroundColor = .clear
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -68,6 +69,7 @@ class ProfileHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "sz"
         label.textColor = .black
+        label.font = UIFont.boldSystemFont(ofSize: 17)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -87,7 +89,8 @@ class ProfileHeaderCell: UICollectionViewCell {
         profileImageView.rightAnchor.constraint(equalTo: textContainerView.leftAnchor, constant: -8).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
-        
+        profileImageView.layer.cornerRadius = frame.size.width / 6
+        profileImageView.layer.borderColor = UIColor.white.cgColor
         
         textContainerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8).isActive = true
         textContainerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8).isActive = true
