@@ -26,7 +26,9 @@ class ProfileHeaderCell: UICollectionViewCell {
         imageView.image = UIImage(named: "sim2")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .blue
+        imageView.clipsToBounds = true
+        imageView.layer.borderColor = UIColor.main.backgroundGrey.cgColor
+        imageView.layer.borderWidth = 2
         return imageView
     }()
     let fullnameView: UIView = {
@@ -85,7 +87,7 @@ class ProfileHeaderCell: UICollectionViewCell {
 //        addSubview(text3Label)
 
         profileImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        profileImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8)
+        profileImageView.topAnchor.constraint(equalTo: self.topAnchor)
         profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.layer.cornerRadius = frame.size.width / 6
