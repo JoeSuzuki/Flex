@@ -36,7 +36,7 @@ class TabBarController: UITabBarController {
         groupNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
         
         scheduleNavController = UINavigationController(rootViewController: scheduleHomeController!)
-        groupNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
+        scheduleNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
         
         profileNavController = UINavigationController(rootViewController: profileViewController!)
         profileNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
@@ -44,7 +44,7 @@ class TabBarController: UITabBarController {
         let viewControllers: [UINavigationController] = [
             groupNavController,
             scheduleNavController,
-            profileNavController,
+            profileNavController
         ]
         
         setViewControllers(viewControllers, animated: true)

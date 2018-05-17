@@ -91,7 +91,6 @@ class ProfileHeaderCell: UICollectionViewCell {
         profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.layer.cornerRadius = frame.size.width / 6
-//        profileImageView.layer.borderColor = UIColor.white.cgColor
         
 
     }

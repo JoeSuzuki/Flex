@@ -11,8 +11,8 @@ import UIKit
 extension GroupHomeController {
     
     func setupNavigationBarItems() {
-        setupRightNavItems()
-        setupLeftNavItems()
+//        setupRightNavItems()
+//        setupLeftNavItems()
         setupRemainNavItems()
     }
     

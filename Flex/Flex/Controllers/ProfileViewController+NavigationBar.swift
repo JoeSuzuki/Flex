@@ -11,8 +11,8 @@ import UIKit
 extension ProfileViewController {
     
     func setupNavigationBarItems() {
-        setupRightNavItems()
-        setupLeftNavItems()
+//        setupRightNavItems()
+//        setupLeftNavItems()
         setupRemainNavItems()
     }
     

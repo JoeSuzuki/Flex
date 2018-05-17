@@ -11,8 +11,8 @@ import UIKit
 extension ScheduleHomeController {
     
     func setupNavigationBarItems() {
-        setupRightNavItems()
-        setupLeftNavItems()
+//        setupRightNavItems()
+//        setupLeftNavItems()
         setupRemainNavItems()
     }
     
