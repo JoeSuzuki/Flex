@@ -23,14 +23,14 @@ extension ScheduleHomeController {
         tittleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = tittleImageView
         
-        navigationController?.navigationBar.barTintColor = UIColor.main.mainBlue
+        navigationController?.navigationBar.barTintColor = .mainBlue
         navigationController?.navigationBar.isTranslucent = false
         
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         let navBarSeparatorView = UIView()
-        navBarSeparatorView.backgroundColor = UIColor.main.backgroundGrey
+        navBarSeparatorView.backgroundColor = .backgroundGrey
         
         view.addSubview(navBarSeparatorView)
         

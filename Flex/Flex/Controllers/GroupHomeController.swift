@@ -24,7 +24,7 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        collectionView?.backgroundColor = UIColor.main.mainBlue
+        collectionView?.backgroundColor = .mainBlue
         collectionView?.register(GroupCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(GroupHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         

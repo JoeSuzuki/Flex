@@ -27,7 +27,7 @@ class ProfileHeaderCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.layer.borderColor = UIColor.main.backgroundGrey.cgColor
+        imageView.layer.borderColor = UIColor.mainBlue.cgColor
         imageView.layer.borderWidth = 2
         return imageView
     }()

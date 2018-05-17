@@ -26,14 +26,14 @@ extension GroupHomeController {
         navigationItem.title = "Flex"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.white]
 
-        navigationController?.navigationBar.barTintColor = UIColor.main.mainBlue
+        navigationController?.navigationBar.barTintColor = .mainBlue
         navigationController?.navigationBar.isTranslucent = false
 
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         let navBarSeparatorView = UIView()
-        navBarSeparatorView.backgroundColor = UIColor.main.backgroundGrey
+        navBarSeparatorView.backgroundColor = .backgroundGrey
         
         view.addSubview(navBarSeparatorView)
         

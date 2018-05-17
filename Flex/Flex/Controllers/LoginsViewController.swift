@@ -15,10 +15,10 @@ class LoginsViewController: UIViewController {
         button.backgroundColor = UIColor.white
         button.setTitle("Login", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(UIColor.main.mainBlue, for: .normal)
+        button.setTitleColor(.mainBlue, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.main.mainBlue.cgColor
+        button.layer.borderColor = UIColor.mainBlue.cgColor
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         
@@ -29,10 +29,10 @@ class LoginsViewController: UIViewController {
         button.backgroundColor = UIColor.white
         button.setTitle("Register", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(UIColor.main.mainBlue, for: .normal)
+        button.setTitleColor(.mainBlue, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.main.mainBlue.cgColor
+        button.layer.borderColor = UIColor.mainBlue.cgColor
         button.layer.cornerRadius = 10
         button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         
@@ -40,7 +40,7 @@ class LoginsViewController: UIViewController {
     }()
     let containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.main.mainBlue
+        view.backgroundColor = .mainBlue
         return view
     }()
     let logoImageView: UIImageView = {
@@ -55,7 +55,7 @@ class LoginsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.main.mainBlue
+        view.backgroundColor = .mainBlue
         
         view.addSubview(loginButton)
         view.addSubview(registerButton)

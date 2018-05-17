@@ -24,7 +24,7 @@ class ProfileViewController: UICollectionViewController,UICollectionViewDelegate
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        collectionView?.backgroundColor = UIColor.main.mainBlue
+        collectionView?.backgroundColor = .mainBlue
         collectionView?.register(ProfileCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(ProfileHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         

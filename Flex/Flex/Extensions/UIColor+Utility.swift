@@ -16,10 +16,16 @@ extension UIColor {
         self.init(red: r/255, green: g/255, blue: b/255, alpha: a)
     }
     
-    struct main {
-        static let mainBlue = UIColor(r: 32, g: 85, b: 219) // UIColor(r: 90, g: 200, b: 250)
-        static let backgroundGrey = UIColor(r: 230, g: 230, b: 230)
-    } 
+    @nonobjc class var offWhite: UIColor {
+        return UIColor(r: 252.0, g: 252.0, b: 254.0)
+    }
+    @nonobjc class var mainBlue: UIColor { // UIColor(r: 90, g: 200, b: 250)
+        return UIColor(r: 32, g: 85, b: 219)
+    }
+    @nonobjc class var backgroundGrey: UIColor {
+        return UIColor(r: 230, g: 230, b: 230)
+    }
+
 }
 
 

@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
         button.backgroundColor = UIColor.white
         button.setTitle("Register", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(UIColor.main.mainBlue, for: .normal)
+        button.setTitleColor(.mainBlue, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.layer.cornerRadius = 5
 
@@ -165,7 +165,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.main.mainBlue
+        view.backgroundColor = .mainBlue
         
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)

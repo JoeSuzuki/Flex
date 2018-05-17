@@ -23,11 +23,11 @@ class ScheduleCell: UICollectionViewCell {
     let seeMoreButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 5
-        button.layer.borderColor = UIColor.main.mainBlue.cgColor
+        button.layer.borderColor = UIColor.mainBlue.cgColor
         button.layer.borderWidth = 1
         button.setTitle("See more", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.setTitleColor(UIColor.main.mainBlue, for: .normal)
+        button.setTitleColor(.mainBlue, for: .normal)
         button.setImage(#imageLiteral(resourceName: "search"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
@@ -35,13 +35,13 @@ class ScheduleCell: UICollectionViewCell {
     }()
     let separatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.main.mainBlue
+        view.backgroundColor = .mainBlue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     let titleView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.main.mainBlue //UIColor(r: 90, g: 200, b: 250, a: 0.5)
+        view.backgroundColor = .mainBlue //UIColor(r: 90, g: 200, b: 250, a: 0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -56,14 +56,14 @@ class ScheduleCell: UICollectionViewCell {
     let activityNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Dr. Dentist"
-        label.textColor = UIColor.main.mainBlue
+        label.textColor = .mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     let activityTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "12:01" //"\(timeDict[5])" //"\(time[5])"
-        label.textColor = UIColor.main.mainBlue
+        label.textColor = .mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -71,7 +71,7 @@ class ScheduleCell: UICollectionViewCell {
         
         let activityNameContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
-        activityTimeButtonContainerView.backgroundColor = UIColor.main.backgroundGrey
+        activityTimeButtonContainerView.backgroundColor = .backgroundGrey
         
         let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, activityNameContainerView])
         labelsStackView.axis = .horizontal
