@@ -19,14 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         let db = Firestore.firestore()
-        print(db)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
 //        let homeController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
 //        window?.rootViewController = UINavigationController(rootViewController: homeController)
-        window?.rootViewController = TabBarController()
+        //        window?.rootViewController = TabBarController()
+        window?.rootViewController = LoginViewController()
         return true
     }
 
@@ -54,4 +54,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

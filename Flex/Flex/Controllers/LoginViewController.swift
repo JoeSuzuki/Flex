@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Firebase
 
 class LoginViewController: UIViewController {
     var user: User?
@@ -61,17 +62,11 @@ class LoginViewController: UIViewController {
             return
         }
         user = User(name: name, uid: email, dateOfBirth: password, email: name)
-        print(user?.name)
-        print(user?.name)
-        handleLogin()
+        AuthService().createUser(email, password)
+        handleLoginRegister()
     }
     @objc func loginFlow() {
-        guard let name = nameTextField.text else {
-            return
-        }
-        guard let password = passwordTextField.text else {
-            return
-        }
+        handleLoginRegister()
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
@@ -262,7 +257,9 @@ class LoginViewController: UIViewController {
     }
     
     func handleLogin() {
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        let loginViewController = TabBarController()
+        present(loginViewController, animated: true, completion: nil)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {

@@ -16,6 +16,7 @@ struct User {
     let email: String
     let profileImageUrl: String?
     
+    
     init(name: String, uid: String, dateOfBirth : String, email : String) {
         self.name = name
         self.uid = uid

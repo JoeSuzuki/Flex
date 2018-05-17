@@ -11,6 +11,7 @@
 		FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */; };
 		FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18D2099582F0054B34D /* ProfileCell.swift */; };
 		FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18F209958450054B34D /* ProfileHeader.swift */; };
+		FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BFBC920AE341600140952 /* AuthService.swift */; };
 		FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */; };
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
 		FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* GroupHomeController.swift */; };
@@ -52,6 +53,7 @@
 		FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF0BC18D2099582F0054B34D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FF0BC18F209958450054B34D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		FF1BFBC920AE341600140952 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utility.swift"; sourceTree = "<group>"; };
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				FF3935F42044DAAA004D5677 /* UserService.swift */,
+				FF1BFBC920AE341600140952 /* AuthService.swift */,
 				FF2B1C072097FB1400749210 /* GroupService.swift */,
 			);
 			path = Services;
@@ -404,6 +407,7 @@
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
 				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
 				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
+				FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */,
 				FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,

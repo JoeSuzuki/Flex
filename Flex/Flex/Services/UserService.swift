@@ -11,16 +11,15 @@ import Firebase
 
 struct UserService {
 
-    public func setupBasicInfomation() {
+    public func setupBasicInfomation(_ name: String,_ email: String,_ password: String) {
         var db: Firestore!
         db = Firestore.firestore()
-        
         // Add a new document with a generated ID
         var ref: DocumentReference? = nil
         ref = db.collection("users").addDocument(data: [
-            "name": "Joe Suzuki",
-            "age": 16,
-            "profileImageUrl": ""
+            "name": name,
+            "email": email,
+            "password": password
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")

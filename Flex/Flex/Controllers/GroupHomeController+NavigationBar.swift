@@ -11,7 +11,7 @@ import UIKit
 extension GroupHomeController {
     
     func setupNavigationBarItems() {
-//        setupRightNavItems()
+        setupRightNavItems()
 //        setupLeftNavItems()
         setupRemainNavItems()
     }
@@ -59,7 +59,7 @@ extension GroupHomeController {
         searchButton.setImage(#imageLiteral(resourceName: "Home").withRenderingMode(.alwaysOriginal), for: .normal)
         searchButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
         searchButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        searchButton.addTarget(self, action: #selector(buttonActions), for: .touchUpInside)
+        searchButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
 
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: searchButton)]
     }

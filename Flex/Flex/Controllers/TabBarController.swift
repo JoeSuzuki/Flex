@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class TabBarController: UITabBarController {
     
@@ -33,13 +34,13 @@ class TabBarController: UITabBarController {
         profileViewController =  ProfileViewController(collectionViewLayout: UICollectionViewFlowLayout())
         
         groupNavController = UINavigationController(rootViewController: groupHomeController!)
-        groupNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
+        groupNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal))
         
         scheduleNavController = UINavigationController(rootViewController: scheduleHomeController!)
-        scheduleNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
+        scheduleNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal))
         
         profileNavController = UINavigationController(rootViewController: profileViewController!)
-        profileNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysOriginal))
+        profileNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal))
         
         let viewControllers: [UINavigationController] = [
             groupNavController,
