@@ -11,7 +11,7 @@ import Kingfisher
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
-    var user: Users?
+    var user: User?
     
     let inputsContainerView: UIView = {
         //setup
@@ -61,7 +61,7 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
-        user = Users(name: name, uid: email, dateOfBirth: password, email: name)
+//        user = User(name: name, uid: email, dateOfBirth: password, email: name)
 //        AuthService().createUser(email, password) { (authUser) in
 //            guard let firUser = authUser else {
 //                return

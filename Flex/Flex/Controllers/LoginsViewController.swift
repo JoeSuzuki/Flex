@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseAuthUI
+import FirebaseFirestore
+
+typealias FIRUser = FirebaseAuth.User
 
 class LoginsViewController: UIViewController {
 
@@ -77,11 +82,35 @@ class LoginsViewController: UIViewController {
 
     }
     @objc func handleLogin() {
-        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        // 1
+        guard let authUI = FUIAuth.defaultAuthUI()
+            else { return }
+        
+        // 2
+        authUI.delegate = self
+
+        // 3
+        let authViewController = authUI.authViewController()
+        present(authViewController, animated: true)
     }
     @objc func handleRegister() {
-        let handleRegisterController = HandleRegisterViewController()
-        present(handleRegisterController, animated: true, completion: nil)
-//        self.dismiss(animated: true, completion: nil)
+
     }
 }
+
+extension LoginsViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
+        if let error = error {
+            assertionFailure("Error signing in: \(error.localizedDescription)")
+            return
+        }
+        
+        guard let user = user
+            else { return }
+        
+        let userRef = db.collection("users").document(user.uid)
+
+    }
+}
+
