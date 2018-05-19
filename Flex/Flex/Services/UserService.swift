@@ -10,8 +10,8 @@ import Foundation
 import Firebase
 
 struct UserService {
-
-    public func setupBasicInfomation(_ name: String,_ email: String,_ password: String) {
+    
+    public func create(_ name: String,_ email: String) {
         var db: Firestore!
         db = Firestore.firestore()
         // Add a new document with a generated ID
@@ -19,7 +19,6 @@ struct UserService {
         ref = db.collection("users").addDocument(data: [
             "name": name,
             "email": email,
-            "password": password
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")

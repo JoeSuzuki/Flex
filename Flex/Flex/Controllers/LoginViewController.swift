@@ -8,10 +8,10 @@
 
 import UIKit
 import Kingfisher
-import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
-    var user: User?
+    var user: Users?
     
     let inputsContainerView: UIView = {
         //setup
@@ -61,12 +61,17 @@ class LoginViewController: UIViewController {
             print("password is wrong")
             return
         }
-        user = User(name: name, uid: email, dateOfBirth: password, email: name)
-        AuthService().createUser(email, password)
-        handleLoginRegister()
-    }
-    @objc func loginFlow() {
-        handleLoginRegister()
+        user = Users(name: name, uid: email, dateOfBirth: password, email: name)
+//        AuthService().createUser(email, password) { (authUser) in
+//            guard let firUser = authUser else {
+//                return
+//            }
+//            UserService().create(name, email)
+//        }
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            // ...
+            self.handleLoginRegister()
+        }
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
@@ -74,6 +79,12 @@ class LoginViewController: UIViewController {
         } else {
             checkIfInfoExists()
         }
+    }
+
+    func handleLogin() {
+//         self.dismiss(animated: true, completion: nil)
+        let loginViewController = TabBarController()
+        present(loginViewController, animated: true, completion: nil)
     }
 
     let nameTextField: UITextField = {
@@ -256,12 +267,6 @@ class LoginViewController: UIViewController {
         profileImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
-    func handleLogin() {
-//        self.dismiss(animated: true, completion: nil)
-        let loginViewController = TabBarController()
-        present(loginViewController, animated: true, completion: nil)
-    }
-
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

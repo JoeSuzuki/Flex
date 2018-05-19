@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
-struct User {
+struct Users {
     let name: String
     let uid: String
     let dateOfBirth: String
