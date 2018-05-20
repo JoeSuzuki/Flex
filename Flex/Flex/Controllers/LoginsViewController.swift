@@ -83,17 +83,15 @@ class LoginsViewController: UIViewController {
     }
     @objc func handleLogin() {
 //        self.dismiss(animated: true, completion: nil)
-        // 1
         guard let authUI = FUIAuth.defaultAuthUI()
             else { return }
         
-        // 2
         authUI.delegate = self
 
-        // 3
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
     }
+    
     @objc func handleRegister() {
 
     }
@@ -111,9 +109,11 @@ extension LoginsViewController: FUIAuthDelegate {
                 //Set the user on this Post
                 print("Document data: \(user)")
             } else {
-                print("Document does not exist")
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
 }
+//let vc = ViewController()
+//self.present(vc, animated: true, completion: nil)
 

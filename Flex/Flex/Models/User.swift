@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseFirestore.FIRDocumentSnapshot
 
-struct User {
+class User: NSObject {
     let name: String
     let uid: String
     let profileImageUrl: String?
@@ -18,6 +18,7 @@ struct User {
         self.name = name
         self.uid = uid
         self.profileImageUrl = nil
+        super.init()
     }
     
     init?(snapshot: DocumentSnapshot) {
@@ -31,5 +32,25 @@ struct User {
         }
         self.uid = snapshot.documentID
         self.name = name
+        super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        guard let uid = aDecoder.decodeObject(forKey: "uid") as? String,
+            let name = aDecoder.decodeObject(forKey: "name") as? String,
+            let profileImageUrl = aDecoder.decodeObject(forKey: "profileImageUrl") as? String
+            else { return nil }
+        
+        self.uid = uid
+        self.name = name
+        self.profileImageUrl = profileImageUrl
+        super.init()
+    }
+}
+
+extension User: NSCoding {
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(uid, forKey: "uid")
+        aCoder.encode(name, forKey: "name")
     }
 }

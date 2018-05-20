@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //        let homeController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
 //        window?.rootViewController = UINavigationController(rootViewController: homeController)
-//        window?.rootViewController = TabBarController()
-        window?.rootViewController = LoginsViewController()
+        window?.rootViewController = TabBarController()
+//        window?.rootViewController = LoginsViewController()
         return true
     }
 
