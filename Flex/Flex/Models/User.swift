@@ -46,6 +46,18 @@ class User: NSObject {
         self.profileImageUrl = profileImageUrl
         super.init()
     }
+    
+    private static var _current: User?
+
+    class func setCurrent(_ user: User, writeToUserDefaults: Bool = false) {
+        if writeToUserDefaults {
+            let data = NSKeyedArchiver.archivedData(withRootObject: user)
+            UserDefaults.standard.set(data, forKey: "currentUser")
+        }
+        
+        _current = user
+    }
+
 }
 
 extension User: NSCoding {
