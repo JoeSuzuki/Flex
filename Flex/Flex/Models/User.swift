@@ -7,38 +7,29 @@
 //
 
 import Foundation
-import FirebaseDatabase.FIRDataSnapshot
+import FirebaseFirestore.FIRDocumentSnapshot
 
 struct User {
     let name: String
     let uid: String
-    let dateOfBirth: String
-    let email: String
     let profileImageUrl: String?
     
-    
-    init(name: String, uid: String, dateOfBirth : String, email : String) {
+    init(name: String, uid: String) {
         self.name = name
         self.uid = uid
-        self.dateOfBirth = dateOfBirth
-        self.email = email
         self.profileImageUrl = nil
     }
     
-    init?(snapshot: DataSnapshot) {
-        guard let dict = snapshot.value as? [String : Any],
-            let name = dict["name"] as? String,
-            let dateOfBirth = dict["DOB"] as? String,
-            let email = dict["email"] as? String
+    init?(snapshot: DocumentSnapshot) {
+        guard let dict = snapshot.data(),
+            let name = dict["name"] as? String
             else { return nil }
         if let url = dict["profileImageUrl"] as? String {
             self.profileImageUrl = url
         } else {
             self.profileImageUrl = nil
         }
-        self.uid = snapshot.key
+        self.uid = snapshot.documentID
         self.name = name
-        self.dateOfBirth = dateOfBirth
-        self.email = email
     }
 }
