@@ -109,11 +109,11 @@ extension LoginsViewController: FUIAuthDelegate {
                 //Set the user on this Post
                 print("Document data: \(user)")
             } else {
-                self.dismiss(animated: true, completion: nil)
+//                self.dismiss(animated: true, completion: nil)
+                let vc = LoginViewController()
+                self.present(vc, animated: true, completion: nil)
             }
         }
     }
 }
-//let vc = ViewController()
-//self.present(vc, animated: true, completion: nil)
 

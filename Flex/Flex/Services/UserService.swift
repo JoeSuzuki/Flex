@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth.FIRAuth
+import FirebaseFirestore
 
 struct UserService {
     
@@ -19,11 +20,28 @@ struct UserService {
         ref = db.collection("users").addDocument(data: [
             "name": name,
             "email": email,
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                } else {
+                    print("Document added with ID: \(ref!.documentID)")
+                }
+        }
+    }
+
+    static func creates(_ firUser: FIRUser, name: String, completion: @escaping (User?) -> Void) {
+        var db: Firestore!
+        db = Firestore.firestore()
+        
+        let ref = db.collection("users").document(firUser.uid)
+        
+        ref.setData([
+            "name": name
         ]) { err in
             if let err = err {
-                print("Error adding document: \(err)")
+                print("Error updating document: \(err)")
             } else {
-                print("Document added with ID: \(ref!.documentID)")
+                print("Document successfully updated")
             }
         }
     }

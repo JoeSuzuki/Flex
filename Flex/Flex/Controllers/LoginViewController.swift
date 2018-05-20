@@ -83,8 +83,15 @@ class LoginViewController: UIViewController {
 
     func handleLogin() {
 //         self.dismiss(animated: true, completion: nil)
-        let loginViewController = TabBarController()
-        present(loginViewController, animated: true, completion: nil)
+//        let loginViewController = TabBarController()
+//        present(loginViewController, animated: true, completion: nil)
+        guard let firUser = Auth.auth().currentUser
+            else { return }
+        UserService.creates(firUser, name: "name") { (user) in
+            guard let user = user else { return }
+            
+            print("Created new user: \(user.name)")
+        }
     }
 
     let nameTextField: UITextField = {
