@@ -101,20 +101,15 @@ class LoginsViewController: UIViewController {
 
 extension LoginsViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        if let error = error {
-            assertionFailure("Error signing in: \(error.localizedDescription)")
-            return
-        }
-        
         guard let user = user
             else { return }
         
         let userRef = Firestore.firestore().collection("users").document(user.uid)
         
         userRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
+            if let user = document.flatMap({ User(snapshot: $0) }) {
+                //Set the user on this Post
+                print("Document data: \(user)")
             } else {
                 print("Document does not exist")
             }
