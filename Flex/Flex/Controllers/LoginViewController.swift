@@ -87,11 +87,16 @@ class LoginViewController: UIViewController {
 //        present(loginViewController, animated: true, completion: nil)
         guard let firUser = Auth.auth().currentUser
             else { return }
-        UserService.creates(firUser, name: "name") { (user) in
+        UserService.creates(firUser, name: "ddd") { (user) in
             guard let user = user else { return }
             
             print("Created new user: \(user.name)")
         }
+        let users = Auth.auth().currentUser
+        print(users?.uid)
+        print(users?.email)
+        print(users?.displayName)
+
     }
 
     let nameTextField: UITextField = {
