@@ -85,11 +85,12 @@ class LoginViewController: UIViewController {
 //         self.dismiss(animated: true, completion: nil)
 //        let loginViewController = TabBarController()
 //        present(loginViewController, animated: true, completion: nil)
-        guard let firUser = Auth.auth().currentUser
-            else { return }
+        guard let firUser = Auth.auth().currentUser else { return }
         UserService.creates(firUser, name: "ddd") { (user) in
             guard let user = user else { return }
-            
+           
+            User.setCurrent(user)
+
             print("Created new user: \(user.name)")
         }
         let users = Auth.auth().currentUser

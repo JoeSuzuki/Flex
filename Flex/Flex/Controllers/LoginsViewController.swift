@@ -70,60 +70,29 @@ class LoginsViewController: UIViewController {
     }
     @objc func handleLogin() {
 //        self.dismiss(animated: true, completion: nil)
-        guard let authUI = FUIAuth.defaultAuthUI()
-            else { return }
+        guard let authUI = FUIAuth.defaultAuthUI() else { return }
         
         authUI.delegate = self
 
         let authViewController = authUI.authViewController()
         present(authViewController, animated: true)
     }
-    
-    @objc func handleRegister() {
-        guard let firUser = Auth.auth().currentUser else { return }
-        UserService.creates(firUser, name: "nddd") { (user) in
-            guard let user = user else {
-                // handle error
-                return
-            }
-            
-            User.setCurrent(user)
-            
-            let vc = LoginViewController()
-            self.present(vc, animated: true, completion: nil)
-
-        }
-
-    }
 }
 
 extension LoginsViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        guard let user = user
-            else { return }
+        guard let user = user else { return }
         
-        let userRef = Firestore.firestore().collection("users").document(user.uid)
-        
-//        userRef.getDocument { (document, error) in
-//            if let user = document.flatMap({ User(snapshot: $0) }) {
-//                //Set the user on this Post
-//                print("Document data: \(user)")
-//            } else {
-////                self.dismiss(animated: true, completion: nil)
-//                let vc = LoginViewController()
-//                self.present(vc, animated: true, completion: nil)
-//            }
-//        }
-        userRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                if let user = User(snapshot: document) {
-                    User.setCurrent(user, writeToUserDefaults: true)
-                }
+        UserService.show(forUID: user.uid) { (user) in
+            if let user = user {
+                // handle existing user
+                User.setCurrent(user)
+                self.dismiss(animated: true, completion: nil)
             } else {
-                let vc = LoginViewController()
-                self.present(vc, animated: true, completion: nil)
+                // handle new user
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
+    
 }
-

@@ -45,5 +45,18 @@ struct UserService {
             }
         }
     }
+    
+    static func show(forUID uid: String, completion: @escaping (User?) -> Void) {
+        let userRef = Firestore.firestore().collection("users").document(uid)
+        
+        userRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                guard let user = User(snapshot: document) else {
+                    return completion(nil)
+                }
+                completion(user)
+            }
+        }
+    }
 }
 
