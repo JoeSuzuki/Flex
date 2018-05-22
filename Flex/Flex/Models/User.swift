@@ -36,9 +36,9 @@ class User: NSObject {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        guard let uid = aDecoder.decodeObject(forKey: "uid") as? String,
-            let name = aDecoder.decodeObject(forKey: "name") as? String,
-            let profileImageUrl = aDecoder.decodeObject(forKey: "profileImageUrl") as? String
+        guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
+            let name = aDecoder.decodeObject(forKey: Constants.UserDefaults.name) as? String,
+            let profileImageUrl = aDecoder.decodeObject(forKey: Constants.UserDefaults.profileImageUrl) as? String
             else { return nil }
         
         self.uid = uid
@@ -52,7 +52,7 @@ class User: NSObject {
     class func setCurrent(_ user: User, writeToUserDefaults: Bool = false) {
         if writeToUserDefaults {
             let data = NSKeyedArchiver.archivedData(withRootObject: user)
-            UserDefaults.standard.set(data, forKey: "currentUser")
+            UserDefaults.standard.set(data, forKey: Constants.UserDefaults.currentUser)
         }
         
         _current = user

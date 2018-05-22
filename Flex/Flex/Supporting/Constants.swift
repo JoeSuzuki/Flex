@@ -9,7 +9,10 @@
 import UIKit
 
 struct Constants {
-    
+    struct UserDefaults {
+        static let currentUser = "currentUser"
+        static let uid = "uid"
+        static let name = "name"
+        static let profileImageUrl = "profileImageUrl"
+    }
 }
-
-

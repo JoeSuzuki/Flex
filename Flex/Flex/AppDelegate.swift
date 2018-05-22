@@ -21,11 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        
+            
+        configureInitialRootViewController(for: window!)
+
 //        let homeController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
 //        window?.rootViewController = UINavigationController(rootViewController: homeController)
 //        window?.rootViewController = TabBarController()
-        window?.rootViewController = LoginsViewController()
+//        window?.rootViewController = LoginsViewController()
         return true
     }
 
@@ -52,4 +54,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension AppDelegate {
+    func configureInitialRootViewController(for window: UIWindow) {
+        let defaults = UserDefaults.standard
+        let initialViewController: UIViewController
 
+        if Auth.auth().currentUser != nil,
+            let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+            let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
+            
+            User.setCurrent(user)
+
+            initialViewController = TabBarController()
+        } else {
+            initialViewController = LoginsViewController()
+        }
+        window.rootViewController = initialViewController
+        window.makeKeyAndVisible()
+    }
+}

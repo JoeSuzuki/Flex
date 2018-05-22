@@ -96,10 +96,11 @@ extension LoginsViewController: FUIAuthDelegate {
                 UserService.creates(firUser, name: displayName) { (user) in
                     guard let user = user else { return }
                     
-                    User.setCurrent(user)
+                    User.setCurrent(user, writeToUserDefaults: true)
             }
-                let vc = LoginViewController()
+                let vc = TabBarController()
                 self.present(vc, animated: true, completion: nil)
+//                self.dismiss(animated: true, completion: nil)
             }
         }
     }
