@@ -47,7 +47,7 @@ class LoginsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .mainBlue
-        
+
         view.addSubview(loginButton)
         view.addSubview(containerView)
         view.addSubview(logoImageView)
@@ -98,10 +98,10 @@ extension LoginsViewController: FUIAuthDelegate {
                     
                     User.setCurrent(user, writeToUserDefaults: true)
             }
-                let vc = TabBarController()
-                self.present(vc, animated: true, completion: nil)
 //                self.dismiss(animated: true, completion: nil)
             }
+            let vc = TabBarController()
+            self.present(vc, animated: true, completion: nil)
         }
     }
 }

@@ -59,13 +59,16 @@ extension AppDelegate {
         let defaults = UserDefaults.standard
         let initialViewController: UIViewController
 
-        if Auth.auth().currentUser != nil,
-            let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+        if Auth.auth().currentUser != nil {
+            if let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
             let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
             
             User.setCurrent(user)
 
             initialViewController = TabBarController()
+            } else {
+                initialViewController = LoginsViewController()
+            }
         } else {
             initialViewController = LoginsViewController()
         }
