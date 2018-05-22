@@ -81,8 +81,7 @@ class LoginsViewController: UIViewController {
 
 extension LoginsViewController: FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        guard let user = user
-            else { return }
+        guard let user = user else { return }
         
         let userRef = Firestore.firestore().collection("users").document(user.uid)
         
@@ -92,16 +91,13 @@ extension LoginsViewController: FUIAuthDelegate {
                     User.setCurrent(user, writeToUserDefaults: true)
                 }
             } else {
-                let users = Auth.auth().currentUser
-
                 guard let firUser = Auth.auth().currentUser else { return }
-                UserService.creates(firUser, name: (users?.displayName!)!) { (user) in
+                guard let displayName = firUser.displayName else { return }
+                UserService.creates(firUser, name: displayName) { (user) in
                     guard let user = user else { return }
                     
                     User.setCurrent(user)
-                    
-                    print("Created new user: \(user.name)")
-                }
+            }
                 let vc = LoginViewController()
                 self.present(vc, animated: true, completion: nil)
             }
