@@ -51,10 +51,10 @@ struct UserService {
         
         userRef.getDocument { (document, error) in
             if let document = document, document.exists {
-                guard let user = User(snapshot: document) else {
-                    return completion(nil)
+                if let user = User(snapshot: document) {
+                    completion(user)
                 }
-                completion(user)
+                return completion(nil)
             }
         }
     }
