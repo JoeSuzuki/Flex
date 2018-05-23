@@ -85,23 +85,28 @@ extension LoginsViewController: FUIAuthDelegate {
         
         let userRef = Firestore.firestore().collection("users").document(user.uid)
         
-        userRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                if let user = User(snapshot: document) {
-                    User.setCurrent(user, writeToUserDefaults: true)
-                }
-            } else {
+        
+        UserService.show(forUID: user.uid) { (user) in
+            // handle existing user
+            if let user = user {
+                User.setCurrent(user, writeToUserDefaults: true)
+                
+                let initialViewController = TabBarController()
+                self.view.window?.rootViewController = initialViewController
+                self.view.window?.makeKeyAndVisible()
+            }
+                // handle new user
+            else {
                 guard let firUser = Auth.auth().currentUser else { return }
                 guard let displayName = firUser.displayName else { return }
                 UserService.creates(firUser, name: displayName) { (user) in
                     guard let user = user else { return }
                     
                     User.setCurrent(user, writeToUserDefaults: true)
+                }
+                let vc = TabBarController()
+                self.present(vc, animated: true, completion: nil)
             }
-//                self.dismiss(animated: true, completion: nil)
-            }
-            let vc = TabBarController()
-            self.present(vc, animated: true, completion: nil)
         }
     }
 }

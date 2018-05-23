@@ -54,8 +54,8 @@ struct UserService {
                 if let user = User(snapshot: document) {
                     completion(user)
                 }
-                return completion(nil)
             }
+            return completion(nil)
         }
     }
 }

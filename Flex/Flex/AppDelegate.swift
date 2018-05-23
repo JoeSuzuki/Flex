@@ -55,24 +55,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func configureInitialRootViewController(for window: UIWindow) {
+    func configureInitialRootViewController(for window: UIWindow?) {
         let defaults = UserDefaults.standard
         let initialViewController: UIViewController
-
-        if Auth.auth().currentUser != nil {
-            if let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+        
+        if let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
             let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
             
             User.setCurrent(user)
-
+            
             initialViewController = TabBarController()
-            } else {
-                initialViewController = LoginsViewController()
-            }
-        } else {
+        }
+        else {
             initialViewController = LoginsViewController()
         }
-        window.rootViewController = initialViewController
-        window.makeKeyAndVisible()
+        
+        window?.rootViewController = initialViewController
+        window?.makeKeyAndVisible()
     }
 }
