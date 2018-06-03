@@ -20,9 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let db = Firestore.firestore()
 
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
-            
-        configureInitialRootViewController(for: window!)
+
+//        configureInitialRootViewController(for: window!)
 
 //        let homeController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
 //        window?.rootViewController = UINavigationController(rootViewController: homeController)
@@ -55,22 +56,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func configureInitialRootViewController(for window: UIWindow?) {
-        let defaults = UserDefaults.standard
-        let initialViewController: UIViewController
-        
-        if let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
-            let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
-            
-            User.setCurrent(user)
-            
-            initialViewController = TabBarController()
-        }
-        else {
-            initialViewController = LoginsViewController()
-        }
-        
-        window?.rootViewController = initialViewController
-        window?.makeKeyAndVisible()
-    }
+//    func configureInitialRootViewController(for window: UIWindow?) {
+//        let defaults = UserDefaults.standard
+//        let initialViewController: UIViewController
+//
+//        if let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+//            let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
+//
+//            User.setCurrent(user)
+//
+//            initialViewController = TabBarController()
+//        }
+//        else {
+//            initialViewController = LoginsViewController()
+//        }
+//
+//        window?.rootViewController = initialViewController
+//        window?.makeKeyAndVisible()
+//    }
 }

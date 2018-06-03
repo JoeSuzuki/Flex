@@ -16,7 +16,9 @@ struct GroupService {
         db = Firestore.firestore()
         
         db.collection("categories").document("\(catergoryName)").setData([
-            "Joe Suzuki" : ["11", "joe"]
+            "11:00" : [],
+            "12:00" : [],
+            "1:00" : []
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")
