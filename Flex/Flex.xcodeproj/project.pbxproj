@@ -42,6 +42,7 @@
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
+		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
 		FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */; };
 		FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
+		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,17 +161,11 @@
 		FF251C7F1FF864D60067AD40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C511FF844E20067AD40 /* GroupHomeController.swift */,
-				FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */,
-				FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */,
-				FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */,
-				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
-				FFB29B3720840C770010A692 /* LoginsViewController.swift */,
-				FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */,
-				FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */,
-				FF26BAA3204B92E3008065E5 /* SettingViewController.swift */,
-				FF26BAA1204B9273008065E5 /* ProfileViewController.swift */,
-				FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */,
+				FFCBC1D020C392230016C793 /* Home */,
+				FFCBC1D120C3922A0016C793 /* Schedule */,
+				FFCBC1D220C3923C0016C793 /* Login+Signup */,
+				FFCBC1D320C3924F0016C793 /* Profile+Setting */,
+				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
 			);
 			path = Controllers;
@@ -232,6 +228,45 @@
 			name = Supporting;
 			path = Flex/Supporting;
 			sourceTree = SOURCE_ROOT;
+		};
+		FFCBC1D020C392230016C793 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF251C511FF844E20067AD40 /* GroupHomeController.swift */,
+				FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFCBC1D120C3922A0016C793 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */,
+				FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		FFCBC1D220C3923C0016C793 /* Login+Signup */ = {
+			isa = PBXGroup;
+			children = (
+				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
+				FFB29B3720840C770010A692 /* LoginsViewController.swift */,
+				FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */,
+			);
+			path = "Login+Signup";
+			sourceTree = "<group>";
+		};
+		FFCBC1D320C3924F0016C793 /* Profile+Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */,
+				FF26BAA3204B92E3008065E5 /* SettingViewController.swift */,
+				FF26BAA1204B9273008065E5 /* ProfileViewController.swift */,
+				FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */,
+			);
+			path = "Profile+Setting";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -402,6 +437,7 @@
 				FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */,
 				FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
+				FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
 				FF2B1C082097FB1400749210 /* GroupService.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
