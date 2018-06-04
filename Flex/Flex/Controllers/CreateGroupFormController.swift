@@ -43,8 +43,8 @@ extension CreateGroupFormController {
     }
     
     private func setupRemainNavItems() {
-        navigationItem.title = "Flex"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationItem.title = "Create a Group"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24),NSAttributedStringKey.foregroundColor: UIColor.white]
         
         navigationController?.navigationBar.barTintColor = .mainBlue
         navigationController?.navigationBar.isTranslucent = false
@@ -85,11 +85,11 @@ extension CreateGroupFormController {
     }
     
     @objc func cancelButton() {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc func submitButton() {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
     }
 
 }
