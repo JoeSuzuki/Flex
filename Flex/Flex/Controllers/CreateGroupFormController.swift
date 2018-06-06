@@ -20,11 +20,10 @@ class CreateGroupFormController: FormViewController {
                 row.title = "Name"
                 row.placeholder = "Enter your group name"
             }
-            <<< ActionSheetRow<String>() {
-                $0.title = "Gender"
-                $0.selectorTitle = "Gender"
-                $0.options = ["Male","Female","Other"]
-                $0.value = "Male"
+            <<< LocationRow("location") {
+                $0.title = "Location"
+                }.onChange { [weak self] row in
+                    self!.tableView!.reloadData()
             }
             <<< MultipleSelectorRow<String>() {
                 $0.title = "Availability"
