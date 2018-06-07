@@ -170,6 +170,7 @@ public class MapViewController : UIViewController, TypedRowControllerType, MKMap
         
     }
     
+
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

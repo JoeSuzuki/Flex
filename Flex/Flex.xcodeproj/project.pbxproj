@@ -44,6 +44,7 @@
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
 		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
 		FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */; };
+		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
 		FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */; };
 		FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
+		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 				FFCBC1D220C3923C0016C793 /* Login+Signup */,
 				FFCBC1D320C3924F0016C793 /* Profile+Setting */,
 				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
+				FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
 			);
 			path = Controllers;
@@ -442,6 +445,7 @@
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
+				FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */,
 				FF2B1C082097FB1400749210 /* GroupService.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
 				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
