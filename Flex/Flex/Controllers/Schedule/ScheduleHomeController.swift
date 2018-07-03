@@ -37,7 +37,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ScheduleCell
-        cell.layer.borderColor = UIColor.white.cgColor
+//        cell.layer.borderColor = UIColor.white.cgColor
         cell.layer.borderWidth = 1
 //        cell.layer.cornerRadius = 10
         for x in timeDict{

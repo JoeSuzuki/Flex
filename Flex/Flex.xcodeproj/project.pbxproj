@@ -44,6 +44,9 @@
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
 		FFC0A49C20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */; };
 		FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */; };
+		FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */; };
+		FFC0A4A320EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */; };
+		FFC0A4A620EB409E007F39F7 /* GroupSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A520EB409E007F39F7 /* GroupSchedule.swift */; };
 		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
 		FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */; };
 		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
@@ -93,6 +96,9 @@
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
 		FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EurekaCreateGroupFormController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateGroupFormController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleViewController.swift; sourceTree = "<group>"; };
+		FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FFC0A4A520EB409E007F39F7 /* GroupSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSchedule.swift; sourceTree = "<group>"; };
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 				FFCBC1D220C3923C0016C793 /* Login+Signup */,
 				FFCBC1D320C3924F0016C793 /* Profile+Setting */,
 				FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */,
+				FFC0A4A420EB3723007F39F7 /* GroupSchedule */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
 			);
 			path = Controllers;
@@ -187,6 +194,7 @@
 				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
 				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
+				FFC0A4A520EB409E007F39F7 /* GroupSchedule.swift */,
 				FF0BC18D2099582F0054B34D /* ProfileCell.swift */,
 				FF0BC18F209958450054B34D /* ProfileHeader.swift */,
 			);
@@ -247,6 +255,15 @@
 				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
 			);
 			name = CreateGroupForm;
+			sourceTree = "<group>";
+		};
+		FFC0A4A420EB3723007F39F7 /* GroupSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */,
+				FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */,
+			);
+			name = GroupSchedule;
 			sourceTree = "<group>";
 		};
 		FFCBC1D020C392230016C793 /* Home */ = {
@@ -447,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC0A4A620EB409E007F39F7 /* GroupSchedule.swift in Sources */,
 				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
@@ -462,6 +480,8 @@
 				FFC0A49C20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift in Sources */,
 				FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */,
 				FF2B1C082097FB1400749210 /* GroupService.swift in Sources */,
+				FFC0A4A320EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift in Sources */,
+				FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
 				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
 				FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */,

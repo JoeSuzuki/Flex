@@ -75,9 +75,11 @@ class LoginViewController: UIViewController {
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
-            handleLogin()
+//            handleLogin()
+            self.dismiss(animated: true, completion: nil)
         } else {
-            checkIfInfoExists()
+            self.dismiss(animated: true, completion: nil)
+//            checkIfInfoExists()
         }
     }
 
