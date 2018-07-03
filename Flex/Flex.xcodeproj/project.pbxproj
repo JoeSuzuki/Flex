@@ -42,6 +42,8 @@
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
+		FFC0A49C20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */; };
+		FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */; };
 		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
 		FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */; };
 		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
@@ -89,6 +91,8 @@
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
+		FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EurekaCreateGroupFormController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateGroupFormController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
@@ -169,8 +173,10 @@
 				FFCBC1D120C3922A0016C793 /* Schedule */,
 				FFCBC1D220C3923C0016C793 /* Login+Signup */,
 				FFCBC1D320C3924F0016C793 /* Profile+Setting */,
-				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
 				FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */,
+				FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */,
+				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
+				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
 			);
 			path = Controllers;
@@ -445,10 +451,12 @@
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
 				FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */,
 				FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */,
+				FFC0A49C20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift in Sources */,
 				FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */,
 				FF2B1C082097FB1400749210 /* GroupService.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
 				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
+				FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */,
 				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */,
 				FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */,
