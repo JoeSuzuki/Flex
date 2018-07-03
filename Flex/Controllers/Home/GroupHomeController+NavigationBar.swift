@@ -24,9 +24,9 @@ extension GroupHomeController {
 //        navigationItem.titleView = tittleImageView
         
         navigationItem.title = "Flex"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.mainLightBlue]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.white]
 
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = .mainLightBlue
         navigationController?.navigationBar.isTranslucent = false
 
         navigationController?.navigationBar.shadowImage = UIImage()
