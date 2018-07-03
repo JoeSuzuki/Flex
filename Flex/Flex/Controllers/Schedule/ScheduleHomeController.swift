@@ -28,7 +28,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         collectionView!.collectionViewLayout = layout
 
         setupNavigationBarItems()
-        GroupService().setupCategories("technolog")
+//        GroupService().setupCategories("technolog")
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,8 +43,8 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         for x in timeDict{
             if timeDict[indexPath.row] == x {
                 cell.timeTitle.text = x
-                let currentDate = NSDate()
-                print(currentDate.hour)
+//                let currentDate = NSDate()
+//                print(currentDate.hour)
             }
         }
         cell.clipsToBounds = true
@@ -52,7 +52,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width / 2, height: 125)
+        return CGSize(width: view.frame.width , height: 125)
     }
     
 //    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

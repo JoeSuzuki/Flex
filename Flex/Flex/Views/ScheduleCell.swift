@@ -116,10 +116,10 @@ class ScheduleCell: UICollectionViewCell {
         titleView.bottomAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
         titleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         titleView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        titleView.heightAnchor.constraint(equalToConstant: 28.0).isActive = true
+        titleView.heightAnchor.constraint(equalToConstant: 32.0).isActive = true
 
-        timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 4).isActive = true
-        timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 4).isActive = true
+        timeTitle.topAnchor.constraint(equalTo: titleView.topAnchor, constant: 0).isActive = true
+        timeTitle.bottomAnchor.constraint(equalTo: titleView.bottomAnchor, constant: 0).isActive = true
         timeTitle.leftAnchor.constraint(equalTo: titleView.leftAnchor).isActive = true
         timeTitle.rightAnchor.constraint(equalTo: titleView.rightAnchor).isActive = true
         timeTitle.textAlignment = .center
