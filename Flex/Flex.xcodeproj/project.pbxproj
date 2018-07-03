@@ -173,10 +173,7 @@
 				FFCBC1D120C3922A0016C793 /* Schedule */,
 				FFCBC1D220C3923C0016C793 /* Login+Signup */,
 				FFCBC1D320C3924F0016C793 /* Profile+Setting */,
-				FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */,
-				FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */,
-				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
-				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
+				FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
 			);
 			path = Controllers;
@@ -240,6 +237,17 @@
 			name = Supporting;
 			path = Flex/Supporting;
 			sourceTree = SOURCE_ROOT;
+		};
+		FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */ = {
+			isa = PBXGroup;
+			children = (
+				FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */,
+				FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */,
+				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
+				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
+			);
+			name = CreateGroupForm;
+			sourceTree = "<group>";
 		};
 		FFCBC1D020C392230016C793 /* Home */ = {
 			isa = PBXGroup;

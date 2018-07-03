@@ -14,6 +14,6 @@ class CreateGroupFormController: UIViewController {
         super.viewDidLoad()
         setupNavigationBarItems()
         view.backgroundColor = .white
-
     }
+    
 }
