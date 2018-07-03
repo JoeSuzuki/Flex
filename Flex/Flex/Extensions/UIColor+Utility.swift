@@ -19,8 +19,14 @@ extension UIColor {
     @nonobjc class var offWhite: UIColor {
         return UIColor(r: 252.0, g: 252.0, b: 254.0)
     }
-    @nonobjc class var mainBlue: UIColor { // UIColor(r: 90, g: 200, b: 250)
+    @nonobjc class var mainBlue: UIColor {
         return UIColor(r: 32, g: 85, b: 219)
+    }
+    @nonobjc class var appleLightBlue: UIColor {
+        return UIColor(r: 90, g: 200, b: 250)
+    }
+    @nonobjc class var mainLightBlue: UIColor {
+        return UIColor(r: 71, g: 186, b: 251)
     }
     @nonobjc class var backgroundGrey: UIColor {
         return UIColor(r: 230, g: 230, b: 230)

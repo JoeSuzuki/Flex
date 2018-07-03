@@ -191,10 +191,10 @@
 			children = (
 				FF251C831FF8C42F0067AD40 /* GroupHeader.swift */,
 				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
+				FFC0A4A520EB409E007F39F7 /* GroupSchedule.swift */,
 				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
 				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
-				FFC0A4A520EB409E007F39F7 /* GroupSchedule.swift */,
 				FF0BC18D2099582F0054B34D /* ProfileCell.swift */,
 				FF0BC18F209958450054B34D /* ProfileHeader.swift */,
 			);
