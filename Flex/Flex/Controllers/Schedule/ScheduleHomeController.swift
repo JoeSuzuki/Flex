@@ -55,6 +55,13 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         return CGSize(width: view.frame.width , height: 125)
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        let loginViewController = LoginViewController()
+        present(loginViewController, animated: true, completion: nil)
+    }
+
+    
 //    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 //        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath)
 //        header.backgroundColor = .white
