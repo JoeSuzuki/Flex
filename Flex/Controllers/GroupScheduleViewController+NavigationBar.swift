@@ -17,12 +17,6 @@ extension GroupScheduleViewController {
     }
     
     private func setupRemainNavItems() {
-        //        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysTemplate))
-        //        tittleImageView.tintColor = .white
-        //        tittleImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-        //        tittleImageView.contentMode = .scaleAspectFit
-        //        navigationItem.titleView = tittleImageView
-        
         navigationItem.title = "Flex"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.white]
         
