@@ -22,26 +22,19 @@ class GroupScheduleCell: UICollectionViewCell {
     let availableButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 5
-        //        button.backgroundColor = .green
+        button.backgroundColor = .green
         button.layer.borderColor = UIColor.mainBlue.cgColor
         button.layer.borderWidth = 1
         button.setTitle("See more", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.mainBlue, for: .normal)
-        button.isUserInteractionEnabled = true
-        button.isEnabled = true
+//        button.isUserInteractionEnabled = true
+//        button.isEnabled = true
         button.addTarget(self, action: #selector(buttonsAction), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     @objc func buttonsAction() {
-        print("dddddd")
-        print("dddddd")
-        print("dddddd")
-        print("dddddd")
-        print("dddddd")
-        print("dddddd")
-        print("dddddd")
         print("dddddd")
     }
     let activityTimeLabel: UILabel = {
@@ -53,11 +46,11 @@ class GroupScheduleCell: UICollectionViewCell {
     }()
     fileprivate func setupLabels() {
         
-        let activityNameContainerView = UIView()
+        let availableButtonContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
         activityTimeButtonContainerView.backgroundColor = .backgroundGrey
         
-        let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, activityNameContainerView])
+        let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, availableButtonContainerView])
         labelsStackView.axis = .horizontal
         labelsStackView.distribution = .fillEqually
         labelsStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -71,10 +64,10 @@ class GroupScheduleCell: UICollectionViewCell {
         addSubview(availableButton)
         addSubview(activityTimeLabel)
         
-        availableButton.topAnchor.constraint(equalTo: activityNameContainerView.topAnchor).isActive = true
-        availableButton.bottomAnchor.constraint(equalTo: activityNameContainerView.bottomAnchor).isActive = true
-        availableButton.leftAnchor.constraint(equalTo: activityNameContainerView.leftAnchor).isActive = true
-        availableButton.rightAnchor.constraint(equalTo: activityNameContainerView.rightAnchor).isActive = true
+        availableButton.topAnchor.constraint(equalTo: availableButtonContainerView.topAnchor).isActive = true
+        availableButton.bottomAnchor.constraint(equalTo: availableButtonContainerView.bottomAnchor).isActive = true
+        availableButton.leftAnchor.constraint(equalTo: availableButtonContainerView.leftAnchor).isActive = true
+        availableButton.rightAnchor.constraint(equalTo: availableButtonContainerView.rightAnchor).isActive = true
         
         activityTimeLabel.topAnchor.constraint(equalTo: activityTimeButtonContainerView.topAnchor).isActive = true
         activityTimeLabel.bottomAnchor.constraint(equalTo: activityTimeButtonContainerView.bottomAnchor).isActive = true
