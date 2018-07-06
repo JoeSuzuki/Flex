@@ -52,6 +52,7 @@ class GroupScheduleCell: UICollectionViewCell {
         labelsStackView.axis = .horizontal
         labelsStackView.distribution = .fillEqually
         labelsStackView.translatesAutoresizingMaskIntoConstraints = false
+        labelsStackView.alignment = .center
         
         addSubview(labelsStackView)
         labelsStackView.topAnchor.constraint(equalTo: scheduleView.topAnchor).isActive = true
@@ -64,7 +65,7 @@ class GroupScheduleCell: UICollectionViewCell {
         
         availableButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButtonContainerView.leadingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: availableButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
         activityTimeLabel.anchor(top: activityTimeButtonContainerView.topAnchor, leading: activityTimeButtonContainerView.leadingAnchor, bottom: activityTimeButtonContainerView.bottomAnchor, trailing: activityTimeButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
-
+        
         activityTimeLabel.textAlignment = .center
     }
     
