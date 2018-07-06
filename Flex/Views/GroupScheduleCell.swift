@@ -28,9 +28,8 @@ class GroupScheduleCell: UICollectionViewCell {
         button.setTitle("See more", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.mainBlue, for: .normal)
-//        button.isUserInteractionEnabled = true
+        button.isUserInteractionEnabled = true
 //        button.isEnabled = true
-        button.addTarget(self, action: #selector(buttonsAction), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()

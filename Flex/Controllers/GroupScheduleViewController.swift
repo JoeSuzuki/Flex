@@ -24,12 +24,19 @@ class GroupScheduleViewController: UICollectionViewController,UICollectionViewDe
         
     }
     
+    @objc func buttonsAction(sender: UIButton) {
+        print("dddddd")
+    }
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! GroupScheduleCell
+        cell.availableButton.tag = indexPath.row
+        cell.availableButton.addTarget(self, action: #selector(buttonsAction(sender:)), for: .touchUpInside)
+
         return cell
     }
     
