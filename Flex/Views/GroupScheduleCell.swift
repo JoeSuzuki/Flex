@@ -33,9 +33,6 @@ class GroupScheduleCell: UICollectionViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    @objc func buttonsAction() {
-        print("dddddd")
-    }
     let activityTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "12:00"

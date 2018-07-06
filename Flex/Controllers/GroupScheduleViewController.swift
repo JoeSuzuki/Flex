@@ -24,10 +24,6 @@ class GroupScheduleViewController: UICollectionViewController,UICollectionViewDe
         
     }
     
-    @objc func buttonsAction(sender: UIButton) {
-        print("dddddd")
-    }
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
