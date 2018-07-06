@@ -22,14 +22,14 @@ class GroupScheduleCell: UICollectionViewCell {
     let availableButton: UIButton = {
         let button = UIButton()
         button.layer.cornerRadius = 5
-        button.backgroundColor = .green
-        button.layer.borderColor = UIColor.mainBlue.cgColor
+//        button.backgroundColor = .green
+        button.layer.borderColor = UIColor.backgroundGrey.cgColor
         button.layer.borderWidth = 1
         button.setTitle("See more", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.mainBlue, for: .normal)
         button.isUserInteractionEnabled = true
-//        button.isEnabled = true
+        button.isEnabled = true
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -44,8 +44,10 @@ class GroupScheduleCell: UICollectionViewCell {
         
         let availableButtonContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
-        activityTimeButtonContainerView.backgroundColor = .backgroundGrey
-        
+//        activityTimeButtonContainerView.backgroundColor = .backgroundGrey
+        let width = layer.frame.width / 2
+        let height = layer.frame.height / 2
+
         let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, availableButtonContainerView])
         labelsStackView.axis = .horizontal
         labelsStackView.distribution = .fillEqually
@@ -60,15 +62,9 @@ class GroupScheduleCell: UICollectionViewCell {
         addSubview(availableButton)
         addSubview(activityTimeLabel)
         
-        availableButton.topAnchor.constraint(equalTo: availableButtonContainerView.topAnchor).isActive = true
-        availableButton.bottomAnchor.constraint(equalTo: availableButtonContainerView.bottomAnchor).isActive = true
-        availableButton.leftAnchor.constraint(equalTo: availableButtonContainerView.leftAnchor).isActive = true
-        availableButton.rightAnchor.constraint(equalTo: availableButtonContainerView.rightAnchor).isActive = true
-        
-        activityTimeLabel.topAnchor.constraint(equalTo: activityTimeButtonContainerView.topAnchor).isActive = true
-        activityTimeLabel.bottomAnchor.constraint(equalTo: activityTimeButtonContainerView.bottomAnchor).isActive = true
-        activityTimeLabel.leftAnchor.constraint(equalTo: activityTimeButtonContainerView.leftAnchor).isActive = true
-        activityTimeLabel.rightAnchor.constraint(equalTo: activityTimeButtonContainerView.rightAnchor).isActive = true
+        availableButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButtonContainerView.leadingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: availableButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
+        activityTimeLabel.anchor(top: activityTimeButtonContainerView.topAnchor, leading: activityTimeButtonContainerView.leadingAnchor, bottom: activityTimeButtonContainerView.bottomAnchor, trailing: activityTimeButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
+
         activityTimeLabel.textAlignment = .center
     }
     
