@@ -21,7 +21,14 @@ class GroupScheduleViewController: UICollectionViewController,UICollectionViewDe
         collectionView?.register(GroupScheduleCell.self, forCellWithReuseIdentifier: cellId)
         
         setupNavigationBarItems()
-        
+        removeCollectionViewSpacing()
+    }
+    
+    func removeCollectionViewSpacing() {
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        collectionView!.collectionViewLayout = layout
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

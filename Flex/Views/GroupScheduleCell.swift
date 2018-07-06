@@ -21,8 +21,8 @@ class GroupScheduleCell: UICollectionViewCell {
     }()
     let availableButton: UIButton = {
         let button = UIButton()
-        button.layer.cornerRadius = 5
-//        button.backgroundColor = .green
+        button.layer.cornerRadius = 10
+        button.backgroundColor = .green
         button.layer.borderColor = UIColor.backgroundGrey.cgColor
         button.layer.borderWidth = 1
         button.setTitle("See more", for: .normal)
