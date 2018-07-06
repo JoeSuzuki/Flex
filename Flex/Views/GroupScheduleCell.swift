@@ -26,7 +26,7 @@ class GroupScheduleCell: UICollectionViewCell {
         button.layer.borderColor = UIColor.backgroundGrey.cgColor
         button.layer.borderWidth = 1
         button.setTitle("See more", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.setTitleColor(.mainBlue, for: .normal)
         button.isUserInteractionEnabled = true
         button.isEnabled = true
@@ -36,6 +36,7 @@ class GroupScheduleCell: UICollectionViewCell {
     let activityTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "12:00"
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textColor = .mainBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
