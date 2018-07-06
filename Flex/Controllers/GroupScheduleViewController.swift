@@ -17,7 +17,7 @@ class GroupScheduleViewController: UICollectionViewController,UICollectionViewDe
         super.viewDidLoad()
         view.backgroundColor = .white
         
-        collectionView?.backgroundColor = .mainBlue
+        collectionView?.backgroundColor = .secondBackgroundGrey
         collectionView?.register(GroupScheduleCell.self, forCellWithReuseIdentifier: cellId)
         
         setupNavigationBarItems()

@@ -41,6 +41,7 @@ class GroupScheduleCell: UICollectionViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
     fileprivate func setupLabels() {
         
         let availableButtonContainerView = UIView()
@@ -68,13 +69,15 @@ class GroupScheduleCell: UICollectionViewCell {
         activityTimeLabel.anchor(top: activityTimeButtonContainerView.topAnchor, leading: activityTimeButtonContainerView.leadingAnchor, bottom: activityTimeButtonContainerView.bottomAnchor, trailing: activityTimeButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
         
         activityTimeLabel.textAlignment = .center
+        
+
     }
     
     func setupViews() {
         backgroundColor = .white
-        
+
         addSubview(scheduleView)
-        
+
         scheduleView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         scheduleView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         scheduleView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true

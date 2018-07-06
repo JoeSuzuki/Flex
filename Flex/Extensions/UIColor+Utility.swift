@@ -31,7 +31,7 @@ extension UIColor {
     @nonobjc class var backgroundGrey: UIColor {
         return UIColor(r: 230, g: 230, b: 230)
     }
-
+    @nonobjc class var secondBackgroundGrey: UIColor {
+        return UIColor(r: 232, g: 236, b: 241)
+    }
 }
-
-
