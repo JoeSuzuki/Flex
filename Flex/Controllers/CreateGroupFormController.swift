@@ -32,21 +32,23 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: basicId, for: indexPath) as! BasicGroupInfoCell
             return cell
-        } else if indexPath.row == 1{
+        case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: locationId, for: indexPath) as! GroupLocationCell
             return cell
-        } else if indexPath.row == 2{
+        case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: profilePictureId, for: indexPath) as! GroupProfilePictureCell
             return cell
-        } else if indexPath.row == 3{
+        case 3:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: extraDetailId, for: indexPath) as! GroupExtraDetailCell
+            return cell
+        default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: extraDetailId, for: indexPath) as! GroupExtraDetailCell
             return cell
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: extraDetailId, for: indexPath) as! GroupExtraDetailCell
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
