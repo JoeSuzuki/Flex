@@ -79,9 +79,12 @@ extension GroupHomeController {
 
 //        present(UINavigationController(rootViewController: homeController), animated: true, completion: nil)
         
-        let createGroupFormController = EurekaCreateGroupFormController()
-//        present(createGroupFormController, animated: true, completion: nil)
-        navigationController?.pushViewController(createGroupFormController, animated: true)
+//        let createGroupFormController = CreateGroupFormController()
+////        present(createGroupFormController, animated: true, completion: nil)
+//        navigationController?.pushViewController(createGroupFormController, animated: true)
+        let groupScheduleViewController = CreateGroupFormController(collectionViewLayout: UICollectionViewFlowLayout())
+        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
+
     }
 
 }
