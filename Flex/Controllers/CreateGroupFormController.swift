@@ -17,7 +17,7 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
+
         collectionView?.backgroundColor = .backgroundGrey
         
         collectionView?.register(BasicGroupInfoCell.self, forCellWithReuseIdentifier: basicId)
@@ -52,9 +52,11 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = view.layer.frame.height
+
         switch indexPath.row {
         case 0:
-            return CGSize(width: view.frame.width, height: 100)
+            return CGSize(width: view.frame.width, height: height/3)
         case 1:
             return CGSize(width: view.frame.width, height: 400)
         case 2:

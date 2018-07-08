@@ -36,7 +36,18 @@ class BasicGroupInfoCell: UICollectionViewCell {
     }()
 
     func setupViews() {
+        let width = layer.frame.width
+        let height = layer.frame.height/3
         backgroundColor = .white
+        
+        addSubview(nameView)
+        addSubview(descriptionView)
+        addSubview(availbilityView)
+        
+        nameView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
+        descriptionView.anchor(top: nameView.bottomAnchor, leading: self.leadingAnchor, bottom: availbilityView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
+        availbilityView.anchor(top: descriptionView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
+
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
