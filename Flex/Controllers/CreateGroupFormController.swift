@@ -52,15 +52,17 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             return CGSize(width: view.frame.width, height: 10)
-        } else if indexPath.row == 1{
+        case 1:
             return CGSize(width: view.frame.width, height: 40)
-        } else if indexPath.row == 2{
+        case 2:
             return CGSize(width: view.frame.width, height: 80)
-        } else if indexPath.row == 3{
+        case 3:
+            return CGSize(width: view.frame.width, height: 120)
+        default:
             return CGSize(width: view.frame.width, height: 120)
         }
-        return CGSize(width: view.frame.width, height: 245)
     }
 }
