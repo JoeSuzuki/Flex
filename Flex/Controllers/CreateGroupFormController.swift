@@ -16,7 +16,7 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .backgroundGrey
 
         collectionView?.backgroundColor = .backgroundGrey
         
