@@ -8,19 +8,10 @@
 
 import UIKit
 
-class GroupNameCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    func setupViews() {
-        backgroundColor = .white
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-class GroupDescriptionCell: UICollectionViewCell {
+class BasicGroupInfoCell: UICollectionViewCell {
+    // Name
+    // Desccription
+    // Availbility
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -33,18 +24,7 @@ class GroupDescriptionCell: UICollectionViewCell {
     }
 }
 class GroupLocationCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    func setupViews() {
-        backgroundColor = .white
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-class GroupAvailbilityCell: UICollectionViewCell {
+    // Location
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
