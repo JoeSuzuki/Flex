@@ -8,7 +8,6 @@
 
 import UIKit
 import Kingfisher
-import FirebaseAuth
 
 class LoginViewController: UIViewController {
     var user: User?
@@ -68,10 +67,6 @@ class LoginViewController: UIViewController {
 //            }
 //            UserService().create(name, email)
 //        }
-        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            // ...
-            self.handleLoginRegister()
-        }
     }
     @objc func handleLoginRegister() {
         if loginRegisterSegmentedControl.selectedSegmentIndex == 0 {
@@ -87,18 +82,6 @@ class LoginViewController: UIViewController {
 //         self.dismiss(animated: true, completion: nil)
 //        let loginViewController = TabBarController()
 //        present(loginViewController, animated: true, completion: nil)
-        guard let firUser = Auth.auth().currentUser else { return }
-        UserService.creates(firUser, name: "ddd") { (user) in
-            guard let user = user else { return }
-           
-            User.setCurrent(user)
-
-            print("Created new user: \(user.name)")
-        }
-        let users = Auth.auth().currentUser
-        print(users?.uid)
-        print(users?.email)
-        print(users?.displayName)
 
     }
 

@@ -7,11 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseAuthUI
-import FirebaseFirestore
-
-typealias FIRUser = FirebaseAuth.User
 
 class LoginsViewController: UIViewController {
 
@@ -70,43 +65,5 @@ class LoginsViewController: UIViewController {
     }
     @objc func handleLogin() {
 //        self.dismiss(animated: true, completion: nil)
-        guard let authUI = FUIAuth.defaultAuthUI() else { return }
-        
-        authUI.delegate = self
-
-        let authViewController = authUI.authViewController()
-        present(authViewController, animated: true)
-    }
-}
-
-extension LoginsViewController: FUIAuthDelegate {
-    func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        guard let user = user else { return }
-        
-        let userRef = Firestore.firestore().collection("users").document(user.uid)
-        
-        
-        UserService.show(forUID: user.uid) { (user) in
-            // handle existing user
-            if let user = user {
-                User.setCurrent(user, writeToUserDefaults: true)
-                
-                let initialViewController = TabBarController()
-                self.view.window?.rootViewController = initialViewController
-                self.view.window?.makeKeyAndVisible()
-            }
-                // handle new user
-            else {
-                guard let firUser = Auth.auth().currentUser else { return }
-                guard let displayName = firUser.displayName else { return }
-                UserService.creates(firUser, name: displayName) { (user) in
-                    guard let user = user else { return }
-                    
-                    User.setCurrent(user, writeToUserDefaults: true)
-                }
-                let vc = TabBarController()
-                self.present(vc, animated: true, completion: nil)
-            }
-        }
     }
 }

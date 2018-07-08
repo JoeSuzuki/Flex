@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class ProfileViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
@@ -16,7 +15,6 @@ class ProfileViewController: UICollectionViewController,UICollectionViewDelegate
     let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
     let companeyArray = ["Suzuki", "Apple", "SpaceX"]
     var group = [Group]()
-    var db: Firestore!
     
     var timer: Timer?
     
@@ -29,8 +27,6 @@ class ProfileViewController: UICollectionViewController,UICollectionViewDelegate
         collectionView?.register(ProfileHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         setupNavigationBarItems()
-        
-        db = Firestore.firestore()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

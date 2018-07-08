@@ -7,12 +7,6 @@ target 'Flex' do
 
   # Pods for Flex
   pod 'Kingfisher', '~> 4.0'
-  pod 'Firebase/Core'
-  pod 'Firebase/Firestore'
-  pod 'Firebase/Auth'
-  pod 'FirebaseUI/Auth'
-  pod 'Firebase/Database'
-  pod 'Firebase/Storage'
   pod 'Eureka'
   pod 'ImageRow'
   pod "Spruce", '~> 1.0.0'

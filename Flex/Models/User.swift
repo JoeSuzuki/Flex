@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import FirebaseFirestore.FIRDocumentSnapshot
 
 class User: NSObject {
     let name: String
@@ -18,20 +17,6 @@ class User: NSObject {
         self.name = name
         self.uid = uid
         self.profileImageUrl = nil
-        super.init()
-    }
-    
-    init?(snapshot: DocumentSnapshot) {
-        guard let dict = snapshot.data(),
-            let name = dict["name"] as? String
-            else { return nil }
-        if let url = dict["profileImageUrl"] as? String {
-            self.profileImageUrl = url
-        } else {
-            self.profileImageUrl = nil
-        }
-        self.uid = snapshot.documentID
-        self.name = name
         super.init()
     }
     

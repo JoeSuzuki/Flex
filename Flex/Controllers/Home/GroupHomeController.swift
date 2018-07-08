@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
@@ -16,7 +15,6 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
     let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
     let companeyArray = ["Suzuki", "Apple", "SpaceX"]
     var group = [Group]()
-    var db: Firestore!
 
     var timer: Timer?
 
@@ -30,7 +28,6 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
         
         setupNavigationBarItems()
         
-        db = Firestore.firestore()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
