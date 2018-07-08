@@ -10,6 +10,7 @@ import UIKit
 
 class CreateGroupFormController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     let cellId = "cellId"
+    let cellIds = "cellIds"
     let headerId = "headerId"
 
     override func viewDidLoad() {
@@ -18,30 +19,25 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
         
         collectionView?.backgroundColor = .backgroundGrey
         collectionView?.register(GroupCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView?.register(GroupHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
-        
+        collectionView?.register(GroupHeaderCell.self, forCellWithReuseIdentifier: cellIds)
+
         setupNavigationBarItems()
     }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! GroupCell
-        return cell
+        if indexPath.row % 2 == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIds, for: indexPath) as! GroupHeaderCell
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! GroupCell
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 245)
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath) as! GroupHeaderCell
-        header.backgroundColor = .white
-        return header
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: 40)
     }
 }

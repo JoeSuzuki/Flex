@@ -62,6 +62,7 @@ extension CreateGroupFormController {
     }
     
     @objc func submitButton() {
-        self.dismiss(animated: true, completion: nil)
+        let groupScheduleViewController = EurekaCreateGroupFormController()
+        present(groupScheduleViewController, animated: true, completion: nil)
     }
 }

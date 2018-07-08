@@ -84,7 +84,5 @@ extension GroupHomeController {
 //        navigationController?.pushViewController(createGroupFormController, animated: true)
         let groupScheduleViewController = CreateGroupFormController(collectionViewLayout: UICollectionViewFlowLayout())
         present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
-
     }
-
 }
