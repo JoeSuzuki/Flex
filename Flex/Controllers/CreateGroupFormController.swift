@@ -54,9 +54,9 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.row {
         case 0:
-            return CGSize(width: view.frame.width, height: 10)
+            return CGSize(width: view.frame.width, height: 100)
         case 1:
-            return CGSize(width: view.frame.width, height: 40)
+            return CGSize(width: view.frame.width, height: 400)
         case 2:
             return CGSize(width: view.frame.width, height: 80)
         case 3:

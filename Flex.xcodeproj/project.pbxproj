@@ -196,7 +196,7 @@
 				FF251C831FF8C42F0067AD40 /* GroupHeader.swift */,
 				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
 				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
-				FF73C33E20F1B5A50057E70E /* CreateGroupCells.swift */,
+				FFE1AF7220F25E9600DA84C7 /* CreateGroupCells */,
 				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
 				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
@@ -311,6 +311,14 @@
 			path = "Profile+Setting";
 			sourceTree = "<group>";
 		};
+		FFE1AF7220F25E9600DA84C7 /* CreateGroupCells */ = {
+			isa = PBXGroup;
+			children = (
+				FF73C33E20F1B5A50057E70E /* CreateGroupCells.swift */,
+			);
+			path = CreateGroupCells;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,7 +422,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (

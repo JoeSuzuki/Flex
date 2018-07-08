@@ -16,6 +16,25 @@ class BasicGroupInfoCell: UICollectionViewCell {
         super.init(frame: frame)
         setupViews()
     }
+    let nameView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .red //UIColor(r: 90, g: 200, b: 250, a: 0.5)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    let descriptionView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white //UIColor(r: 90, g: 200, b: 250, a: 0.5)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    let availbilityView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .blue //UIColor(r: 90, g: 200, b: 250, a: 0.5)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     func setupViews() {
         backgroundColor = .white
     }
