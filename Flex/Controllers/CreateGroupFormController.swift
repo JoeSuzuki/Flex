@@ -56,7 +56,7 @@ class CreateGroupFormController: UICollectionViewController,UICollectionViewDele
 
         switch indexPath.row {
         case 0:
-            return CGSize(width: view.frame.width, height: height/3)
+            return CGSize(width: view.frame.width, height: height/6)
         case 1:
             return CGSize(width: view.frame.width, height: 400)
         case 2:
