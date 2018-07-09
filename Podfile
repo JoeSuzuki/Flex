@@ -7,6 +7,7 @@ target 'Flex' do
 
   # Pods for Flex
   pod 'AWSMobileClient', '~> 2.6.13'
+  pod 'AWSPinpoint', '~> 2.6.13'
   pod 'Kingfisher', '~> 4.0'
   pod 'Eureka'
   pod 'ImageRow'
