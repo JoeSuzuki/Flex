@@ -8,6 +8,7 @@
 
 import UIKit
 import AWSMobileClient
+import AWSCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = TabBarController()
 //        window?.rootViewController = LoginsViewController()
         
+        //Check if connected with AWS
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
+        AWSDDLog.sharedInstance.logLevel = .info
+
         // Create AWSMobileClient to connect with AWS
         return AWSMobileClient.sharedInstance().interceptApplication(
             application,
