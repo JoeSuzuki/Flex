@@ -6,6 +6,7 @@ target 'Flex' do
   use_frameworks!
 
   # Pods for Flex
+  pod 'AWSMobileClient', '~> 2.6.13'
   pod 'Kingfisher', '~> 4.0'
   pod 'Eureka'
   pod 'ImageRow'
