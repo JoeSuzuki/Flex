@@ -11,6 +11,7 @@
 		FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */; };
 		FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18D2099582F0054B34D /* ProfileCell.swift */; };
 		FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18F209958450054B34D /* ProfileHeader.swift */; };
+		FF12400B20F4236000A1907D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FF12400A20F4235F00A1907D /* awsconfiguration.json */; };
 		FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BFBC920AE341600140952 /* AuthService.swift */; };
 		FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */; };
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
@@ -31,7 +32,6 @@
 		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
 		FF417AA520F2C644002B5A86 /* BasicGroupInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */; };
-		FF417AA720F307DF002B5A86 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FF417AA620F307DF002B5A86 /* awsconfiguration.json */; };
 		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839E820AD6769002AABFA /* TabBarController.swift */; };
 		FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */; };
@@ -64,6 +64,7 @@
 		FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF0BC18D2099582F0054B34D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FF0BC18F209958450054B34D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		FF12400A20F4235F00A1907D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FF1BFBC920AE341600140952 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utility.swift"; sourceTree = "<group>"; };
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +87,6 @@
 		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
 		FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGroupInfoCell.swift; sourceTree = "<group>"; };
-		FF417AA620F307DF002B5A86 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF5839E820AD6769002AABFA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewContorller+Service.swift"; sourceTree = "<group>"; };
@@ -172,6 +172,7 @@
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
+				FF12400A20F4235F00A1907D /* awsconfiguration.json */,
 			);
 			path = Flex;
 			sourceTree = "<group>";
@@ -247,7 +248,6 @@
 			children = (
 				FF8C6B9E1FF8DBE80052654F /* Constants.swift */,
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
-				FF417AA620F307DF002B5A86 /* awsconfiguration.json */,
 			);
 			name = Supporting;
 			path = Flex/Supporting;
@@ -384,9 +384,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF417AA720F307DF002B5A86 /* awsconfiguration.json in Resources */,
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
+				FF12400B20F4236000A1907D /* awsconfiguration.json in Resources */,
 				FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +433,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
