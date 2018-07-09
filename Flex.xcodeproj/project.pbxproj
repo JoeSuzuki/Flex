@@ -26,7 +26,6 @@
 		FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */; };
 		FF2B1C082097FB1400749210 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B1C072097FB1400749210 /* GroupService.swift */; };
 		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
-		FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF3935F0204244B3004D5677 /* GoogleService-Info.plist */; };
 		FF3935F52044DAAA004D5677 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935F42044DAAA004D5677 /* UserService.swift */; };
 		FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* Group.swift */; };
 		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
@@ -82,7 +81,6 @@
 		FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		FF2B1C072097FB1400749210 /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
 		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FF3935F0204244B3004D5677 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF3935F42044DAAA004D5677 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FF3C4645201C5A3600D2EDAD /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -172,10 +170,6 @@
 				FF3935EF204243D2004D5677 /* Services */,
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
-				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
-				FF417AA620F307DF002B5A86 /* awsconfiguration.json */,
-				FF3935F0204244B3004D5677 /* GoogleService-Info.plist */,
-				FF251C5B1FF844E20067AD40 /* Info.plist */,
 				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
 			);
 			path = Flex;
@@ -251,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				FF8C6B9E1FF8DBE80052654F /* Constants.swift */,
+				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
+				FF417AA620F307DF002B5A86 /* awsconfiguration.json */,
+				FF251C5B1FF844E20067AD40 /* Info.plist */,
 			);
 			name = Supporting;
 			path = Flex/Supporting;
@@ -390,7 +387,6 @@
 				FF417AA720F307DF002B5A86 /* awsconfiguration.json in Resources */,
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
-				FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */,
 				FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

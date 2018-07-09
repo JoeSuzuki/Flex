@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = UINavigationController(rootViewController: homeController)
 //        window?.rootViewController = TabBarController()
 //        window?.rootViewController = LoginsViewController()
+        
+        // Create AWSMobileClient to connect with AWS
         return AWSMobileClient.sharedInstance().interceptApplication(
             application,
             didFinishLaunchingWithOptions: launchOptions)
