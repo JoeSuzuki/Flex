@@ -63,6 +63,7 @@ class BasicGroupInfoCell: UICollectionViewCell {
 //        text.font = UIFont.boldSystemFont(ofSize: 17)
         text.textColor = .black
         text.backgroundColor = .white
+        text.semanticContentAttribute = .forceRightToLeft
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
@@ -71,6 +72,7 @@ class BasicGroupInfoCell: UICollectionViewCell {
         text.placeholder = "Enter description"
         text.textColor = .black
         text.backgroundColor = .white
+        text.semanticContentAttribute = .forceRightToLeft
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
@@ -79,6 +81,7 @@ class BasicGroupInfoCell: UICollectionViewCell {
         text.placeholder = "Enter availbility"
         text.textColor = .black
         text.backgroundColor = .white
+        text.semanticContentAttribute = .forceRightToLeft
         text.translatesAutoresizingMaskIntoConstraints = false
         return text
     }()
@@ -101,15 +104,15 @@ class BasicGroupInfoCell: UICollectionViewCell {
         addSubview(availbilityLabel)
 
         nameView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
-        nameLabel.anchor(top: nameView.topAnchor, leading: nameView.leadingAnchor, bottom: nameView.bottomAnchor, trailing: nameText.leadingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+        nameLabel.anchor(top: nameView.topAnchor, leading: nameView.leadingAnchor, bottom: nameView.bottomAnchor, trailing: nameText.leadingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 0))
         nameText.anchor(top: nameView.topAnchor, leading: nameLabel.trailingAnchor, bottom: nameView.bottomAnchor, trailing: nameView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         
         descriptionView.anchor(top: nameView.bottomAnchor, leading: self.leadingAnchor, bottom: availbilityView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
-        descriptionLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor, trailing: descriptionText.leadingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+        descriptionLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor, trailing: descriptionText.leadingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 0))
         descriptionText.anchor(top: descriptionView.topAnchor, leading: descriptionLabel.trailingAnchor, bottom: descriptionView.bottomAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         
         availbilityView.anchor(top: descriptionView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
-        availbilityLabel.anchor(top: availbilityView.topAnchor, leading: availbilityView.leadingAnchor, bottom: availbilityView.bottomAnchor, trailing: availbilityText.leadingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+        availbilityLabel.anchor(top: availbilityView.topAnchor, leading: availbilityView.leadingAnchor, bottom: availbilityView.bottomAnchor, trailing: availbilityText.leadingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 0))
         availbilityText.anchor(top: availbilityView.topAnchor, leading: availbilityLabel.trailingAnchor, bottom: availbilityView.bottomAnchor, trailing: availbilityView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         
     }
