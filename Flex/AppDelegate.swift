@@ -18,10 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var pinpoint: AWSPinpoint?
 
     // Resume a previously signed-in authenticated session
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+    // Add a AWSMobileClient call in application:open url
+    func application(_ application: UIApplication, open url: URL,
+                     sourceApplication: String?, annotation: Any) -> Bool {
         return AWSMobileClient.sharedInstance().interceptApplication(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = TabBarController()
@@ -43,9 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSDDLog.sharedInstance.logLevel = .info
 
         // Create AWSMobileClient to connect with AWS
-        return AWSMobileClient.sharedInstance().interceptApplication(
-            application,
-            didFinishLaunchingWithOptions: launchOptions)
+        return AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
