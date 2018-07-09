@@ -9,11 +9,13 @@
 import UIKit
 import AWSMobileClient
 import AWSCore
+import AWSPinpoint
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var pinpoint: AWSPinpoint?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -27,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = TabBarController()
 //        window?.rootViewController = LoginsViewController()
         
+        // Initialize Pinpoint
+        pinpoint = AWSPinpoint(configuration:
+            AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
+
         //Check if connected with AWS
         AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
         AWSDDLog.sharedInstance.logLevel = .info
@@ -58,25 +64,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-}
-
-extension AppDelegate {
-//    func configureInitialRootViewController(for window: UIWindow?) {
-//        let defaults = UserDefaults.standard
-//        let initialViewController: UIViewController
-//
-//        if let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
-//            let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
-//
-//            User.setCurrent(user)
-//
-//            initialViewController = TabBarController()
-//        }
-//        else {
-//            initialViewController = LoginsViewController()
-//        }
-//
-//        window?.rootViewController = initialViewController
-//        window?.makeKeyAndVisible()
-//    }
 }
