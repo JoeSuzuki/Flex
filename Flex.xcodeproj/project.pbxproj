@@ -32,6 +32,7 @@
 		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
 		FF417AA520F2C644002B5A86 /* BasicGroupInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */; };
+		FF417AA720F307DF002B5A86 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FF417AA620F307DF002B5A86 /* awsconfiguration.json */; };
 		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839E820AD6769002AABFA /* TabBarController.swift */; };
 		FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */; };
@@ -87,6 +88,7 @@
 		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
 		FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGroupInfoCell.swift; sourceTree = "<group>"; };
+		FF417AA620F307DF002B5A86 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF5839E820AD6769002AABFA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewContorller+Service.swift"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */,
+				FF417AA620F307DF002B5A86 /* awsconfiguration.json */,
 				FF3935F0204244B3004D5677 /* GoogleService-Info.plist */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
 				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
@@ -384,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF417AA720F307DF002B5A86 /* awsconfiguration.json in Resources */,
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
 				FF3935F1204244B3004D5677 /* GoogleService-Info.plist in Resources */,
@@ -431,7 +435,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
