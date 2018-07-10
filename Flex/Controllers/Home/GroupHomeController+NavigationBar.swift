@@ -66,7 +66,10 @@ extension GroupHomeController {
     
     @objc func buttonAction() {
         let loginViewController = AuthUIViewController()
-        present(loginViewController, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: loginViewController)
+        navigationController.navigationBar.isTranslucent = false
+        
+        present(navigationController, animated: false, completion: nil)
 //        let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
 //        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
 

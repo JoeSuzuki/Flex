@@ -13,6 +13,7 @@ import AWSAuthUI
 class AuthUIViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
         if !AWSSignInManager.sharedInstance().isLoggedIn {
             AWSAuthUIViewController
