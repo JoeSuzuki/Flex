@@ -39,9 +39,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>197321650958674</key>
-    <string>0123456789012345</string>
-    <key>Flex</key>
+    <key>FacebookAppID</key>
+    <string>197321650958674</string>
+    <key>FacebookDisplayName</key>
     <string>Flex</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
