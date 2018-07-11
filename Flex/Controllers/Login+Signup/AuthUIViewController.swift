@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AWSMobileClient
+import AWSUserPoolsSignIn
+import AWSFacebookSignIn
 import AWSAuthCore
 import AWSAuthUI
 
@@ -16,22 +19,27 @@ class AuthUIViewController: UIViewController {
         view.backgroundColor = .white
         
         if !AWSSignInManager.sharedInstance().isLoggedIn {
-            AWSAuthUIViewController.presentViewController(with: self.navigationController!, configuration: nil, completionHandler: { (provider: AWSSignInProvider, error: Error?) in //self.navigationController?.dismiss(animated: false, completion: nil)
-                if error != nil {
-                    print("Error occurred: \(String(describing: error))")
-                } else {
-                    // Sign in successful.
-                }
-            })
+            presentAuthUIViewController()
         }
     }
+    
+    func presentAuthUIViewController() {
+        let config = AWSAuthUIConfiguration()
+        config.enableUserPoolsUI = true
+        config.addSignInButtonView(class: AWSFacebookSignInButton.self)
+//        config.backgroundColor = UIColor.blue
+        config.font = UIFont (name: "Helvetica Neue", size: 20)
+        config.isBackgroundColorFullScreen = true
+        config.canCancel = true
+        
+        AWSAuthUIViewController.presentViewController(
+            with: self.navigationController!,
+            configuration: config, completionHandler: { (provider: AWSSignInProvider, error: Error?) in
+                if error == nil {
+                    // SignIn succeeded.
+                } else {
+                    // end user faced error while loggin in, take any required action here.
+                }
+        })
+    }
 }
-// func signOutButtonPress() {
-//
-//AWSSignInManager.sharedInstance().logout(completionHandler: {(result: Any?, error: Error?) in
-//    self.showSignIn()
-//    // print("Sign-out Successful: \(signInProvider.getDisplayName)");
-//
-//})
-//}
-
