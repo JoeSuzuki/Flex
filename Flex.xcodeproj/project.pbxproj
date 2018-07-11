@@ -34,6 +34,8 @@
 		FF417AA520F2C644002B5A86 /* BasicGroupInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */; };
 		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839E820AD6769002AABFA /* TabBarController.swift */; };
+		FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */; };
+		FF6A4B5920F61A20001421F9 /* GroupTableViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */; };
 		FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */; };
 		FF73C33F20F1B5A50057E70E /* CreateGroupCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF73C33E20F1B5A50057E70E /* CreateGroupCells.swift */; };
 		FF788DFA208C7AF30011294C /* PrivatePolicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */; };
@@ -90,6 +92,8 @@
 		FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGroupInfoCell.swift; sourceTree = "<group>"; };
 		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF5839E820AD6769002AABFA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupTableViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewContorller+Service.swift"; sourceTree = "<group>"; };
 		FF73C33E20F1B5A50057E70E /* CreateGroupCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCells.swift; sourceTree = "<group>"; };
 		FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePolicyController.swift; sourceTree = "<group>"; };
@@ -255,6 +259,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FF6A4B5520F6182B001421F9 /* GroupDescription */ = {
+			isa = PBXGroup;
+			children = (
+				FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */,
+				FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */,
+			);
+			path = GroupDescription;
+			sourceTree = "<group>";
+		};
 		FF8C6B9D1FF8DBD40052654F /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +304,7 @@
 			children = (
 				FF251C511FF844E20067AD40 /* GroupHomeController.swift */,
 				FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */,
+				FF6A4B5520F6182B001421F9 /* GroupDescription */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -523,6 +537,7 @@
 				FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */,
 				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */,
+				FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */,
 				FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
@@ -541,6 +556,7 @@
 				FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */,
 				FF417AA520F2C644002B5A86 /* BasicGroupInfoCell.swift in Sources */,
 				FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */,
+				FF6A4B5920F61A20001421F9 /* GroupTableViewController+NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

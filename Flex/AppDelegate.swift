@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
-
+        
 //        configureInitialRootViewController(for: window!)
 
 //        let homeController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
