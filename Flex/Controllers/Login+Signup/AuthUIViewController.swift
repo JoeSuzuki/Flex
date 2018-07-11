@@ -16,7 +16,7 @@ class AuthUIViewController: UIViewController {
         view.backgroundColor = .white
         
         if !AWSSignInManager.sharedInstance().isLoggedIn {
-            AWSAuthUIViewController.presentViewController(with: self.navigationController!, configuration: nil, completionHandler: { (provider: AWSSignInProvider, error: Error?) in self.navigationController?.dismiss(animated: false, completion: nil)
+            AWSAuthUIViewController.presentViewController(with: self.navigationController!, configuration: nil, completionHandler: { (provider: AWSSignInProvider, error: Error?) in //self.navigationController?.dismiss(animated: false, completion: nil)
                 if error != nil {
                     print("Error occurred: \(String(describing: error))")
                 } else {
