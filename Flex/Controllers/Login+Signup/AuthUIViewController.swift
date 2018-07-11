@@ -30,7 +30,7 @@ class AuthUIViewController: UIViewController {
 //        config.backgroundColor = UIColor.blue
         config.font = UIFont (name: "Helvetica Neue", size: 20)
         config.isBackgroundColorFullScreen = true
-        config.canCancel = true
+//        config.canCancel = true
         
         AWSAuthUIViewController.presentViewController(
             with: self.navigationController!,
