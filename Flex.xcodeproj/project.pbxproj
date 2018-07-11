@@ -11,8 +11,7 @@
 		FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */; };
 		FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18D2099582F0054B34D /* ProfileCell.swift */; };
 		FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18F209958450054B34D /* ProfileHeader.swift */; };
-		FF12400B20F4236000A1907D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FF12400A20F4235F00A1907D /* awsconfiguration.json */; };
-		FF12400D20F4283300A1907D /* AuthUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12400C20F4283300A1907D /* AuthUI.swift */; };
+		FF12400D20F4283300A1907D /* AuthUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12400C20F4283300A1907D /* AuthUIViewController.swift */; };
 		FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BFBC920AE341600140952 /* AuthService.swift */; };
 		FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */; };
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
@@ -56,6 +55,7 @@
 		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
 		FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */; };
 		FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */; };
+		FFF7DB9B20F59C3700B13500 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFF7DB9A20F59C3700B13500 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,8 +65,7 @@
 		FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF0BC18D2099582F0054B34D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FF0BC18F209958450054B34D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
-		FF12400A20F4235F00A1907D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		FF12400C20F4283300A1907D /* AuthUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUI.swift; sourceTree = "<group>"; };
+		FF12400C20F4283300A1907D /* AuthUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUIViewController.swift; sourceTree = "<group>"; };
 		FF1BFBC920AE341600140952 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utility.swift"; sourceTree = "<group>"; };
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +111,7 @@
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
+		FFF7DB9A20F59C3700B13500 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +173,8 @@
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
+				FFF7DB9A20F59C3700B13500 /* awsconfiguration.json */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
-				FF12400A20F4235F00A1907D /* awsconfiguration.json */,
 			);
 			path = Flex;
 			sourceTree = "<group>";
@@ -234,6 +234,16 @@
 			name = Extensions;
 			path = Flex/Extensions;
 			sourceTree = SOURCE_ROOT;
+		};
+		FF35DCC720F4B1D200725954 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */,
+				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
+				FFB29B3720840C770010A692 /* LoginsViewController.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
 		};
 		FF3935EF204243D2004D5677 /* Services */ = {
 			isa = PBXGroup;
@@ -297,10 +307,8 @@
 		FFCBC1D220C3923C0016C793 /* Login+Signup */ = {
 			isa = PBXGroup;
 			children = (
-				FF3935ED2042429B004D5677 /* LoginViewController.swift */,
-				FFB29B3720840C770010A692 /* LoginsViewController.swift */,
-				FF12400C20F4283300A1907D /* AuthUI.swift */,
-				FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */,
+				FF35DCC720F4B1D200725954 /* CustomUI */,
+				FF12400C20F4283300A1907D /* AuthUIViewController.swift */,
 			);
 			path = "Login+Signup";
 			sourceTree = "<group>";
@@ -360,6 +368,7 @@
 				TargetAttributes = {
 					FF251C4B1FF844E20067AD40 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -387,9 +396,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFF7DB9B20F59C3700B13500 /* awsconfiguration.json in Resources */,
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
-				FF12400B20F4236000A1907D /* awsconfiguration.json in Resources */,
 				FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +498,7 @@
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
-				FF12400D20F4283300A1907D /* AuthUI.swift in Sources */,
+				FF12400D20F4283300A1907D /* AuthUIViewController.swift in Sources */,
 				FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */,
 				FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */,
 				FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */,
@@ -653,12 +662,14 @@
 			baseConfigurationReference = C635D1FDDFB9272FE0684716 /* Pods-Flex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = URE62YMM2S;
 				INFOPLIST_FILE = Flex/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suzukiJoe.Flex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -669,6 +680,7 @@
 			baseConfigurationReference = CF5F12A739972D5391E239DA /* Pods-Flex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = URE62YMM2S;
 				INFOPLIST_FILE = Flex/Info.plist;
