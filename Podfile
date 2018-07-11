@@ -10,6 +10,7 @@ target 'Flex' do
   pod 'AWSPinpoint', '~> 2.6.13'
   pod 'AWSUserPoolsSignIn', '~> 2.6.13'
   pod 'AWSAuthUI', '~> 2.6.13'
+  pod 'AWSFacebookSignIn', '~> 2.6.13'
   pod 'Kingfisher', '~> 4.0'
   pod 'Eureka'
   pod 'ImageRow'
