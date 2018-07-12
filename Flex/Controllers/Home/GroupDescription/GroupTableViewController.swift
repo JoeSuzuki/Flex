@@ -32,7 +32,7 @@ class GroupTableViewController: UITableViewController {
     
     // MARK: - CELL
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -50,30 +50,3 @@ class GroupTableViewController: UITableViewController {
         tableView.register(CustomTableCell.self, forCellReuseIdentifier: cellId)
     }
 }
-
-// MARK: - HEADER
-class CustomTableViewHeader: UITableViewHeaderFooterView {
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        
-        contentView.backgroundColor = .orange
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-// MARK: - CELL
-class CustomTableCell: UITableViewCell {
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        contentView.backgroundColor = .green
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
