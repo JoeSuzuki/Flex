@@ -1,5 +1,5 @@
 //
-//  GroupTableCell.swift
+//  GroupTableHeader.swift
 //  Flex
 //
 //  Created by Joe Suzuki on 7/11/18.
@@ -8,14 +8,15 @@
 
 import UIKit
 
-class CustomTableCell: UITableViewCell {
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+class GroupTableHeader: UITableViewHeaderFooterView {
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
         
-        contentView.backgroundColor = .green
+        contentView.backgroundColor = .orange
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

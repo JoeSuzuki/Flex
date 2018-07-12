@@ -15,8 +15,6 @@ class GroupTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarItems()
-        
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
         setupTableView()
     }
     
@@ -26,7 +24,7 @@ class GroupTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerId) as! CustomTableViewHeader
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerId) as! GroupTableHeader
         return header
     }
     
@@ -40,13 +38,13 @@ class GroupTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CustomTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! GroupTableCell
         return cell
     }
     
     func setupTableView() {
         tableView.backgroundColor = .lightGray
-        tableView.register(CustomTableViewHeader.self, forHeaderFooterViewReuseIdentifier: headerId)
-        tableView.register(CustomTableCell.self, forCellReuseIdentifier: cellId)
+        tableView.register(GroupTableHeader.self, forHeaderFooterViewReuseIdentifier: headerId)
+        tableView.register(GroupTableCell.self, forCellReuseIdentifier: cellId)
     }
 }
