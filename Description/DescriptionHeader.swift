@@ -16,18 +16,18 @@ class DescriptionHeaderCell: UICollectionViewCell {
     
     let groupImageView: UIImageView = {
         let groupView = UIImageView()
-        //        groupView.image = #imageLiteral(resourceName: "search")
-        let url = URL(string: "https://avatars1.githubusercontent.com/u/23642941?s=460&v=4")
+//                groupView.image = #imageLiteral(resourceName: "search")
+        let url = URL(string: "https://media.gettyimages.com/photos/food-court-blurred-picture-id532028378?b=1&k=6&m=532028378&s=612x612&w=0&h=8RqP803cLYHHYv0UiLj8dyl3sAbpC6vfbGqhbjAbVyU=")
         groupView.kf.setImage(with: url)
         groupView.layer.cornerRadius = 5
-        groupView.contentMode = .scaleAspectFit
+        groupView.contentMode = .scaleAspectFill
         groupView.clipsToBounds = true
         groupView.translatesAutoresizingMaskIntoConstraints = false
         return groupView
     }()
     let descriptionView: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
