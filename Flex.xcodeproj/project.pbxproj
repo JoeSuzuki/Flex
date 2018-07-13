@@ -46,6 +46,10 @@
 		FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */; };
 		FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */; };
 		FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA41FF992D40052654F /* ScheduleCell.swift */; };
+		FF8D559720F8806B0007D912 /* GroupDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */; };
+		FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */; };
+		FF8D559B20F881500007D912 /* DescriptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559A20F881500007D912 /* DescriptionHeader.swift */; };
+		FF8D559E20F8816F0007D912 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559D20F8816F0007D912 /* DescriptionCell.swift */; };
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
@@ -106,6 +110,10 @@
 		FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeController.swift; sourceTree = "<group>"; };
 		FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF8C6BA41FF992D40052654F /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDescriptionController.swift; sourceTree = "<group>"; };
+		FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupDescriptionController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FF8D559A20F881500007D912 /* DescriptionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionHeader.swift; sourceTree = "<group>"; };
+		FF8D559D20F8816F0007D912 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
@@ -197,6 +205,8 @@
 				FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */,
 				FFC0A4A420EB3723007F39F7 /* GroupSchedule */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
+				FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */,
+				FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FF4E9BBC20F73AF7007025B1 /* GroupHome */,
+				FF8D559C20F881550007D912 /* Description */,
 				FF4E9BB920F73AF7007025B1 /* GroupTableView */,
 				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
 				FFE1AF7220F25E9600DA84C7 /* CreateGroupCells */,
@@ -284,8 +295,8 @@
 		FF6A4B5520F6182B001421F9 /* GroupDescription */ = {
 			isa = PBXGroup;
 			children = (
-				FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */,
-				FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */,
+				FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */,
+				FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */,
 			);
 			path = GroupDescription;
 			sourceTree = "<group>";
@@ -298,6 +309,15 @@
 			);
 			name = Supporting;
 			path = Flex/Supporting;
+			sourceTree = SOURCE_ROOT;
+		};
+		FF8D559C20F881550007D912 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				FF8D559A20F881500007D912 /* DescriptionHeader.swift */,
+				FF8D559D20F8816F0007D912 /* DescriptionCell.swift */,
+			);
+			path = Description;
 			sourceTree = SOURCE_ROOT;
 		};
 		FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */ = {
@@ -535,6 +555,7 @@
 			files = (
 				FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */,
 				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
+				FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */,
 				FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
 				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
@@ -570,9 +591,12 @@
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
 				FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */,
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
+				FF8D559B20F881500007D912 /* DescriptionHeader.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
+				FF8D559E20F8816F0007D912 /* DescriptionCell.swift in Sources */,
 				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
 				FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */,
+				FF8D559720F8806B0007D912 /* GroupDescriptionController.swift in Sources */,
 				FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */,
 				FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */,
 				FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */,
