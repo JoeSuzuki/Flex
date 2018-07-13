@@ -20,7 +20,7 @@ class GroupTableViewController: UITableViewController {
     
     // MARK: - HEADER
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return view.frame.height * 4 / 13
+        return view.frame.height * 5 / 13
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -43,7 +43,7 @@ class GroupTableViewController: UITableViewController {
     }
     
     func setupTableView() {
-        tableView.backgroundColor = .lightGray
+        tableView.backgroundColor = .backgroundGrey
         tableView.register(GroupTableHeader.self, forHeaderFooterViewReuseIdentifier: headerId)
         tableView.register(GroupTableCell.self, forCellReuseIdentifier: cellId)
     }

@@ -12,7 +12,7 @@ class GroupTableHeader: UITableViewHeaderFooterView {
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         
-        contentView.backgroundColor = .orange
+        contentView.backgroundColor = .white
     }
     
     required init?(coder aDecoder: NSCoder) {
