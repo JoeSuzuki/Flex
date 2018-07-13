@@ -14,21 +14,32 @@ class GroupTableHeader: UITableViewHeaderFooterView {
         super.init(reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .white
         let width = layer.frame.width
-        let height = layer.frame.height / 5
-
+//        let height = layer.frame.height / 5
+        let height = contentView.layer.frame.height / 5
         contentView.addSubview(groupImageView)
         contentView.addSubview(descriptionView)
         contentView.addSubview(openTimeLabel)
+        
+        groupImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        groupImageView.bottomAnchor.constraint(equalTo: descriptionView.topAnchor).isActive = true
+        groupImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        groupImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        
+        descriptionView.topAnchor.constraint(equalTo: groupImageView.bottomAnchor).isActive = true
+        descriptionView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        descriptionView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        descriptionView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
 
-        groupImageView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor,
-                              trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0),
-                              size: .init(width: width, height: 25))
-        descriptionView.anchor(top: groupImageView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor,
-                               trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0),
-                               size: .init(width: width, height: height * 2))
-        openTimeLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor,
-                               trailing: descriptionView.trailingAnchor,
-                               padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+        openTimeLabel.topAnchor.constraint(equalTo: descriptionView.topAnchor).isActive = true
+        openTimeLabel.bottomAnchor.constraint(equalTo: descriptionView.bottomAnchor).isActive = true
+        openTimeLabel.leftAnchor.constraint(equalTo: descriptionView.leftAnchor).isActive = true
+        openTimeLabel.rightAnchor.constraint(equalTo: descriptionView.rightAnchor).isActive = true
+
+//        descriptionView.anchor(top: groupImageView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor,
+//                               trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+//        openTimeLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor,
+//                               trailing: descriptionView.trailingAnchor,
+//                               padding: .init(top: 0, left: 0, bottom: 0, right: 0))
     }
     
     let groupImageView: UIImageView = {
