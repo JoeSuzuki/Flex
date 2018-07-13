@@ -34,33 +34,75 @@ class DescriptionHeaderCell: UICollectionViewCell {
     let openTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "8:00 AM - 5:00 PM"
-        label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.textColor = .backgroundGrey
+//        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     let locationLabel: UILabel = {
         let label = UILabel()
         label.text = "New York, NY"
-        label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.textColor = .backgroundGrey
+//        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
+    let nameStarView: UIView = {
+        let view = UIView()
+//        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    let nameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Doctor"
+//        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    let starButton: UIButton = {
+        let button = UIButton()
+        button.setTitleColor(.mainBlue, for: .normal)
+        button.setImage(#imageLiteral(resourceName: "search"), for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
+        return button
+    }()
+    let messageButton: UIButton = {
+        let button = UIButton()
+        button.layer.cornerRadius = 5
+        button.layer.borderColor = UIColor.mainBlue.cgColor
+        button.layer.borderWidth = 1
+        button.setTitle("Message", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
+        button.setTitleColor(.mainBlue, for: .normal)
+//        button.setImage(#imageLiteral(resourceName: "search"), for: .normal)
+//        button.imageView?.contentMode = .scaleAspectFit
+//        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
+        return button
+    }()
+
     func setupViews() {
         let width = layer.frame.width
-        let height = layer.frame.height / 9
+        let height = layer.frame.height / 11
         
         addSubview(groupImageView)
         addSubview(descriptionView)
         addSubview(openTimeLabel)
         addSubview(locationLabel)
+        addSubview(nameStarView)
+        addSubview(nameLabel)
+        addSubview(starButton)
 
-        groupImageView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height * 7))
+        groupImageView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height * 9))
         descriptionView.anchor(top: groupImageView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height * 2))
         openTimeLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: locationLabel.topAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         locationLabel.anchor(top: openTimeLabel.bottomAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+        nameStarView.anchor(top: groupImageView.topAnchor, leading: groupImageView.leadingAnchor, bottom: groupImageView.bottomAnchor, trailing: groupImageView.trailingAnchor, padding: .init(top: height * 7, left: 0, bottom: 0, right: 0))
+        nameLabel.anchor(top: nameStarView.topAnchor, leading: nameStarView.leadingAnchor, bottom: nameStarView.bottomAnchor, trailing: starButton.leadingAnchor)
+        starButton.anchor(top: nameStarView.topAnchor, leading: nameLabel.trailingAnchor, bottom: nameStarView.bottomAnchor, trailing: nameStarView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+
     }
     
     required init?(coder aDecoder: NSCoder) {

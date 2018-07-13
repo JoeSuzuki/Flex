@@ -59,15 +59,10 @@ extension GroupDescriptionController {
     }
     
     @objc func buttonAction() {
-        let loginViewController = AuthUIViewController()
-        let navigationController = UINavigationController(rootViewController: loginViewController)
-        present(navigationController, animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func buttonActions() {
-        let table = GroupTableViewController()
-        let navigationController = UINavigationController(rootViewController: table)
-        
-        present(navigationController, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }
