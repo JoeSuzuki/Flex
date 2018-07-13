@@ -18,13 +18,17 @@ class GroupTableHeader: UITableViewHeaderFooterView {
 
         contentView.addSubview(groupImageView)
         contentView.addSubview(descriptionView)
+        contentView.addSubview(openTimeLabel)
 
         groupImageView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor,
                               trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0),
-                              size: .init(width: width, height: height * 3))
+                              size: .init(width: width, height: 25))
         descriptionView.anchor(top: groupImageView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor,
-                              trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0),
-                              size: .init(width: width, height: height * 2))
+                               trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0),
+                               size: .init(width: width, height: height * 2))
+        openTimeLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor,
+                               trailing: descriptionView.trailingAnchor,
+                               padding: .init(top: 0, left: 0, bottom: 0, right: 0))
     }
     
     let groupImageView: UIImageView = {
@@ -43,6 +47,14 @@ class GroupTableHeader: UITableViewHeaderFooterView {
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
+    }()
+    let openTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "8:00 AM - 5:00 PM"
+        label.font = UIFont.boldSystemFont(ofSize: 17)
+        label.textColor = .backgroundGrey
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
 
     required init?(coder aDecoder: NSCoder) {
