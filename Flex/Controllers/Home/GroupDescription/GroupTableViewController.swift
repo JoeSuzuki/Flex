@@ -20,7 +20,7 @@ class GroupTableViewController: UITableViewController {
     
     // MARK: - HEADER
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return view.frame.height * 4 / 13
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

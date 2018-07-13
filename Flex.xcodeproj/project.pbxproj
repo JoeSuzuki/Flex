@@ -19,8 +19,6 @@
 		FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF251C561FF844E20067AD40 /* Assets.xcassets */; };
 		FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF251C581FF844E20067AD40 /* LaunchScreen.storyboard */; };
 		FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */; };
-		FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C831FF8C42F0067AD40 /* GroupHeader.swift */; };
-		FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C851FF8C46C0067AD40 /* GroupCell.swift */; };
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
 		FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA1204B9273008065E5 /* ProfileViewController.swift */; };
 		FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA3204B92E3008065E5 /* SettingViewController.swift */; };
@@ -32,8 +30,10 @@
 		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
 		FF417AA520F2C644002B5A86 /* BasicGroupInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */; };
-		FF4E9BB620F70197007025B1 /* GroupTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BB520F70197007025B1 /* GroupTableCell.swift */; };
-		FF4E9BB820F701BB007025B1 /* GroupTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BB720F701BB007025B1 /* GroupTableHeader.swift */; };
+		FF4E9BBF20F73AF7007025B1 /* GroupTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBA20F73AF7007025B1 /* GroupTableHeader.swift */; };
+		FF4E9BC020F73AF7007025B1 /* GroupTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBB20F73AF7007025B1 /* GroupTableCell.swift */; };
+		FF4E9BC120F73AF7007025B1 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBD20F73AF7007025B1 /* GroupHeader.swift */; };
+		FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBE20F73AF7007025B1 /* GroupCell.swift */; };
 		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839E820AD6769002AABFA /* TabBarController.swift */; };
 		FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */; };
@@ -79,8 +79,6 @@
 		FF251C591FF844E20067AD40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF251C5B1FF844E20067AD40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF251C801FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
-		FF251C831FF8C42F0067AD40 /* GroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
-		FF251C851FF8C46C0067AD40 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		FF26BAA1204B9273008065E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FF26BAA3204B92E3008065E5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -92,8 +90,10 @@
 		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
 		FF417AA420F2C644002B5A86 /* BasicGroupInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGroupInfoCell.swift; sourceTree = "<group>"; };
-		FF4E9BB520F70197007025B1 /* GroupTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableCell.swift; sourceTree = SOURCE_ROOT; };
-		FF4E9BB720F701BB007025B1 /* GroupTableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableHeader.swift; sourceTree = SOURCE_ROOT; };
+		FF4E9BBA20F73AF7007025B1 /* GroupTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableHeader.swift; sourceTree = "<group>"; };
+		FF4E9BBB20F73AF7007025B1 /* GroupTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableCell.swift; sourceTree = "<group>"; };
+		FF4E9BBD20F73AF7007025B1 /* GroupHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
+		FF4E9BBE20F73AF7007025B1 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF5839E820AD6769002AABFA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
@@ -204,9 +204,9 @@
 		FF251C821FF8C3390067AD40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FF4E9BB320F700F0007025B1 /* GroupHome */,
+				FF4E9BBC20F73AF7007025B1 /* GroupHome */,
+				FF4E9BB920F73AF7007025B1 /* GroupTableView */,
 				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
-				FF4E9BB420F7011E007025B1 /* GroupTableView */,
 				FFE1AF7220F25E9600DA84C7 /* CreateGroupCells */,
 				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
 				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
@@ -263,23 +263,23 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		FF4E9BB320F700F0007025B1 /* GroupHome */ = {
+		FF4E9BB920F73AF7007025B1 /* GroupTableView */ = {
 			isa = PBXGroup;
 			children = (
-				FF251C831FF8C42F0067AD40 /* GroupHeader.swift */,
-				FF251C851FF8C46C0067AD40 /* GroupCell.swift */,
-			);
-			path = GroupHome;
-			sourceTree = SOURCE_ROOT;
-		};
-		FF4E9BB420F7011E007025B1 /* GroupTableView */ = {
-			isa = PBXGroup;
-			children = (
-				FF4E9BB520F70197007025B1 /* GroupTableCell.swift */,
-				FF4E9BB720F701BB007025B1 /* GroupTableHeader.swift */,
+				FF4E9BBA20F73AF7007025B1 /* GroupTableHeader.swift */,
+				FF4E9BBB20F73AF7007025B1 /* GroupTableCell.swift */,
 			);
 			path = GroupTableView;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
+		};
+		FF4E9BBC20F73AF7007025B1 /* GroupHome */ = {
+			isa = PBXGroup;
+			children = (
+				FF4E9BBD20F73AF7007025B1 /* GroupHeader.swift */,
+				FF4E9BBE20F73AF7007025B1 /* GroupCell.swift */,
+			);
+			path = GroupHome;
+			sourceTree = "<group>";
 		};
 		FF6A4B5520F6182B001421F9 /* GroupDescription */ = {
 			isa = PBXGroup;
@@ -534,7 +534,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */,
-				FF251C861FF8C46C0067AD40 /* GroupCell.swift in Sources */,
 				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
 				FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
@@ -553,7 +552,6 @@
 				FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */,
 				FF2B1C082097FB1400749210 /* GroupService.swift in Sources */,
 				FFC0A4A320EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift in Sources */,
-				FF4E9BB620F70197007025B1 /* GroupTableCell.swift in Sources */,
 				FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
 				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
@@ -563,24 +561,26 @@
 				FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */,
 				FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
+				FF4E9BC020F73AF7007025B1 /* GroupTableCell.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
 				FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */,
 				FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */,
+				FF4E9BC120F73AF7007025B1 /* GroupHeader.swift in Sources */,
 				FF788DFA208C7AF30011294C /* PrivatePolicyController.swift in Sources */,
-				FF251C841FF8C42F0067AD40 /* GroupHeader.swift in Sources */,
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
 				FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */,
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
 				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
+				FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */,
 				FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */,
 				FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */,
 				FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */,
 				FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */,
+				FF4E9BBF20F73AF7007025B1 /* GroupTableHeader.swift in Sources */,
 				FF417AA520F2C644002B5A86 /* BasicGroupInfoCell.swift in Sources */,
 				FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */,
 				FF6A4B5920F61A20001421F9 /* GroupTableViewController+NavigationBar.swift in Sources */,
-				FF4E9BB820F701BB007025B1 /* GroupTableHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
