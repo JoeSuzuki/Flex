@@ -49,7 +49,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
     }()
     let nameStarView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
+//        view.backgroundColor = UIColor(r: 90, g: 200, b: 250, a: 0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -94,15 +94,15 @@ class DescriptionHeaderCell: UICollectionViewCell {
         addSubview(locationLabel)
         addSubview(nameStarView)
         addSubview(nameLabel)
-        addSubview(starButton)
+        addSubview(messageButton)
 
         groupImageView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height * 9))
         descriptionView.anchor(top: groupImageView.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height * 2))
         openTimeLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: locationLabel.topAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         locationLabel.anchor(top: openTimeLabel.bottomAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         nameStarView.anchor(top: groupImageView.topAnchor, leading: groupImageView.leadingAnchor, bottom: groupImageView.bottomAnchor, trailing: groupImageView.trailingAnchor, padding: .init(top: height * 8, left: 0, bottom: 0, right: 0))
-        nameLabel.anchor(top: nameStarView.topAnchor, leading: nameStarView.leadingAnchor, bottom: nameStarView.bottomAnchor, trailing: starButton.leadingAnchor, padding: .init(top: 0, left: 4, bottom: 8, right: 0))
-        starButton.anchor(top: nameStarView.topAnchor, leading: nameLabel.trailingAnchor, bottom: nameStarView.bottomAnchor, trailing: nameStarView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 8, right: 4), size: .init(width: height * 2, height: height * 2))
+        nameLabel.anchor(top: nameStarView.topAnchor, leading: nameStarView.leadingAnchor, bottom: nameStarView.bottomAnchor, trailing: messageButton.leadingAnchor, padding: .init(top: 0, left: 4, bottom: 8, right: 0))
+        messageButton.anchor(top: nameStarView.topAnchor, leading: nameLabel.trailingAnchor, bottom: nameStarView.bottomAnchor, trailing: nameStarView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 8, right: 4), size: .init(width: width / 4, height: height))
 
     }
     
