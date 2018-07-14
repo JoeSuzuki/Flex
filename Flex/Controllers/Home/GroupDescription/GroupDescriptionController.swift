@@ -58,7 +58,7 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-        let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
-        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
+//        let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
+//        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
     }
 }
