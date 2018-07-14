@@ -30,25 +30,24 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIds, for: indexPath) as! DescriptionHeaderCell
             return cell
-        } else if indexPath.row == 1 {
+        case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
             return cell
-        } else if indexPath.row == 2 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
-            return cell
-        } else {
+        default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
             return cell
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             return CGSize(width: view.frame.width, height: view.frame.height * 4 / 11)
-        } else  {
+        default:
             return CGSize(width: view.frame.width, height: 245)
         }
     }
