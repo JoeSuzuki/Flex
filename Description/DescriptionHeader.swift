@@ -35,7 +35,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "8:00 AM - 5:00 PM"
 //        label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.textColor = .black
+        label.textColor = .gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -43,7 +43,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "New York, NY"
 //        label.font = UIFont.boldSystemFont(ofSize: 17)
-        label.textColor = .black
+        label.textColor = .gray
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -75,6 +75,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
         button.layer.cornerRadius = 5
         button.layer.borderColor = UIColor.mainBlue.cgColor
         button.layer.borderWidth = 1
+        button.layer.backgroundColor = UIColor.white.cgColor
         button.setTitle("Message", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(.mainBlue, for: .normal)
