@@ -12,7 +12,6 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
     
     let cellId = "cellId"
     let cellIds = "headerIds"
-    let headerId = "headerId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +20,6 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         collectionView?.backgroundColor = .backgroundGrey
         collectionView?.register(DescriptionCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(DescriptionHeaderCell.self, forCellWithReuseIdentifier: cellIds)
-        collectionView?.register(DescriptionHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         setupNavigationBarItems()
         
@@ -53,16 +51,6 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         } else  {
             return CGSize(width: view.frame.width, height: 245)
         }
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: headerId, for: indexPath) as! DescriptionHeaderCell
-        header.backgroundColor = .white
-        return header
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.height * 4 / 11)
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
