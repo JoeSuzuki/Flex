@@ -55,7 +55,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
     }()
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Doctor"
+        label.text = "Doctor Office"
 //        label.font = UIFont.boldSystemFont(ofSize: 25)
         label.font = label.font.withSize(20)
         label.textColor = .white
