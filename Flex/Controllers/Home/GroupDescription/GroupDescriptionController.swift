@@ -11,6 +11,7 @@ import UIKit
 class GroupDescriptionController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
     let cellId = "cellId"
+    let viewId = "viewId"
     let cellIds = "headerIds"
     
     override func viewDidLoad() {
@@ -20,7 +21,8 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         collectionView?.backgroundColor = .backgroundGrey
         collectionView?.register(DescriptionCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(DescriptionHeaderCell.self, forCellWithReuseIdentifier: cellIds)
-        
+        collectionView?.register(DescriptionViewCell.self, forCellWithReuseIdentifier: viewId)
+
         setupNavigationBarItems()
         
     }
@@ -35,7 +37,7 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIds, for: indexPath) as! DescriptionHeaderCell
             return cell
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: viewId, for: indexPath) as! DescriptionViewCell
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
@@ -47,6 +49,8 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         switch indexPath.row {
         case 0:
             return CGSize(width: view.frame.width, height: view.frame.height * 4 / 11)
+        case 1:
+            return CGSize(width: view.frame.width, height: view.frame.height / 14)
         default:
             return CGSize(width: view.frame.width, height: 245)
         }

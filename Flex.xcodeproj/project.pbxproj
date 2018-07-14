@@ -50,6 +50,7 @@
 		FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */; };
 		FF8D559B20F881500007D912 /* DescriptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559A20F881500007D912 /* DescriptionHeader.swift */; };
 		FF8D559E20F8816F0007D912 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559D20F8816F0007D912 /* DescriptionCell.swift */; };
+		FF8D55A020F99D170007D912 /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */; };
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
@@ -114,6 +115,7 @@
 		FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupDescriptionController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF8D559A20F881500007D912 /* DescriptionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionHeader.swift; sourceTree = "<group>"; };
 		FF8D559D20F8816F0007D912 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 			children = (
 				FF8D559A20F881500007D912 /* DescriptionHeader.swift */,
 				FF8D559D20F8816F0007D912 /* DescriptionCell.swift */,
+				FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */,
 			);
 			path = Description;
 			sourceTree = SOURCE_ROOT;
@@ -584,6 +587,7 @@
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF4E9BC020F73AF7007025B1 /* GroupTableCell.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
+				FF8D55A020F99D170007D912 /* DescriptionViewCell.swift in Sources */,
 				FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */,
 				FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */,
 				FF4E9BC120F73AF7007025B1 /* GroupHeader.swift in Sources */,

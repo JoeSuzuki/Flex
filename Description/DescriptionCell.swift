@@ -24,4 +24,3 @@ class DescriptionCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
