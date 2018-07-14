@@ -57,6 +57,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "Doctor"
 //        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.font = label.font.withSize(20)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -66,7 +67,7 @@ class DescriptionHeaderCell: UICollectionViewCell {
         button.setTitleColor(.mainBlue, for: .normal)
         button.setImage(#imageLiteral(resourceName: "search"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
-        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -8, bottom: 0, right: 0)
+        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         return button
     }()
     let messageButton: UIButton = {
@@ -100,8 +101,8 @@ class DescriptionHeaderCell: UICollectionViewCell {
         openTimeLabel.anchor(top: descriptionView.topAnchor, leading: descriptionView.leadingAnchor, bottom: locationLabel.topAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         locationLabel.anchor(top: openTimeLabel.bottomAnchor, leading: descriptionView.leadingAnchor, bottom: descriptionView.bottomAnchor, trailing: descriptionView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
         nameStarView.anchor(top: groupImageView.topAnchor, leading: groupImageView.leadingAnchor, bottom: groupImageView.bottomAnchor, trailing: groupImageView.trailingAnchor, padding: .init(top: height * 8, left: 0, bottom: 0, right: 0))
-        nameLabel.anchor(top: nameStarView.topAnchor, leading: nameStarView.leadingAnchor, bottom: nameStarView.bottomAnchor, trailing: starButton.leadingAnchor)
-        starButton.anchor(top: nameStarView.topAnchor, leading: nameLabel.trailingAnchor, bottom: nameStarView.bottomAnchor, trailing: nameStarView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: height, height: height ))
+        nameLabel.anchor(top: nameStarView.topAnchor, leading: nameStarView.leadingAnchor, bottom: nameStarView.bottomAnchor, trailing: starButton.leadingAnchor, padding: .init(top: 0, left: 4, bottom: 8, right: 0))
+        starButton.anchor(top: nameStarView.topAnchor, leading: nameLabel.trailingAnchor, bottom: nameStarView.bottomAnchor, trailing: nameStarView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 8, right: 4), size: .init(width: height * 2, height: height * 2))
 
     }
     
