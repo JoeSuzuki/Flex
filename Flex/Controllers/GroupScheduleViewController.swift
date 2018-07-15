@@ -44,7 +44,7 @@ class GroupScheduleViewController: UICollectionViewController,UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: view.frame.width / 6)
+        return CGSize(width: view.frame.width, height: view.frame.width / 7)
     }
 }
 

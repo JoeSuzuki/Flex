@@ -12,5 +12,4 @@ extension GroupScheduleViewController {
     @objc func buttonsAction(sender: UIButton) {
         print("dddddd")
     }
-
 }

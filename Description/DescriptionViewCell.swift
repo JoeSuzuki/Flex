@@ -14,6 +14,16 @@ class DescriptionViewCell: UICollectionViewCell {
         setupViews()
         backgroundColor = .white
     }
+//    let viewScheduleButton: UISegmentedControl = {
+//        let items = ["DISCRIPTION", "SCHEDULE"]
+//        let segment = UISegmentedControl(items: items)
+//        segment.selectedSegmentIndex = 0
+//        segment.backgroundColor = .mainLightBlue
+//        segment.tintColor = .white
+//        segment.removeBorders()
+//        segment.translatesAutoresizingMaskIntoConstraints = false
+//        return segment
+//    }()
     let viewScheduleButton: UIButton = {
         let button = UIButton()
         button.layer.backgroundColor = UIColor.white.cgColor
@@ -22,7 +32,6 @@ class DescriptionViewCell: UICollectionViewCell {
         button.setTitleColor(.mainBlue, for: .normal)
         return button
     }()
-
     
     func setupViews() {
         addSubview(viewScheduleButton)

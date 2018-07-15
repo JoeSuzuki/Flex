@@ -38,6 +38,8 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: viewId, for: indexPath) as! DescriptionViewCell
+            cell.viewScheduleButton.tag = indexPath.row
+            cell.viewScheduleButton.addTarget(self, action: #selector(buttonsAction(sender:)), for: .touchUpInside)
             return cell
         default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
@@ -60,5 +62,9 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         guard let cell = collectionView.cellForItem(at: indexPath) else { return }
 //        let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
 //        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
+    }
+    @objc func buttonsAction(sender: UIButton) {
+        let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
     }
 }
