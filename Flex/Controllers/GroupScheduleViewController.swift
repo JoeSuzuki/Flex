@@ -27,7 +27,7 @@ class GroupScheduleViewController: UICollectionViewController,UICollectionViewDe
     func removeCollectionViewSpacing() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 0
+        layout.minimumLineSpacing = 5
         collectionView!.collectionViewLayout = layout
     }
     

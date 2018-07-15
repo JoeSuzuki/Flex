@@ -23,7 +23,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 5
+        layout.minimumLineSpacing = 0
         
         collectionView!.collectionViewLayout = layout
 
