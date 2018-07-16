@@ -48,13 +48,14 @@
 		FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA41FF992D40052654F /* ScheduleCell.swift */; };
 		FF8D559720F8806B0007D912 /* GroupDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */; };
 		FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */; };
-		FF8D559B20F881500007D912 /* DescriptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559A20F881500007D912 /* DescriptionHeader.swift */; };
-		FF8D559E20F8816F0007D912 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559D20F8816F0007D912 /* DescriptionCell.swift */; };
-		FF8D55A020F99D170007D912 /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */; };
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
-		FFB6987C20FC4478006CC01B /* EditDescriptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6987B20FC4478006CC01B /* EditDescriptionHeader.swift */; };
+		FFB6988320FC453F006CC01B /* DescriptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6987E20FC453F006CC01B /* DescriptionHeader.swift */; };
+		FFB6988420FC453F006CC01B /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6987F20FC453F006CC01B /* DescriptionViewCell.swift */; };
+		FFB6988520FC453F006CC01B /* EditDescriptionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6988120FC453F006CC01B /* EditDescriptionHeader.swift */; };
+		FFB6988620FC453F006CC01B /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6988220FC453F006CC01B /* DescriptionCell.swift */; };
+		FFB6988820FC45B5006CC01B /* EditDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6988720FC45B5006CC01B /* EditDescriptionController.swift */; };
 		FFC0A49C20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */; };
 		FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */; };
 		FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */; };
@@ -114,13 +115,14 @@
 		FF8C6BA41FF992D40052654F /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDescriptionController.swift; sourceTree = "<group>"; };
 		FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupDescriptionController+NavigationBar.swift"; sourceTree = "<group>"; };
-		FF8D559A20F881500007D912 /* DescriptionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionHeader.swift; sourceTree = "<group>"; };
-		FF8D559D20F8816F0007D912 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
-		FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
-		FFB6987B20FC4478006CC01B /* EditDescriptionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditDescriptionHeader.swift; path = Description/EditDescriptionHeader.swift; sourceTree = SOURCE_ROOT; };
+		FFB6987E20FC453F006CC01B /* DescriptionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionHeader.swift; sourceTree = "<group>"; };
+		FFB6987F20FC453F006CC01B /* DescriptionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
+		FFB6988120FC453F006CC01B /* EditDescriptionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDescriptionHeader.swift; sourceTree = "<group>"; };
+		FFB6988220FC453F006CC01B /* DescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		FFB6988720FC45B5006CC01B /* EditDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDescriptionController.swift; sourceTree = "<group>"; };
 		FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EurekaCreateGroupFormController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateGroupFormController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleViewController.swift; sourceTree = "<group>"; };
@@ -218,8 +220,8 @@
 		FF251C821FF8C3390067AD40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FFB6987D20FC453F006CC01B /* Description */,
 				FF4E9BBC20F73AF7007025B1 /* GroupHome */,
-				FF8D559C20F881550007D912 /* Description */,
 				FF4E9BB920F73AF7007025B1 /* GroupTableView */,
 				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
 				FFE1AF7220F25E9600DA84C7 /* CreateGroupCells */,
@@ -301,6 +303,7 @@
 			children = (
 				FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */,
 				FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */,
+				FFB6988920FC45BF006CC01B /* Edit */,
 			);
 			path = GroupDescription;
 			sourceTree = "<group>";
@@ -315,24 +318,32 @@
 			path = Flex/Supporting;
 			sourceTree = SOURCE_ROOT;
 		};
-		FF8D559C20F881550007D912 /* Description */ = {
+		FFB6987D20FC453F006CC01B /* Description */ = {
 			isa = PBXGroup;
 			children = (
-				FF8D559A20F881500007D912 /* DescriptionHeader.swift */,
-				FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */,
-				FF8D559D20F8816F0007D912 /* DescriptionCell.swift */,
-				FFB6987A20FC440C006CC01B /* Edit */,
+				FFB6987E20FC453F006CC01B /* DescriptionHeader.swift */,
+				FFB6987F20FC453F006CC01B /* DescriptionViewCell.swift */,
+				FFB6988220FC453F006CC01B /* DescriptionCell.swift */,
+				FFB6988020FC453F006CC01B /* Edit */,
 			);
 			path = Description;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		FFB6987A20FC440C006CC01B /* Edit */ = {
+		FFB6988020FC453F006CC01B /* Edit */ = {
 			isa = PBXGroup;
 			children = (
-				FFB6987B20FC4478006CC01B /* EditDescriptionHeader.swift */,
+				FFB6988120FC453F006CC01B /* EditDescriptionHeader.swift */,
 			);
 			path = Edit;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
+		};
+		FFB6988920FC45BF006CC01B /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				FFB6988720FC45B5006CC01B /* EditDescriptionController.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
 		};
 		FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */ = {
 			isa = PBXGroup;
@@ -573,6 +584,7 @@
 				FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */,
 				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
 				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
+				FFB6988820FC45B5006CC01B /* EditDescriptionController.swift in Sources */,
 				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
@@ -594,22 +606,22 @@
 				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */,
 				FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */,
-				FFB6987C20FC4478006CC01B /* EditDescriptionHeader.swift in Sources */,
 				FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */,
 				FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */,
 				FF4E9BC020F73AF7007025B1 /* GroupTableCell.swift in Sources */,
 				FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */,
-				FF8D55A020F99D170007D912 /* DescriptionViewCell.swift in Sources */,
 				FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */,
 				FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */,
+				FFB6988520FC453F006CC01B /* EditDescriptionHeader.swift in Sources */,
 				FF4E9BC120F73AF7007025B1 /* GroupHeader.swift in Sources */,
 				FF788DFA208C7AF30011294C /* PrivatePolicyController.swift in Sources */,
+				FFB6988420FC453F006CC01B /* DescriptionViewCell.swift in Sources */,
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
+				FFB6988620FC453F006CC01B /* DescriptionCell.swift in Sources */,
 				FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */,
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
-				FF8D559B20F881500007D912 /* DescriptionHeader.swift in Sources */,
+				FFB6988320FC453F006CC01B /* DescriptionHeader.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
-				FF8D559E20F8816F0007D912 /* DescriptionCell.swift in Sources */,
 				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
 				FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */,
 				FF8D559720F8806B0007D912 /* GroupDescriptionController.swift in Sources */,
