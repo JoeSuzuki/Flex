@@ -59,7 +59,8 @@ extension GroupDescriptionController {
     }
     
     @objc func buttonAction() {
-        self.dismiss(animated: true, completion: nil)
+        let loginViewController = EditDescriptionController()
+        present(loginViewController, animated: true, completion: nil)
     }
     
     @objc func buttonActions() {
