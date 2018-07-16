@@ -29,6 +29,8 @@ class DescriptionCell: UICollectionViewCell {
         textView.text = "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
         //                label.font = UIFont.boldSystemFont(ofSize: 25)
         //        label.font = label.font.withSize(20)
+        textView.isEditable = false
+        textView.isSelectable = false
         textView.textColor = .black
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
