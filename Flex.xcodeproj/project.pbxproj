@@ -317,8 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				FF8D559A20F881500007D912 /* DescriptionHeader.swift */,
-				FF8D559D20F8816F0007D912 /* DescriptionCell.swift */,
 				FF8D559F20F99D170007D912 /* DescriptionViewCell.swift */,
+				FF8D559D20F8816F0007D912 /* DescriptionCell.swift */,
 			);
 			path = Description;
 			sourceTree = SOURCE_ROOT;

@@ -17,18 +17,30 @@ class DescriptionCell: UICollectionViewCell {
     }
     let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = ""
-        //        label.font = UIFont.boldSystemFont(ofSize: 25)
-//        label.font = label.font.withSize(20)
+        label.text = "Description"
+        //                label.font = UIFont.boldSystemFont(ofSize: 25)
+        //        label.font = label.font.withSize(20)
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    let descriptionTextView: UITextView = {
+        let textView = UITextView()
+        textView.text = "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
+        //                label.font = UIFont.boldSystemFont(ofSize: 25)
+        //        label.font = label.font.withSize(20)
+        textView.textColor = .black
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        return textView
+    }()
 
     func setupViews() {
         addSubview(descriptionLabel)
+        addSubview(descriptionTextView)
+
+        descriptionLabel.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionTextView.topAnchor, trailing: self.trailingAnchor)
         
-        descriptionLabel.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor)
+        descriptionTextView.anchor(top: descriptionLabel.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor)
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
