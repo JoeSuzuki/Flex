@@ -35,6 +35,8 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         switch indexPath.row {
         case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIds, for: indexPath) as! DescriptionHeaderCell
+            cell.messageButton.tag = indexPath.row
+            cell.messageButton.addTarget(self, action: #selector(messageAction(sender:)), for: .touchUpInside)
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: viewId, for: indexPath) as! DescriptionViewCell
@@ -63,8 +65,12 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
 //        let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
 //        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
     }
+    
     @objc func buttonsAction(sender: UIButton) {
         let groupScheduleViewController = GroupScheduleViewController(collectionViewLayout: UICollectionViewFlowLayout())
         present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
+    }
+    @objc func messageAction(sender: UIButton) {
+        print("Message sent")
     }
 }
