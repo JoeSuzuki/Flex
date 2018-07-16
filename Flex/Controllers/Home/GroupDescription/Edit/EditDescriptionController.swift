@@ -11,6 +11,6 @@ import UIKit
 class EditDescriptionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundColor = .white
+        view.backgroundColor = .white
     }
 }
