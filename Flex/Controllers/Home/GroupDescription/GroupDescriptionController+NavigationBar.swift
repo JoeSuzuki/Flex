@@ -60,7 +60,9 @@ extension GroupDescriptionController {
     
     @objc func buttonAction() {
         let loginViewController = EditDescriptionController()
-        present(loginViewController, animated: true, completion: nil)
+        let navigationController = UINavigationController(rootViewController: loginViewController)
+
+        present(navigationController, animated: true, completion: nil)
     }
     
     @objc func buttonActions() {
