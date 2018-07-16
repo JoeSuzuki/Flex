@@ -26,7 +26,7 @@ class DescriptionCell: UICollectionViewCell {
     }()
     let descriptionTextView: UITextView = {
         let textView = UITextView()
-        textView.text = "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
+        textView.text = "DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription"
         //                label.font = UIFont.boldSystemFont(ofSize: 25)
         //        label.font = label.font.withSize(20)
         textView.isEditable = false
@@ -40,7 +40,7 @@ class DescriptionCell: UICollectionViewCell {
         addSubview(descriptionLabel)
         addSubview(descriptionTextView)
 
-        descriptionLabel.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionTextView.topAnchor, trailing: self.trailingAnchor)
+        descriptionLabel.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: descriptionTextView.topAnchor, trailing: self.trailingAnchor, padding: .init(top: 4, left: 4, bottom: 0, right: 0))
         
         descriptionTextView.anchor(top: descriptionLabel.bottomAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor)
     }
