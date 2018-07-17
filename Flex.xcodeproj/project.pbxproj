@@ -13,6 +13,7 @@
 		FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18F209958450054B34D /* ProfileHeader.swift */; };
 		FF12400D20F4283300A1907D /* AuthUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12400C20F4283300A1907D /* AuthUIViewController.swift */; };
 		FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BFBC920AE341600140952 /* AuthService.swift */; };
+		FF1FD6E820FEB6C7000931BB /* GroupLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FD6E720FEB6C7000931BB /* GroupLocationCell.swift */; };
 		FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */; };
 		FF251C501FF844E20067AD40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C4F1FF844E20067AD40 /* AppDelegate.swift */; };
 		FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C511FF844E20067AD40 /* GroupHomeController.swift */; };
@@ -78,6 +79,7 @@
 		FF0BC18F209958450054B34D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		FF12400C20F4283300A1907D /* AuthUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUIViewController.swift; sourceTree = "<group>"; };
 		FF1BFBC920AE341600140952 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FF1FD6E720FEB6C7000931BB /* GroupLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLocationCell.swift; sourceTree = "<group>"; };
 		FF212A23209D8B3400F33FB0 /* UIImageView+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Utility.swift"; sourceTree = "<group>"; };
 		FF251C4C1FF844E20067AD40 /* Flex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF251C4F1FF844E20067AD40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				FFB6988B20FC4985006CC01B /* CreateGroupCells.swift */,
 				FFB6988C20FC4985006CC01B /* BasicGroupInfoCell.swift */,
+				FF1FD6E720FEB6C7000931BB /* GroupLocationCell.swift */,
 			);
 			path = CreateGroupCells;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1FD6E820FEB6C7000931BB /* GroupLocationCell.swift in Sources */,
 				FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */,
 				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
 				FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */,
