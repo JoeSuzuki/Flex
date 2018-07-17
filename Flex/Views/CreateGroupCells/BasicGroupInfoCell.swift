@@ -44,14 +44,14 @@ class BasicGroupInfoCell: UICollectionViewCell {
     }()
     let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Name"
+        label.text = "Description"
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     let availbilityLabel: UILabel = {
         let label = UILabel()
-        label.text = "Name"
+        label.text = "Availbility"
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
