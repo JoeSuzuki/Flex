@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class GroupLocationCell: UICollectionViewCell {
     // Location
@@ -14,8 +15,16 @@ class GroupLocationCell: UICollectionViewCell {
         super.init(frame: frame)
         setupViews()
     }
+    let mapView: MKMapView = {
+        let map = MKMapView()
+        return map
+    }()
+    
     func setupViews() {
         backgroundColor = .white
+        addSubview(mapView)
+        
+        mapView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor)
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
