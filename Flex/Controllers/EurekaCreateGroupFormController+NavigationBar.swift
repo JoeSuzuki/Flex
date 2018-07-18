@@ -19,7 +19,7 @@ extension EurekaCreateGroupFormController {
         navigationItem.title = "Create a Group"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24),NSAttributedStringKey.foregroundColor: UIColor.white]
         
-        navigationController?.navigationBar.barTintColor = .mainBlue
+        navigationController?.navigationBar.barTintColor = .mainLightBlue
         navigationController?.navigationBar.isTranslucent = false
         
         navigationController?.navigationBar.shadowImage = UIImage()
