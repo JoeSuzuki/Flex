@@ -27,14 +27,11 @@
 		FF2B1C082097FB1400749210 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B1C072097FB1400749210 /* GroupService.swift */; };
 		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
 		FF3935F52044DAAA004D5677 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935F42044DAAA004D5677 /* UserService.swift */; };
-		FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4645201C5A3600D2EDAD /* Group.swift */; };
-		FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4647201C5FBC00D2EDAD /* User.swift */; };
 		FF3C464A201DA62800D2EDAD /* UISegmentedControl+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */; };
 		FF4E9BBF20F73AF7007025B1 /* GroupTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBA20F73AF7007025B1 /* GroupTableHeader.swift */; };
 		FF4E9BC020F73AF7007025B1 /* GroupTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBB20F73AF7007025B1 /* GroupTableCell.swift */; };
 		FF4E9BC120F73AF7007025B1 /* GroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBD20F73AF7007025B1 /* GroupHeader.swift */; };
 		FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4E9BBE20F73AF7007025B1 /* GroupCell.swift */; };
-		FF5078F1203108740016D484 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5078F0203108740016D484 /* Time.swift */; };
 		FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5839E820AD6769002AABFA /* TabBarController.swift */; };
 		FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */; };
 		FF6A4B5920F61A20001421F9 /* GroupTableViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */; };
@@ -95,16 +92,13 @@
 		FF2B1C072097FB1400749210 /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
 		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF3935F42044DAAA004D5677 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		FF3C4645201C5A3600D2EDAD /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
-		FF3C4647201C5FBC00D2EDAD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FF3C4649201DA62800D2EDAD /* UISegmentedControl+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Utility.swift"; sourceTree = "<group>"; };
 		FF4E9BBA20F73AF7007025B1 /* GroupTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableHeader.swift; sourceTree = "<group>"; };
 		FF4E9BBB20F73AF7007025B1 /* GroupTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableCell.swift; sourceTree = "<group>"; };
 		FF4E9BBD20F73AF7007025B1 /* GroupHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupHeader.swift; sourceTree = "<group>"; };
 		FF4E9BBE20F73AF7007025B1 /* GroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
-		FF5078F0203108740016D484 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FF5839E820AD6769002AABFA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewController.swift; sourceTree = "<group>"; };
+		FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupTableViewController.swift; path = ../GroupTableViewController.swift; sourceTree = "<group>"; };
 		FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupTableViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FF72017E20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewContorller+Service.swift"; sourceTree = "<group>"; };
 		FF788DF9208C7AF30011294C /* PrivatePolicyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePolicyController.swift; sourceTree = "<group>"; };
@@ -133,6 +127,9 @@
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
+		FFD7A7F420FEF1F200C6C24E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FFD7A7F520FEF1F200C6C24E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FFD7A7F620FEF1F200C6C24E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FFDBC92E20F5ADAE00B88315 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
@@ -190,8 +187,8 @@
 			children = (
 				FF251C4F1FF844E20067AD40 /* AppDelegate.swift */,
 				FF251C7F1FF864D60067AD40 /* Controllers */,
-				FF251C871FF8C5FF0067AD40 /* Models */,
 				FF251C821FF8C3390067AD40 /* Views */,
+				FFD7A7F720FEF1F200C6C24E /* Models */,
 				FF251C8C1FF8D7CF0067AD40 /* Extensions */,
 				FF3935EF204243D2004D5677 /* Services */,
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
@@ -213,8 +210,7 @@
 				FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */,
 				FFC0A4A420EB3723007F39F7 /* GroupSchedule */,
 				FF5839E820AD6769002AABFA /* TabBarController.swift */,
-				FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */,
-				FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */,
+				FF5B6F8E20FEF12F00BDEE56 /* TableViewTest */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -235,17 +231,6 @@
 			);
 			name = Views;
 			path = Flex/Views;
-			sourceTree = SOURCE_ROOT;
-		};
-		FF251C871FF8C5FF0067AD40 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FF3C4647201C5FBC00D2EDAD /* User.swift */,
-				FF3C4645201C5A3600D2EDAD /* Group.swift */,
-				FF5078F0203108740016D484 /* Time.swift */,
-			);
-			name = Models;
-			path = Flex/Models;
 			sourceTree = SOURCE_ROOT;
 		};
 		FF251C8C1FF8D7CF0067AD40 /* Extensions */ = {
@@ -298,6 +283,24 @@
 				FF4E9BBE20F73AF7007025B1 /* GroupCell.swift */,
 			);
 			path = GroupHome;
+			sourceTree = "<group>";
+		};
+		FF5B6F8D20FEF10F00BDEE56 /* Eureka */ = {
+			isa = PBXGroup;
+			children = (
+				FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */,
+				FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */,
+			);
+			name = Eureka;
+			sourceTree = "<group>";
+		};
+		FF5B6F8E20FEF12F00BDEE56 /* TableViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF6A4B5620F6187E001421F9 /* GroupTableViewController.swift */,
+				FF6A4B5820F61A20001421F9 /* GroupTableViewController+NavigationBar.swift */,
+			);
+			path = TableViewTest;
 			sourceTree = "<group>";
 		};
 		FF6A4B5520F6182B001421F9 /* GroupDescription */ = {
@@ -360,8 +363,7 @@
 		FFC0A49F20EB22C7007F39F7 /* CreateGroupForm */ = {
 			isa = PBXGroup;
 			children = (
-				FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */,
-				FFC0A49B20EB1EF0007F39F7 /* EurekaCreateGroupFormController+NavigationBar.swift */,
+				FF5B6F8D20FEF10F00BDEE56 /* Eureka */,
 				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
 				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
 			);
@@ -416,6 +418,17 @@
 			);
 			path = "Profile+Setting";
 			sourceTree = "<group>";
+		};
+		FFD7A7F720FEF1F200C6C24E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFD7A7F420FEF1F200C6C24E /* Time.swift */,
+				FFD7A7F520FEF1F200C6C24E /* User.swift */,
+				FFD7A7F620FEF1F200C6C24E /* Group.swift */,
+			);
+			name = Models;
+			path = /Users/Joesuzuki/Documents/GitHub/Flex/Flex/Models;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -586,10 +599,8 @@
 				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
 				FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */,
 				FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */,
-				FF3C4646201C5A3600D2EDAD /* Group.swift in Sources */,
 				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
 				FFB6988820FC45B5006CC01B /* EditDescriptionController.swift in Sources */,
-				FF5078F1203108740016D484 /* Time.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
 				FF12400D20F4283300A1907D /* AuthUIViewController.swift in Sources */,
@@ -606,7 +617,6 @@
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
 				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
 				FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */,
-				FF3C4648201C5FBC00D2EDAD /* User.swift in Sources */,
 				FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */,
 				FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */,
 				FF5839E920AD6769002AABFA /* TabBarController.swift in Sources */,

@@ -13,6 +13,7 @@ class EditDescriptionController: UIViewController {
         let views = BasicGroupInfoCell()
         return views
     }()
+    
     let groupLocationCell: UIView = {
         let views = GroupLocationCell()
         return views
