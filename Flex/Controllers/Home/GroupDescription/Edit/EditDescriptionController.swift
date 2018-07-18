@@ -9,8 +9,16 @@
 import UIKit
 
 class EditDescriptionController: UIViewController {
+    let viewId = "viewId"
+ 
+    let views: UIView = {
+        let views = BasicGroupInfoCell()
+        return views
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        view.addSubview(views)
+        views.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
 }
