@@ -1,15 +1,14 @@
 //
-//  GroupDescriptionController+NavigationBar.swift
+//  EditDescriptionController+Navigationbar.swift
 //  Flex
 //
-//  Created by Joe Suzuki on 7/13/18.
+//  Created by Joe Suzuki on 7/18/18.
 //  Copyright © 2018 Joe Suzuki. All rights reserved.
 //
 
 import UIKit
 
-extension GroupDescriptionController {
-    
+extension EditDescriptionController {
     func setupNavigationBarItems() {
         setupRightNavItems()
         setupLeftNavItems()
@@ -59,12 +58,11 @@ extension GroupDescriptionController {
     }
     
     @objc func buttonAction() {
-        let loginViewController = EditDescriptionController()
-        let navigationController = UINavigationController(rootViewController: loginViewController)
-        self.navigationController?.pushViewController(navigationController, animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func buttonActions() {
         self.dismiss(animated: true, completion: nil)
     }
 }
+

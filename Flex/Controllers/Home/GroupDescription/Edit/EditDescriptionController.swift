@@ -21,6 +21,7 @@ class EditDescriptionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        setupNavigationBarItems()
     }
     func setupViews() {
         view.addSubview(basicGroupInfoCell)
