@@ -9,13 +9,10 @@
 import UIKit
 
 class ProfileViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
-    
     let cellId = "cellId"
     let headerId = "headerId"
     let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
     let companeyArray = ["Suzuki", "Apple", "SpaceX"]
-    
-    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,4 +49,3 @@ class ProfileViewController: UICollectionViewController,UICollectionViewDelegate
             return CGSize(width: view.frame.width, height: view.frame.width / 2)
     }
 }
-

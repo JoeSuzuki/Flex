@@ -18,11 +18,13 @@ class EditDescriptionController: UIViewController {
         let views = GroupLocationCell()
         return views
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setupNavigationBarItems()
     }
+    
     func setupViews() {
         view.addSubview(basicGroupInfoCell)
         view.addSubview(groupLocationCell)

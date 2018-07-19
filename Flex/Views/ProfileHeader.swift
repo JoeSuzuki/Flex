@@ -23,12 +23,12 @@ class ProfileHeaderCell: UICollectionViewCell {
     }()
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "sim2")
+        imageView.image = UIImage(named: "AppLogo")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.layer.borderColor = UIColor.mainBlue.cgColor
-        imageView.layer.borderWidth = 2
+//        imageView.layer.borderColor = UIColor.mainBlue.cgColor
+//        imageView.layer.borderWidth = 2
         return imageView
     }()
     let fullnameView: UIView = {
