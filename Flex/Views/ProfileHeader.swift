@@ -87,11 +87,11 @@ class ProfileHeaderCell: UICollectionViewCell {
 //        addSubview(text3Label)
 
         profileImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        profileImageView.topAnchor.constraint(equalTo: self.topAnchor)
-        profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
-        profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
+//        profileImageView.topAnchor.constraint(equalTo: self.topAnchor)
+//        profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
+//        profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
+        profileImageView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: self.frame.width / 3, height: self.frame.width / 3))
         profileImageView.layer.cornerRadius = frame.size.width / 6
-        
 
     }
     required init?(coder aDecoder: NSCoder) {
