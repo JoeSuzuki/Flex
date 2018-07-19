@@ -11,26 +11,24 @@ import UIKit
 class ProfileViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     let cellId = "cellId"
     let headerId = "headerId"
-    let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
-    let companeyArray = ["Suzuki", "Apple", "SpaceX"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
         collectionView?.backgroundColor = .mainBlue
-        collectionView?.register(ProfileCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(ProfileGroupCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(ProfileHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         setupNavigationBarItems()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return nameArray.count
+        return 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ProfileCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! ProfileGroupCell
         return cell
     }
     
