@@ -63,6 +63,9 @@
 		FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */; };
 		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
 		FFDBC92F20F5ADAF00B88315 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFDBC92E20F5ADAE00B88315 /* awsconfiguration.json */; };
+		FFE9578A20FFF93F00005039 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9578720FFF93F00005039 /* Time.swift */; };
+		FFE9578B20FFF93F00005039 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9578820FFF93F00005039 /* User.swift */; };
+		FFE9578C20FFF93F00005039 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9578920FFF93F00005039 /* Group.swift */; };
 		FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */; };
 		FFF022F9208598DB00BA6548 /* HandleRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */; };
 /* End PBXBuildFile section */
@@ -127,10 +130,10 @@
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
-		FFD7A7F420FEF1F200C6C24E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		FFD7A7F520FEF1F200C6C24E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FFD7A7F620FEF1F200C6C24E /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FFDBC92E20F5ADAE00B88315 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		FFE9578720FFF93F00005039 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		FFE9578820FFF93F00005039 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FFE9578920FFF93F00005039 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FFEED1B620941A7B00ADDB08 /* NSDate+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate+Time.swift"; sourceTree = "<group>"; };
 		FFF022F8208598DB00BA6548 /* HandleRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,8 +191,8 @@
 				FF251C4F1FF844E20067AD40 /* AppDelegate.swift */,
 				FF251C7F1FF864D60067AD40 /* Controllers */,
 				FF251C821FF8C3390067AD40 /* Views */,
-				FFD7A7F720FEF1F200C6C24E /* Models */,
 				FF251C8C1FF8D7CF0067AD40 /* Extensions */,
+				FFE9578620FFF93F00005039 /* Models */,
 				FF3935EF204243D2004D5677 /* Services */,
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
@@ -419,16 +422,16 @@
 			path = "Profile+Setting";
 			sourceTree = "<group>";
 		};
-		FFD7A7F720FEF1F200C6C24E /* Models */ = {
+		FFE9578620FFF93F00005039 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FFD7A7F420FEF1F200C6C24E /* Time.swift */,
-				FFD7A7F520FEF1F200C6C24E /* User.swift */,
-				FFD7A7F620FEF1F200C6C24E /* Group.swift */,
+				FFE9578720FFF93F00005039 /* Time.swift */,
+				FFE9578820FFF93F00005039 /* User.swift */,
+				FFE9578920FFF93F00005039 /* Group.swift */,
 			);
 			name = Models;
-			path = /Users/Joesuzuki/Documents/GitHub/Flex/Flex/Models;
-			sourceTree = "<absolute>";
+			path = Flex/Models;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -629,6 +632,7 @@
 				FFB6988520FC453F006CC01B /* EditDescriptionHeader.swift in Sources */,
 				FF4E9BC120F73AF7007025B1 /* GroupHeader.swift in Sources */,
 				FF788DFA208C7AF30011294C /* PrivatePolicyController.swift in Sources */,
+				FFE9578C20FFF93F00005039 /* Group.swift in Sources */,
 				FFB6988420FC453F006CC01B /* DescriptionViewCell.swift in Sources */,
 				FFB6988D20FC4985006CC01B /* CreateGroupCells.swift in Sources */,
 				FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */,
@@ -636,6 +640,8 @@
 				FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */,
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
 				FFB6988320FC453F006CC01B /* DescriptionHeader.swift in Sources */,
+				FFE9578A20FFF93F00005039 /* Time.swift in Sources */,
+				FFE9578B20FFF93F00005039 /* User.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
 				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
 				FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */,

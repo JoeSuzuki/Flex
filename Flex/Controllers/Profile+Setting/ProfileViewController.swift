@@ -14,7 +14,6 @@ class ProfileViewController: UICollectionViewController,UICollectionViewDelegate
     let headerId = "headerId"
     let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
     let companeyArray = ["Suzuki", "Apple", "SpaceX"]
-    var group = [Group]()
     
     var timer: Timer?
     
