@@ -26,7 +26,6 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
         collectionView?.register(GroupHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         setupNavigationBarItems()
-        
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
