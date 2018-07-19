@@ -41,7 +41,7 @@ class ProfileHeaderCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "Joe Suzuki"
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = UIFont.boldSystemFont(ofSize: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -80,18 +80,16 @@ class ProfileHeaderCell: UICollectionViewCell {
         addSubview(profileImageView)
 //        addSubview(textContainerView)
 //        addSubview(fullnameView)
-//        addSubview(fullnameLabel)
+        addSubview(fullnameLabel)
 //        addSubview(text2View)
 //        addSubview(text2Label)
 //        addSubview(text3View)
 //        addSubview(text3Label)
 
         profileImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-//        profileImageView.topAnchor.constraint(equalTo: self.topAnchor)
-//        profileImageView.heightAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
-//        profileImageView.widthAnchor.constraint(equalToConstant: self.frame.width / 3).isActive = true
         profileImageView.anchor(top: self.topAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: self.frame.width / 3, height: self.frame.width / 3))
-//        profileImageView.layer.cornerRadius = layer.frame.width / 6
+        fullnameLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        fullnameLabel.anchor(top: profileImageView.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
 
     }
     required init?(coder aDecoder: NSCoder) {
