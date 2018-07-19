@@ -23,10 +23,10 @@ class EditDescriptionController: UIViewController {
         setupViews()
     }
     func setupViews() {
-        view.addSubview(basicGroupInfoCell)
-        view.addSubview(groupLocationCell)
-        
-        basicGroupInfoCell.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: groupLocationCell.topAnchor, trailing: view.trailingAnchor)
-        groupLocationCell.anchor(top: basicGroupInfoCell.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+//        view.addSubview(basicGroupInfoCell)
+//        view.addSubview(groupLocationCell)
+//        
+//        basicGroupInfoCell.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: groupLocationCell.topAnchor, trailing: view.trailingAnchor)
+//        groupLocationCell.anchor(top: basicGroupInfoCell.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
 }
