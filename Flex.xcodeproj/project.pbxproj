@@ -231,11 +231,8 @@
 				FF4E9BB920F73AF7007025B1 /* GroupTableView */,
 				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
 				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
-				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
-				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
-				FF0BC18D2099582F0054B34D /* ProfileCell.swift */,
-				FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */,
-				FF0BC18F209958450054B34D /* ProfileHeader.swift */,
+				FF3C5BF1210183210082BAEC /* Schedule */,
+				FF3C5BF02101830F0082BAEC /* Profile */,
 			);
 			name = Views;
 			path = Flex/Views;
@@ -274,6 +271,25 @@
 			);
 			path = Services;
 			sourceTree = "<group>";
+		};
+		FF3C5BF02101830F0082BAEC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FF0BC18F209958450054B34D /* ProfileHeader.swift */,
+				FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */,
+				FF0BC18D2099582F0054B34D /* ProfileCell.swift */,
+			);
+			path = Profile;
+			sourceTree = SOURCE_ROOT;
+		};
+		FF3C5BF1210183210082BAEC /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
+				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
+			);
+			path = Schedule;
+			sourceTree = SOURCE_ROOT;
 		};
 		FF4E9BB920F73AF7007025B1 /* GroupTableView */ = {
 			isa = PBXGroup;
@@ -571,7 +587,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
