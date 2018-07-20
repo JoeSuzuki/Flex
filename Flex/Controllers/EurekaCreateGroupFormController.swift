@@ -18,22 +18,27 @@ class EurekaCreateGroupFormController: FormViewController {
         form +++ Section("Basic Info")
             <<< NameRow(){ row in
                 row.title = "Name"
+                row.tag = "Name"
                 row.placeholder = "Enter your group name"
             }
             <<< NameRow(){ row in
                 row.title = "Location"
+                row.tag = "Location"
                 row.placeholder = "Enter the location of the venue"
             }
             <<< NameRow(){ row in
                 row.title = "Description"
+                row.tag = "Description"
                 row.placeholder = "Enter the description"
             }
             <<< TextRow(){ row in
                 row.title = "Open Time"
+                row.tag = "Open Time"
                 row.placeholder = "Enter open time here"
             }
             <<< TextRow(){ row in
                 row.title = "End Time"
+                row.tag = "End Time"
                 row.placeholder = "Enter end time here"
             }
 
