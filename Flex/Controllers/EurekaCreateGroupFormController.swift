@@ -48,12 +48,14 @@ class EurekaCreateGroupFormController: FormViewController {
             <<< MultipleSelectorRow<String>() {
                 $0.title = "Availability"
                 $0.selectorTitle = "Availability"
+                $0.tag = "Availability"
                 $0.options = ["Sunday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday"]
             }
             
             +++ Section("")
             <<< ImageRow() {
                 $0.title = "Profile Picture"
+                $0.tag = "Profile Picture"
                 $0.sourceTypes = [.PhotoLibrary, .SavedPhotosAlbum]
                 $0.clearAction = .yes(style: .default)
                 }
@@ -65,10 +67,12 @@ class EurekaCreateGroupFormController: FormViewController {
             +++ Section("Contact Details")
             <<< EmailRow(){
                 $0.title = "Email"
+                $0.tag = "Email"
                 $0.placeholder = "Enter your email"
             }
             <<< PhoneRow() {
                 $0.title = "Phone Number"
+                $0.tag = "Phone Number"
                 $0.placeholder = "(###) ###-####"
         }
         // Enables the navigation accessory and stops navigation when a disabled row is encountered
