@@ -59,9 +59,8 @@ extension GroupDescriptionController {
     }
     
     @objc func buttonAction() {
-        let loginViewController = EditDescriptionController()
-        let navigationController = UINavigationController(rootViewController: loginViewController)
-        self.navigationController?.pushViewController(navigationController, animated: true)
+        let groupScheduleViewController = EditDescriptionController(collectionViewLayout: UICollectionViewFlowLayout())
+        present(UINavigationController(rootViewController: groupScheduleViewController), animated: true, completion: nil)
     }
     
     @objc func buttonActions() {
