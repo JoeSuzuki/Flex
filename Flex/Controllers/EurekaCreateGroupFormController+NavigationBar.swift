@@ -58,7 +58,7 @@ extension EurekaCreateGroupFormController {
     }
     
     @objc func cancelButton() {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func submitButton() {

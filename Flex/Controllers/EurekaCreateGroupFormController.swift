@@ -20,9 +20,17 @@ class EurekaCreateGroupFormController: FormViewController {
                 row.title = "Name"
                 row.placeholder = "Enter your group name"
             }
-            <<< LocationRow("location") {
-                $0.title = "Location"
+            <<< NameRow(){ row in
+                row.title = "Location"
+                row.placeholder = "Enter the location of the venue"
             }
+            <<< NameRow(){ row in
+                row.title = "Description"
+                row.placeholder = "Enter the description"
+            }
+//            <<< LocationRow("location") {
+//                $0.title = "Location"
+//            }
             <<< MultipleSelectorRow<String>() {
                 $0.title = "Availability"
                 $0.selectorTitle = "Availability"
