@@ -20,6 +20,12 @@
       "Region": "us-east-1"
     }
   },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "flex-deployments-mobilehub-329659210",
+      "Region": "us-east-1"
+    }
+  },
   "PinpointAnalytics": {
     "Default": {
       "AppId": "83e6fd1117b44442b1c00052b2cd2bf4",
