@@ -9,7 +9,6 @@
 import UIKit
 
 class GroupDescriptionController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
-    
     let cellId = "cellId"
     let viewId = "viewId"
     let cellIds = "headerIds"

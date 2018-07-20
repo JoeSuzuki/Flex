@@ -8,16 +8,10 @@
 
 import UIKit
 
-class EditDescriptionController: UIViewController {
-    let basicGroupInfoCell: UIView = {
-        let views = BasicGroupInfoCell()
-        return views
-    }()
-    
-    let groupLocationCell: UIView = {
-        let views = GroupLocationCell()
-        return views
-    }()
+class EditDescriptionController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
+    let cellId = "cellId"
+    let viewId = "viewId"
+    let cellIds = "headerIds"
     
     override func viewDidLoad() {
         super.viewDidLoad()
