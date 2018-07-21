@@ -40,5 +40,21 @@
   "FacebookSignIn": {
     "AppId": "197321650958674",
     "Permissions": "public_profile"
-  }
+  },
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": [
+          "dynamodb:DeleteItem",
+          "dynamodb:GetItem",
+          "dynamodb:PutItem",
+          "dynamodb:Scan",
+          "dynamodb:Query",
+          "dynamodb:UpdateItem",
+          "dynamodb:BatchWriteItem"
+          ],
+       "Resource": [
+        "arn:aws:dynamodb:us-east-1:687403039800:table/Flex",
+        "arn:aws:dynamodb:us-east-1:687403039800:table/Flex/index/*"
+       ]
+    }]
 }
