@@ -13,7 +13,7 @@ target 'Flex' do
   pod 'AWSFacebookSignIn', '~> 2.6.13'
   pod 'AWSS3', '~> 2.6.13'            # For file transfers
   pod 'AWSCognito', '~> 2.6.13'       # For data sync
-
+  pod 'AWSDynamoDB', '~> 2.6.13'      # Connect to NoSQL database tables
   pod 'Kingfisher', '~> 4.0'
   
   pod 'Eureka'

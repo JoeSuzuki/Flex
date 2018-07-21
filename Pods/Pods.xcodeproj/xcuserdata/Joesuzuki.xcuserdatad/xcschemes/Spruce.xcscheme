@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A04265046AEA72A528F2CBDCCB001276'
+               BlueprintIdentifier = 'B3D00641291DDC89BB6EBAA7EAA51E9A'
                BlueprintName = 'Spruce'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Spruce.framework'>
