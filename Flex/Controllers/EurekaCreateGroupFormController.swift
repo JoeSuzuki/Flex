@@ -10,6 +10,16 @@ import Eureka
 import ImageRow
 
 class EurekaCreateGroupFormController: FormViewController {
+    let nameRow: String = ""
+    let location: String = ""
+    let descriptionValue: String = ""
+    let openTime: String = ""
+    let endTime: String = ""
+    
+    let availability: String? = nil
+    let profilePicture: String? = nil
+    let email: String? = nil
+    let phoneNumber: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

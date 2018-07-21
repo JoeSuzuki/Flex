@@ -63,16 +63,6 @@ extension EurekaCreateGroupFormController {
     }
     
     @objc func submitButton() {
-        let nameRow: NameRow? = form.rowBy(tag: "Name")
-        let location: TextRow? = form.rowBy(tag: "Location")
-        let description: TextRow? = form.rowBy(tag: "Description")
-        let openTime: TextRow? = form.rowBy(tag: "Open Time")
-        let endTime: TextRow? = form.rowBy(tag: "End Time")
-
-        let availability: Section?  = form.sectionBy(tag: "Availability")
-        let profilePicture: Section?  = form.sectionBy(tag: "Profile Picture")
-        let email: Section?  = form.sectionBy(tag: "Email")
-        let phoneNumber: Section?  = form.sectionBy(tag: "Phone Number")
 
         print(nameRow)
         print(availability)
