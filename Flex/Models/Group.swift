@@ -7,25 +7,38 @@
 //
 
 import Foundation
+import UIKit
+import AWSDynamoDB
 
-class Group {
-    let ownerName: String
-    let groupName: String
-    let location: String?
-    let time = Date()
-    let startCloseTime: [Date: Date]?
-    let openDays: [String]?
-    let groupBio: String?
-    let groupImage: String?
+class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
-    init(groupName : String, location : String?, startCloseTime : [Date: Date]?, openDays : [String]?, groupBio : String?, groupImage : String?) {
-        self.ownerName = "joe"
-        self.groupName = groupName
-        self.location = location
-        self.startCloseTime = startCloseTime
-        self.openDays = openDays
-        self.groupBio = groupBio
-        self.groupImage = groupImage
+    @objc var _isbn: String?
+    @objc var _category: String?
+    @objc var _ownerName: String
+    @objc var _groupName: String
+    @objc var _location: String?
+    @objc var _time = Date()
+    @objc var _startCloseTime: [Date: Date]?
+    @objc var _openDays: [String]?
+    @objc var _groupBio: String?
+    @objc var _groupImage: String?
+
+    class func dynamoDBTableName() -> String {
+        return "Group"
+    }
+    
+    class func hashKeyAttribute() -> String {
+        return "_isbn"
+    }
+    
+    class func rangeKeyAttribute() -> String {
+        return "_category"
+    }
+    
+    override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
+        return [
+            "_isbn" : "ISBN",
+            "_category" : "Category"
+        ]
     }
 }
-
