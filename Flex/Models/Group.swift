@@ -14,10 +14,9 @@ class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     @objc var _isbn: String?
     @objc var _category: String?
-    @objc var _ownerName: String
-    @objc var _groupName: String
+    @objc var _ownerName: String?
+    @objc var _groupName: String?
     @objc var _location: String?
-    @objc var _time = Date()
     @objc var _startCloseTime: [Date: Date]?
     @objc var _openDays: [String]?
     @objc var _groupBio: String?
