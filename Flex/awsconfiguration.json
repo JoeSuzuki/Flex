@@ -14,7 +14,7 @@
   },
   "DynamoDBObjectMapper": {
     "Default": {
-        "Region": "DYNAMODB-REGION"
+        "Region": "us-east-1"
         }
     },
   "CognitoUserPool": {
