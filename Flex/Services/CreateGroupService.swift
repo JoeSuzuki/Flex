@@ -6,9 +6,9 @@
 //  Copyright © 2018 Joe Suzuki. All rights reserved.
 //
 
-import UIKit
+import Foundation
 import AWSCore
-import AWSS3
+import AWSDynamoDB
 
 struct CreateGroupService {
     
