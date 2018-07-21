@@ -74,6 +74,8 @@ extension EurekaCreateGroupFormController {
         let email: Section?  = form.sectionBy(tag: "Email")
         let phoneNumber: Section?  = form.sectionBy(tag: "Phone Number")
 
-        self.navigationController?.popViewController(animated: true)
+        print(nameRow)
+        print(availability)
+//        self.navigationController?.popViewController(animated: true)
     }
 }
