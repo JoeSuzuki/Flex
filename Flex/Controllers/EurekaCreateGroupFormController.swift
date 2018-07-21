@@ -10,16 +10,16 @@ import Eureka
 import ImageRow
 
 class EurekaCreateGroupFormController: FormViewController {
-    let nameRow: String = ""
-    let location: String = ""
-    let descriptionValue: String = ""
-    let openTime: String = ""
-    let endTime: String = ""
+    var nameRow: String = ""
+    var location: String = ""
+    var descriptionValue: String = ""
+    var openTime: String = ""
+    var endTime: String = ""
     
-    let availability: String? = nil
-    let profilePicture: String? = nil
-    let email: String? = nil
-    let phoneNumber: String? = nil
+    var availability: String? = nil
+    var profilePicture: String? = nil
+    var email: String? = nil
+    var phoneNumber: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,27 +30,37 @@ class EurekaCreateGroupFormController: FormViewController {
                 row.title = "Name"
                 row.tag = "Name"
                 row.placeholder = "Enter your group name"
-            }
+                }.onChange({ (row) in
+                    self.nameRow = row.value != nil ? row.value! : "" //updating the value on change
+                })
             <<< TextRow(){ row in
                 row.title = "Location"
                 row.tag = "Location"
                 row.placeholder = "Enter the location of the venue"
-            }
+                }.onChange({ (row) in
+                    self.location = row.value != nil ? row.value! : "" //updating the value on change
+                })
             <<< TextRow(){ row in
                 row.title = "Description"
                 row.tag = "Description"
                 row.placeholder = "Enter the description"
-            }
+                }.onChange({ (row) in
+                    self.descriptionValue = row.value != nil ? row.value! : "" //updating the value on change
+                })
             <<< TextRow(){ row in
                 row.title = "Open Time"
                 row.tag = "Open Time"
                 row.placeholder = "Enter open time here"
-            }
+                }.onChange({ (row) in
+                    self.openTime = row.value != nil ? row.value! : "" //updating the value on change
+                })
             <<< TextRow(){ row in
                 row.title = "End Time"
                 row.tag = "End Time"
                 row.placeholder = "Enter end time here"
-            }
+                }.onChange({ (row) in
+                    self.endTime = row.value != nil ? row.value! : "" //updating the value on change
+                })
 
 //            <<< LocationRow("location") {
 //                $0.title = "Location"

@@ -63,9 +63,8 @@ extension EurekaCreateGroupFormController {
     }
     
     @objc func submitButton() {
-
         print(nameRow)
-        print(availability)
+        print(location)
 //        self.navigationController?.popViewController(animated: true)
     }
 }
