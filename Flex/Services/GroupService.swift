@@ -12,6 +12,7 @@ struct GroupService {
     
     public func setupCategories(_ catergoryName: String) {
     }
+    
 }
 
 

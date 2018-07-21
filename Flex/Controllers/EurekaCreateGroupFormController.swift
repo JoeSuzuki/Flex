@@ -65,6 +65,7 @@ class EurekaCreateGroupFormController: FormViewController {
 //            <<< LocationRow("location") {
 //                $0.title = "Location"
 //            }
+            
             <<< MultipleSelectorRow<String>() {
                 $0.title = "Availability"
                 $0.selectorTitle = "Availability"
