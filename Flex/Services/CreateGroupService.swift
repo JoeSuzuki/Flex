@@ -106,14 +106,14 @@ struct CreateGroupService {
         // Make the query
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         
-        dynamoDbObjectMapper.query(Books.self, expression: queryExpression) { (output: AWSDynamoDBPaginatedOutput?, error: Error?) in
+        dynamoDbObjectMapper.query(Groups.self, expression: queryExpression) { (output: AWSDynamoDBPaginatedOutput?, error: Error?) in
             if error != nil {
                 print("The request failed. Error: \(String(describing: error))")
             }
             if output != nil {
-                for books in output!.items {
-                    let booksItem = books as? Books
-                    print("\(booksItem!._title!)")
+                for groups in output!.items {
+                    let groupsItem = groups as? Groups
+                    print("\(groupsItem!._groupName!)")
                 }
             }
         }
