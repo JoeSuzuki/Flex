@@ -74,4 +74,19 @@ struct CreateGroupService {
             print("An item was updated.")
         })
     }
+    func deleteBooks() {
+        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
+        
+        let itemToDelete = Groups()
+        itemToDelete?._isbn = "1234"
+        itemToDelete?._category = "Test"
+        
+        dynamoDbObjectMapper.remove(itemToDelete!, completionHandler: {(error: Error?) -> Void in
+            if let error = error {
+                print(" Amazon DynamoDB Save Error: \(error)")
+                return
+            }
+            print("An item was deleted.")
+        })
+    }
 }
