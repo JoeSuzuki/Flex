@@ -11,7 +11,7 @@ import AWSCore
 import AWSDynamoDB
 
 struct CreateGroupService {
-    func createGroups() {
+    static func createGroups() {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         let groupsItem: Groups = Groups()
         
