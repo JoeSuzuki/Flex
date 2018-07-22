@@ -52,5 +52,26 @@ struct CreateGroupService {
                 print("An item was read.")
         })
     }
-    
+    func updateBooks() {
+        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
+        let groupsItem: Groups = Groups()
+
+        groupsItem._isbn = "1234"
+        groupsItem._category = "Tech"
+        groupsItem._ownerName = "Joe Suzuki"
+        groupsItem._groupName = "Doctor Office"
+        groupsItem._location = "New York"
+        //        groupsItem._startCloseTime = ""
+        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday"]
+        groupsItem._groupBio = ""
+        groupsItem._groupImage = ""
+
+        dynamoDbObjectMapper.save(groupsItem, completionHandler: {(error: Error?) -> Void in
+            if let error = error {
+                print(" Amazon DynamoDB Save Error: \(error)")
+                return
+            }
+            print("An item was updated.")
+        })
+    }
 }
