@@ -35,7 +35,22 @@ struct CreateGroupService {
             print("An item was saved.")
         })
     }
+    func readGroups() {
+        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
+        let groupsItem: Groups = Groups()
+        
+        dynamoDbObjectMapper.load(
+            Groups.self,
+            hashKey: "1234",
+            rangeKey: "Test",
+            completionHandler: {
+                (objectModel: AWSDynamoDBObjectModel?, error: Error?) -> Void in
+                if let error = error {
+                    print("Amazon DynamoDB Read Error: \(error)")
+                    return
+                }
+                print("An item was read.")
+        })
+    }
     
-
 }
-
