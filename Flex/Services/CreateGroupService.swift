@@ -17,7 +17,14 @@ struct CreateGroupService {
         
         groupsItem._isbn = "1234"
         groupsItem._category = "Tech"
-        
+        groupsItem._ownerName = ""
+        groupsItem._groupName = ""
+        groupsItem._location = ""
+//        groupsItem._startCloseTime = ""
+        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
+        groupsItem._groupBio = ""
+        groupsItem._groupImage = ""
+
         //Save a new item
         dynamoDbObjectMapper.save(groupsItem, completionHandler: {
             (error: Error?) -> Void in
