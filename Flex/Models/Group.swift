@@ -37,7 +37,14 @@ class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
         return [
             "_isbn" : "ISBN",
-            "_category" : "Category"
+            "_category" : "Category",
+            "_ownerName" : "OwnerName",
+            "_groupName" : "GroupName",
+            "_location" : "Location",
+            "_startCloseTime" : "StartCloseTime",
+            "_openDays" : "OpenDays",
+            "_groupBio" : "GroupBio",
+            "_groupImage" : "GroupImage",
         ]
     }
 }
