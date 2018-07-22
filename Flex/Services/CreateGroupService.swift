@@ -42,7 +42,7 @@ struct CreateGroupService {
         dynamoDbObjectMapper.load(
             Groups.self,
             hashKey: "1234",
-            rangeKey: "Test",
+            rangeKey: "Tech",
             completionHandler: {
                 (objectModel: AWSDynamoDBObjectModel?, error: Error?) -> Void in
                 if let error = error {
@@ -79,7 +79,7 @@ struct CreateGroupService {
         
         let itemToDelete = Groups()
         itemToDelete?._isbn = "1234"
-        itemToDelete?._category = "Test"
+        itemToDelete?._category = "Tech"
         
         dynamoDbObjectMapper.remove(itemToDelete!, completionHandler: {(error: Error?) -> Void in
             if let error = error {
@@ -88,5 +88,34 @@ struct CreateGroupService {
             }
             print("An item was deleted.")
         })
+    }
+    func queryBooks() {
+        let queryExpression = AWSDynamoDBQueryExpression()
+        queryExpression.keyConditionExpression = "#isbn = :ISBN AND #category = :Category"
+        
+        queryExpression.expressionAttributeNames = [
+            "#isbn": "ISBN",
+            "#category": "Category"
+        ]
+        
+        queryExpression.expressionAttributeValues = [
+            ":ISBN" : "1234",
+            ":Category" : "Tech"
+        ]
+        
+        // Make the query
+        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
+        
+        dynamoDbObjectMapper.query(Books.self, expression: queryExpression) { (output: AWSDynamoDBPaginatedOutput?, error: Error?) in
+            if error != nil {
+                print("The request failed. Error: \(String(describing: error))")
+            }
+            if output != nil {
+                for books in output!.items {
+                    let booksItem = books as? Books
+                    print("\(booksItem!._title!)")
+                }
+            }
+        }
     }
 }
