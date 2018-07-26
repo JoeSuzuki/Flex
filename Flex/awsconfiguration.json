@@ -12,11 +12,6 @@
   "IdentityManager": {
     "Default": {}
   },
-  "DynamoDBObjectMapper": {
-    "Default": {
-        "Region": "us-east-1"
-        }
-    },
   "CognitoUserPool": {
     "Default": {
       "PoolId": "us-east-1_dj133780k",
@@ -25,9 +20,8 @@
       "Region": "us-east-1"
     }
   },
-  "S3TransferUtility": {
+  "DynamoDBObjectMapper": {
     "Default": {
-      "Bucket": "flex-deployments-mobilehub-329659210",
       "Region": "us-east-1"
     }
   },

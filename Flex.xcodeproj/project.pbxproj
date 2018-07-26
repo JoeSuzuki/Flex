@@ -60,12 +60,12 @@
 		FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */; };
 		FFC0A4A320EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */; };
 		FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */; };
+		FFC22DBB210975F0001BE7EA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFC22DBA210975F0001BE7EA /* awsconfiguration.json */; };
 		FFC25A0F2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC25A0E2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift */; };
 		FFC25A1121003D9C00E1CB75 /* ProfileGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */; };
 		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
 		FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */; };
 		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
-		FFDBC92F20F5ADAF00B88315 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFDBC92E20F5ADAE00B88315 /* awsconfiguration.json */; };
 		FFE9578A20FFF93F00005039 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9578720FFF93F00005039 /* Time.swift */; };
 		FFE9578B20FFF93F00005039 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9578820FFF93F00005039 /* User.swift */; };
 		FFE9578C20FFF93F00005039 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE9578920FFF93F00005039 /* Group.swift */; };
@@ -131,12 +131,12 @@
 		FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleViewController.swift; sourceTree = "<group>"; };
 		FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleCell.swift; sourceTree = "<group>"; };
+		FFC22DBA210975F0001BE7EA /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FFC25A0E2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditDescriptionController+Navigationbar.swift"; sourceTree = "<group>"; };
 		FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGroupCell.swift; sourceTree = "<group>"; };
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
-		FFDBC92E20F5ADAE00B88315 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FFE9578720FFF93F00005039 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		FFE9578820FFF93F00005039 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFE9578920FFF93F00005039 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
-				FFDBC92E20F5ADAE00B88315 /* awsconfiguration.json */,
+				FFC22DBA210975F0001BE7EA /* awsconfiguration.json */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
 			);
 			path = Flex;
@@ -521,8 +521,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC22DBB210975F0001BE7EA /* awsconfiguration.json in Resources */,
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
-				FFDBC92F20F5ADAF00B88315 /* awsconfiguration.json in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
 				FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */,
 			);
@@ -592,7 +592,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
