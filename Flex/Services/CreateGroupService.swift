@@ -16,7 +16,7 @@ struct CreateGroupService {
         let groupsItem: Groups = Groups()
         
 //        groupsItem._userId = "1234"
-//        groupsItem._groupId = "Tech"
+        groupsItem._groupId = "Tech"
         groupsItem._owner = ""
         groupsItem._description = ""
         groupsItem._image = ""

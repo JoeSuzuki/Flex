@@ -63,6 +63,7 @@ extension CreateGroupFormController {
     
     @objc func submitButton() {
         CreateGroupService.createGroups()
+        print("done")
 //        let groupScheduleViewController = EditDescriptionController()
 //        present(groupScheduleViewController, animated: true, completion: nil)
     }

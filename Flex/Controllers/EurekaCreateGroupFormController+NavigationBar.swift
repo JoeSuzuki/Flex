@@ -63,7 +63,8 @@ extension EurekaCreateGroupFormController {
     }
     
     @objc func submitButton() {
-
+        CreateGroupService.createGroups()
+        print("done")
         //        self.navigationController?.popViewController(animated: true)
     }
 }
