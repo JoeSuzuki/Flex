@@ -60,7 +60,7 @@
 		FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */; };
 		FFC0A4A320EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */; };
 		FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */; };
-		FFC22DBB210975F0001BE7EA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFC22DBA210975F0001BE7EA /* awsconfiguration.json */; };
+		FFC22DBD210976EF001BE7EA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFC22DBC210976EF001BE7EA /* awsconfiguration.json */; };
 		FFC25A0F2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC25A0E2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift */; };
 		FFC25A1121003D9C00E1CB75 /* ProfileGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */; };
 		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
@@ -131,7 +131,7 @@
 		FFC0A4A020EB2FF3007F39F7 /* GroupScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleViewController.swift; sourceTree = "<group>"; };
 		FFC0A4A220EB3392007F39F7 /* GroupScheduleViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupScheduleViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleCell.swift; sourceTree = "<group>"; };
-		FFC22DBA210975F0001BE7EA /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		FFC22DBC210976EF001BE7EA /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FFC25A0E2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditDescriptionController+Navigationbar.swift"; sourceTree = "<group>"; };
 		FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGroupCell.swift; sourceTree = "<group>"; };
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 				FF8C6B9D1FF8DBD40052654F /* Supporting */,
 				FF251C561FF844E20067AD40 /* Assets.xcassets */,
 				FF788DFB208C7B8F0011294C /* privacy_policy.html */,
-				FFC22DBA210975F0001BE7EA /* awsconfiguration.json */,
+				FFC22DBC210976EF001BE7EA /* awsconfiguration.json */,
 				FF251C5B1FF844E20067AD40 /* Info.plist */,
 			);
 			path = Flex;
@@ -521,7 +521,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC22DBB210975F0001BE7EA /* awsconfiguration.json in Resources */,
+				FFC22DBD210976EF001BE7EA /* awsconfiguration.json in Resources */,
 				FF251C5A1FF844E20067AD40 /* LaunchScreen.storyboard in Resources */,
 				FF251C571FF844E20067AD40 /* Assets.xcassets in Resources */,
 				FF788DFC208C7B8F0011294C /* privacy_policy.html in Resources */,
