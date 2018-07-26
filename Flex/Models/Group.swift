@@ -17,7 +17,7 @@ class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var _groupName: String?
     var _image: String?
     var _location: String?
-    var _openDays: Set<String>?
+    var _openDays: [String]?
     var _owner: String?
     var _startCloseTime: [String]?
     

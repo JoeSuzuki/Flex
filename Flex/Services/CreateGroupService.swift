@@ -15,15 +15,17 @@ struct CreateGroupService {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         let groupsItem: Groups = Groups()
         
-        groupsItem._isbn = "1234"
-        groupsItem._category = "Tech"
-        groupsItem._ownerName = ""
+
+//        groupsItem._userId = "1234"
+//        groupsItem._groupId = "Tech"
+        groupsItem._owner = ""
+        groupsItem._description = ""
+        groupsItem._image = ""
         groupsItem._groupName = ""
         groupsItem._location = ""
 //        groupsItem._startCloseTime = ""
         groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
-        groupsItem._groupBio = ""
-        groupsItem._groupImage = ""
+        groupsItem._startCloseTime = ["12:00", "1:00"]
 
         //Save a new item
         dynamoDbObjectMapper.save(groupsItem, completionHandler: {
@@ -56,15 +58,16 @@ struct CreateGroupService {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         let groupsItem: Groups = Groups()
 
-        groupsItem._isbn = "1234"
-        groupsItem._category = "Tech"
-        groupsItem._ownerName = "Joe Suzuki"
-        groupsItem._groupName = "Doctor Office"
-        groupsItem._location = "New York"
+        //        groupsItem._userId = "1234"
+        //        groupsItem._groupId = "Tech"
+        groupsItem._owner = ""
+        groupsItem._description = ""
+        groupsItem._image = ""
+        groupsItem._groupName = ""
+        groupsItem._location = ""
         //        groupsItem._startCloseTime = ""
-        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday"]
-        groupsItem._groupBio = ""
-        groupsItem._groupImage = ""
+        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
+        groupsItem._startCloseTime = ["12:00", "1:00"]
 
         dynamoDbObjectMapper.save(groupsItem, completionHandler: {(error: Error?) -> Void in
             if let error = error {
@@ -78,8 +81,8 @@ struct CreateGroupService {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         
         let itemToDelete = Groups()
-        itemToDelete?._isbn = "1234"
-        itemToDelete?._category = "Tech"
+//        itemToDelete?._isbn = "1234"
+//        itemToDelete?._category = "Tech"
         
         dynamoDbObjectMapper.remove(itemToDelete!, completionHandler: {(error: Error?) -> Void in
             if let error = error {
