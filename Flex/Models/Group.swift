@@ -11,40 +11,42 @@ import UIKit
 import AWSDynamoDB
 
 class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+    var _userId: String?
+    var _groupId: String?
+    var _description: String?
+    var _groupName: String?
+    var _image: String?
+    var _location: String?
+    var _openDays: Set<String>?
+    var _owner: String?
+    var _startCloseTime: [String]?
     
-    @objc var _isbn: String?
-    @objc var _category: String?
-    @objc var _ownerName: String?
-    @objc var _groupName: String?
-    @objc var _location: String?
-    @objc var _startCloseTime: [Date: Date]?
-    @objc var _openDays: [String]?
-    @objc var _groupBio: String?
-    @objc var _groupImage: String?
-
     class func dynamoDBTableName() -> String {
-        return "Group"
+
+        return "flex-mobilehub-329659210-Groups"
     }
     
     class func hashKeyAttribute() -> String {
-        return "_isbn"
+        
+        return "_userId"
     }
     
     class func rangeKeyAttribute() -> String {
-        return "_category"
+        
+        return "_groupId"
     }
     
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
         return [
-            "_isbn" : "ISBN",
-            "_category" : "Category",
-            "_ownerName" : "OwnerName",
-            "_groupName" : "GroupName",
-            "_location" : "Location",
-            "_startCloseTime" : "StartCloseTime",
-            "_openDays" : "OpenDays",
-            "_groupBio" : "GroupBio",
-            "_groupImage" : "GroupImage",
+            "_userId" : "userId",
+            "_groupId" : "groupId",
+            "_description" : "description",
+            "_groupName" : "groupName",
+            "_image" : "image",
+            "_location" : "location",
+            "_openDays" : "openDays",
+            "_owner" : "owner",
+            "_startCloseTime" : "startCloseTime",
         ]
     }
 }
