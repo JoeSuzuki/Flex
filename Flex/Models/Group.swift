@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import AWSDynamoDB
 
+@objcMembers
 class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var _userId: String?
     var _groupId: String?
