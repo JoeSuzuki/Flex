@@ -17,14 +17,14 @@ struct CreateGroupService {
         
 //        groupsItem._userId = "1234"
         groupsItem._groupId = "Tech"
-        groupsItem._owner = ""
-        groupsItem._description = ""
-        groupsItem._image = ""
-        groupsItem._groupName = ""
-        groupsItem._location = ""
+        groupsItem._owner = "Joe"
+        groupsItem._description = "THiSSFSDSD"
+        groupsItem._image = "SDSDSDSDSD"
+        groupsItem._groupName = "SDSDSDSDS"
+        groupsItem._location = "DSDSDS"
 //        groupsItem._startCloseTime = ""
-        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
-        groupsItem._startCloseTime = ["12:00", "1:00"]
+//        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
+//        groupsItem._startCloseTime = ["12:00", "1:00"]
 
         //Save a new item
         dynamoDbObjectMapper.save(groupsItem, completionHandler: {
