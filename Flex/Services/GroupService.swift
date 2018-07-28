@@ -36,7 +36,7 @@ struct GroupService {
             print("An item was saved.")
         })
     }
-    func readGroups() {
+    static func readGroups() {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         let groupsItem: Groups = Groups()
         
@@ -53,7 +53,7 @@ struct GroupService {
                 print("An item was read.")
         })
     }
-    func updateBooks() {
+    static func updateBooks() {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         let groupsItem: Groups = Groups()
         
@@ -76,7 +76,7 @@ struct GroupService {
             print("An item was updated.")
         })
     }
-    func deleteBooks() {
+    static func deleteBooks() {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         
         let itemToDelete = Groups()
