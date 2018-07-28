@@ -59,11 +59,12 @@ extension EurekaCreateGroupFormController {
     }
     
     @objc func cancelButton() {
+        GroupService.readGroups()
         self.dismiss(animated: true, completion: nil)
     }
     
     @objc func submitButton() {
-        CreateGroupService.createGroups()
+        GroupService.createGroups()
         print("done")
         //        self.navigationController?.popViewController(animated: true)
     }
