@@ -19,7 +19,6 @@ class ScheduleHeader: UICollectionViewCell {
         let items = ["MY GROUPS", "JOINED"]
         let view = UIView()
         view.backgroundColor = .white
-        
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
