@@ -22,7 +22,6 @@ struct GroupService {
         groupsItem._image = "SDSDSDSDSD"
         groupsItem._groupName = "SDSDSDSDS"
         groupsItem._location = "DSDSDS"
-        //        groupsItem._startCloseTime = ""
         groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
         groupsItem._startCloseTime = ["12:00", "1:00"]
         

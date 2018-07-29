@@ -23,17 +23,14 @@ class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var _startCloseTime: [String]?
     
     class func dynamoDBTableName() -> String {
-
         return "flex-mobilehub-329659210-Groups"
     }
     
     class func hashKeyAttribute() -> String {
-        
         return "_userId"
     }
     
     class func rangeKeyAttribute() -> String {
-        
         return "_groupId"
     }
     
