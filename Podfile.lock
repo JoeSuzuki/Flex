@@ -1,4 +1,6 @@
 PODS:
+  - AWSAPIGateway (2.6.17):
+    - AWSCore (= 2.6.17)
   - AWSAuthCore (2.6.17):
     - AWSCore (= 2.6.17)
   - AWSAuthUI (2.6.17):
@@ -43,6 +45,8 @@ PODS:
   - Spruce (1.0.0)
 
 DEPENDENCIES:
+  - AWSAPIGateway (~> 2.6.13)
+  - AWSAuthCore (~> 2.6.13)
   - AWSAuthUI (~> 2.6.13)
   - AWSCognito (~> 2.6.13)
   - AWSDynamoDB (~> 2.6.13)
@@ -57,6 +61,7 @@ DEPENDENCIES:
   - Spruce (~> 1.0.0)
 
 SPEC CHECKSUMS:
+  AWSAPIGateway: 0bf1a841609dbcabe94f2203ff98aa0f5f37f2f1
   AWSAuthCore: 15a48ce8153e6b7b7df763e8df9d993c7797957e
   AWSAuthUI: c275f3be411076b0aa33237cb9efc596c16aa631
   AWSCognito: 2a3da30af7d731cfd1032812a052e65099bbe26a
@@ -77,6 +82,6 @@ SPEC CHECKSUMS:
   Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
 
-PODFILE CHECKSUM: 11978afcaf35fd3ba30a3284ce04096ef4c68f95
+PODFILE CHECKSUM: fde37d39e43f79382638ca809ffa67567f376769
 
 COCOAPODS: 1.3.1

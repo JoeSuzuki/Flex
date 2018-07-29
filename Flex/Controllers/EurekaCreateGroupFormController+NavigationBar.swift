@@ -59,7 +59,6 @@ extension EurekaCreateGroupFormController {
     }
     
     @objc func cancelButton() {
-        GroupService.readGroups()
         self.dismiss(animated: true, completion: nil)
     }
     

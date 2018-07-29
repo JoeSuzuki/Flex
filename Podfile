@@ -14,6 +14,9 @@ target 'Flex' do
   pod 'AWSS3', '~> 2.6.13'            # For file transfers
   pod 'AWSCognito', '~> 2.6.13'       # For data sync
   pod 'AWSDynamoDB', '~> 2.6.13'      # Connect to NoSQL database tables
+  pod 'AWSAuthCore', '~> 2.6.13'
+  pod 'AWSAPIGateway', '~> 2.6.13'
+  
   pod 'Kingfisher', '~> 4.0'
   
   pod 'Eureka'
