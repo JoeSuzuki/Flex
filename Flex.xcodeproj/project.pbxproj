@@ -327,6 +327,15 @@
 			path = TableViewTest;
 			sourceTree = "<group>";
 		};
+		FF5D70D7210D685D00D3839C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
+				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		FF6A4B5520F6182B001421F9 /* GroupDescription */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,8 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				FF5B6F8D20FEF10F00BDEE56 /* Eureka */,
-				FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */,
-				FFC0A49D20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift */,
+				FF5D70D7210D685D00D3839C /* Custom */,
 			);
 			name = CreateGroupForm;
 			sourceTree = "<group>";
@@ -591,7 +599,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flex/Pods-Flex-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
