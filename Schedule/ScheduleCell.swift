@@ -56,14 +56,14 @@ class ScheduleCell: UICollectionViewCell {
     let activityNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Dr. Dentist"
-        label.textColor = .mainBlue
+        label.textColor = .mainLightBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     let activityTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "12:01" //"\(timeDict[5])" //"\(time[5])"
-        label.textColor = .mainBlue
+        label.textColor = .mainLightBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -71,7 +71,7 @@ class ScheduleCell: UICollectionViewCell {
         
         let activityNameContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
-        activityTimeButtonContainerView.backgroundColor = .backgroundGrey
+        activityTimeButtonContainerView.backgroundColor = .white
         
         let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, activityNameContainerView])
         labelsStackView.axis = .horizontal
