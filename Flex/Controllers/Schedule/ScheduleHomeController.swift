@@ -22,6 +22,7 @@ class ScheduleHomeController: UICollectionViewController,UICollectionViewDelegat
 //        collectionView?.register(ScheduleHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.collectionView?.backgroundColor = .white
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         
