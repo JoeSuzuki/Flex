@@ -26,14 +26,14 @@ class ScheduleHeader: UICollectionViewCell {
     let activityNameLabel: UILabel = {
         let label = UILabel()
         label.text = "Activity"
-        label.textColor = .mainBlue
+        label.textColor = .mainLightBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     let activityTimeLabel: UILabel = {
         let label = UILabel()
         label.text = "Time"
-        label.textColor = .mainBlue
+        label.textColor = .mainLightBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

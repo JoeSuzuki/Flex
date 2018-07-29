@@ -37,7 +37,7 @@ class GroupScheduleCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "12:00"
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.textColor = .mainBlue
+        label.textColor = .mainLightBlue
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
