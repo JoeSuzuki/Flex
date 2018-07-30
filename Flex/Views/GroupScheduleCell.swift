@@ -15,14 +15,14 @@ class GroupScheduleCell: UICollectionViewCell {
     }
     let scheduleView: UIView = {
         let view = UIView()
-        //        view.backgroundColor = .red
+                view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     let availableButton: UIButton = {
         let button = UIButton()
 //        button.layer.cornerRadius = 10
-        button.backgroundColor = .red
+        button.backgroundColor = .clear
         button.layer.borderColor = UIColor.backgroundGrey.cgColor
 //        button.layer.borderWidth = 1
         button.setTitle("Available", for: .normal)
@@ -46,7 +46,6 @@ class GroupScheduleCell: UICollectionViewCell {
         
         let availableButtonContainerView = UIView()
         let activityTimeButtonContainerView = UIView()
-//        activityTimeButtonContainerView.backgroundColor = .backgroundGrey
         let width = layer.frame.width / 2
         let height = layer.frame.height
 
