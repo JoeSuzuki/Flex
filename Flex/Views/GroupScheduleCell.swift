@@ -22,13 +22,25 @@ class GroupScheduleCell: UICollectionViewCell {
     }()
     let availableButton: UIButton = {
         let button = UIButton()
-//        button.layer.cornerRadius = 10
+        //        button.layer.cornerRadius = 10
         button.backgroundColor = .clear
         button.layer.borderColor = UIColor.backgroundGrey.cgColor
-//        button.layer.borderWidth = 1
+        //        button.layer.borderWidth = 1
         button.setTitle("Available", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.setTitleColor(.white, for: .normal)
+        button.isUserInteractionEnabled = true
+        button.isEnabled = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    let infoButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .red
+//        button.setTitle("Available", for: .normal)
+//        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+//        button.setTitleColor(.white, for: .normal)
+        button.imageView?.image = #imageLiteral(resourceName: "search")
         button.isUserInteractionEnabled = true
         button.isEnabled = true
         button.translatesAutoresizingMaskIntoConstraints = false
