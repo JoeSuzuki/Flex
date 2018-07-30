@@ -16,7 +16,7 @@ class GroupScheduleCell: UICollectionViewCell {
     }
     let scheduleView: UIView = {
         let view = UIView()
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -28,7 +28,7 @@ class GroupScheduleCell: UICollectionViewCell {
         //        button.layer.borderWidth = 1
         button.setTitle("Available", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.mainLightBlue, for: .normal)
         button.isUserInteractionEnabled = true
         button.isEnabled = true
         button.translatesAutoresizingMaskIntoConstraints = false
