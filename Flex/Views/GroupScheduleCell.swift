@@ -21,10 +21,10 @@ class GroupScheduleCell: UICollectionViewCell {
     }()
     let availableButton: UIButton = {
         let button = UIButton()
-        button.layer.cornerRadius = 10
-        button.backgroundColor = .green
+//        button.layer.cornerRadius = 10
+        button.backgroundColor = .red
         button.layer.borderColor = UIColor.backgroundGrey.cgColor
-        button.layer.borderWidth = 1
+//        button.layer.borderWidth = 1
         button.setTitle("Available", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.setTitleColor(.white, for: .normal)
@@ -48,7 +48,7 @@ class GroupScheduleCell: UICollectionViewCell {
         let activityTimeButtonContainerView = UIView()
 //        activityTimeButtonContainerView.backgroundColor = .backgroundGrey
         let width = layer.frame.width / 2
-        let height = layer.frame.height / 2
+        let height = layer.frame.height
 
         let labelsStackView = UIStackView(arrangedSubviews: [activityTimeButtonContainerView, availableButtonContainerView])
         labelsStackView.axis = .horizontal
@@ -65,7 +65,7 @@ class GroupScheduleCell: UICollectionViewCell {
         addSubview(availableButton)
         addSubview(activityTimeLabel)
         
-        availableButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButtonContainerView.leadingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: availableButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width * 2 / 3, height: height))
+        availableButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButtonContainerView.leadingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: availableButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
         activityTimeLabel.anchor(top: activityTimeButtonContainerView.topAnchor, leading: activityTimeButtonContainerView.leadingAnchor, bottom: activityTimeButtonContainerView.bottomAnchor, trailing: activityTimeButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
         
         activityTimeLabel.textAlignment = .center
