@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GroupScheduleCell: UICollectionViewCell {
     override init(frame: CGRect) {
@@ -15,7 +16,7 @@ class GroupScheduleCell: UICollectionViewCell {
     }
     let scheduleView: UIView = {
         let view = UIView()
-                view.backgroundColor = .red
+        view.backgroundColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -32,6 +33,17 @@ class GroupScheduleCell: UICollectionViewCell {
         button.isEnabled = true
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
+    }()
+    let statusImage: UIImageView = {
+        let image = UIImageView()
+        image.image = #imageLiteral(resourceName: "search")
+//        let url = URL(string: "https://media.gettyimages.com/photos/food-court-blurred-picture-id532028378?b=1&k=6&m=532028378&s=612x612&w=0&h=8RqP803cLYHHYv0UiLj8dyl3sAbpC6vfbGqhbjAbVyU=")
+//        image.kf.setImage(with: url)
+        image.layer.cornerRadius = 5
+        image.contentMode = .scaleAspectFill
+        image.clipsToBounds = true
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
     }()
     let activityTimeLabel: UILabel = {
         let label = UILabel()
