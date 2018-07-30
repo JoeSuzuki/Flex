@@ -42,12 +42,12 @@ struct GroupService {
         groupsItem._userId = "1234"
         groupsItem._groupId = "Tech"
         groupsItem._owner = "Joe"
-        groupsItem._description = "THiSSFSDSD"
-        groupsItem._image = "SDSDSDSDSD"
-        groupsItem._groupName = "SDSDSDSDS"
-        groupsItem._location = "DSDSDS"
-        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
-        groupsItem._startCloseTime = ["12:00", "1:00"]
+        groupsItem._description = descripton
+        groupsItem._image = image
+        groupsItem._groupName = groupName
+        groupsItem._location = location
+        groupsItem._openDays = openDays
+        groupsItem._startCloseTime = times
         
         //Save a new item
         dynamoDbObjectMapper.save(groupsItem, completionHandler: {
