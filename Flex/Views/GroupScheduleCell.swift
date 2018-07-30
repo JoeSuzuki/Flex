@@ -89,7 +89,7 @@ class GroupScheduleCell: UICollectionViewCell {
         addSubview(infoButton)
         addSubview(activityTimeLabel)
 
-        availableButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButtonContainerView.leadingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: infoButton.leadingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width * 7 / 10, height: height))
+        availableButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButtonContainerView.leadingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: infoButton.leadingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width * 5 / 10, height: height))
         infoButton.anchor(top: availableButtonContainerView.topAnchor, leading: availableButton.trailingAnchor, bottom: availableButtonContainerView.bottomAnchor, trailing: availableButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width * 3 / 10, height: height))
         
         activityTimeLabel.anchor(top: activityTimeButtonContainerView.topAnchor, leading: activityTimeButtonContainerView.leadingAnchor, bottom: activityTimeButtonContainerView.bottomAnchor, trailing: activityTimeButtonContainerView.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0), size: .init(width: width, height: height))
