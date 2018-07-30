@@ -35,6 +35,30 @@ struct GroupService {
             print("An item was saved.")
         })
     }
+    static func createGroup(_ descripton: String,_ image: String,_ groupName: String,_ location: String,_ openDays: Array<String>,_ times: Array<String>) {
+        let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
+        let groupsItem: Groups = Groups()
+        
+        groupsItem._userId = "1234"
+        groupsItem._groupId = "Tech"
+        groupsItem._owner = "Joe"
+        groupsItem._description = "THiSSFSDSD"
+        groupsItem._image = "SDSDSDSDSD"
+        groupsItem._groupName = "SDSDSDSDS"
+        groupsItem._location = "DSDSDS"
+        groupsItem._openDays = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday"]
+        groupsItem._startCloseTime = ["12:00", "1:00"]
+        
+        //Save a new item
+        dynamoDbObjectMapper.save(groupsItem, completionHandler: {
+            (error: Error?) -> Void in
+            if let error = error {
+                print("Amazon DynamoDB Save Error: \(error)")
+                return
+            }
+            print("An item was saved.")
+        })
+    }
     static func readGroups() {
         let dynamoDbObjectMapper = AWSDynamoDBObjectMapper.default()
         let groupsItem: Groups = Groups()
