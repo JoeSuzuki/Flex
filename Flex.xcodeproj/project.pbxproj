@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8B39A5EBBC4CEDF98D68D44B /* Pods_Flex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B15A4AAE1331C825E915543 /* Pods_Flex.framework */; };
 		FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */; };
-		FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18D2099582F0054B34D /* ProfileCell.swift */; };
-		FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0BC18F209958450054B34D /* ProfileHeader.swift */; };
 		FF12400D20F4283300A1907D /* AuthUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF12400C20F4283300A1907D /* AuthUIViewController.swift */; };
 		FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BFBC920AE341600140952 /* AuthService.swift */; };
 		FF1FD6E820FEB6C7000931BB /* GroupLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1FD6E720FEB6C7000931BB /* GroupLocationCell.swift */; };
@@ -23,7 +21,6 @@
 		FF251C8E1FF8D8160067AD40 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */; };
 		FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA1204B9273008065E5 /* ProfileViewController.swift */; };
 		FF26BAA4204B92E3008065E5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26BAA3204B92E3008065E5 /* SettingViewController.swift */; };
-		FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */; };
 		FF2B1C082097FB1400749210 /* GroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B1C072097FB1400749210 /* GroupService.swift */; };
 		FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935ED2042429B004D5677 /* LoginViewController.swift */; };
 		FF3935F52044DAAA004D5677 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3935F42044DAAA004D5677 /* UserService.swift */; };
@@ -41,9 +38,13 @@
 		FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6B9E1FF8DBE80052654F /* Constants.swift */; };
 		FF8C6BA11FF98EFF0052654F /* ScheduleHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */; };
 		FF8C6BA31FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */; };
-		FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C6BA41FF992D40052654F /* ScheduleCell.swift */; };
 		FF8D559720F8806B0007D912 /* GroupDescriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */; };
 		FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */; };
+		FF9215DC212A5EAC001968BE /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9215D6212A5EAB001968BE /* ScheduleCell.swift */; };
+		FF9215DD212A5EAC001968BE /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9215D7212A5EAB001968BE /* ScheduleHeader.swift */; };
+		FF9215DE212A5EAC001968BE /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9215D9212A5EAC001968BE /* ProfileCell.swift */; };
+		FF9215DF212A5EAC001968BE /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9215DA212A5EAC001968BE /* ProfileHeader.swift */; };
+		FF9215E0212A5EAC001968BE /* ProfileGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9215DB212A5EAC001968BE /* ProfileGroupCell.swift */; };
 		FFA8BA832058A0E500F505A1 /* Keyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */; };
 		FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3720840C770010A692 /* LoginsViewController.swift */; };
 		FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB29B3920840D890010A692 /* UIView+Utility .swift */; };
@@ -61,7 +62,6 @@
 		FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */; };
 		FFC22DBD210976EF001BE7EA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FFC22DBC210976EF001BE7EA /* awsconfiguration.json */; };
 		FFC25A0F2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC25A0E2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift */; };
-		FFC25A1121003D9C00E1CB75 /* ProfileGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */; };
 		FFCBC1D520C392A10016C793 /* CreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */; };
 		FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */; };
 		FFCBC1D920C99B140016C793 /* EurekaCreateGroupFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */; };
@@ -77,8 +77,6 @@
 		C635D1FDDFB9272FE0684716 /* Pods-Flex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5F12A739972D5391E239DA /* Pods-Flex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flex.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flex/Pods-Flex.release.xcconfig"; sourceTree = "<group>"; };
 		FF0BC18B209957EE0054B34D /* ProfileViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+NavigationBar.swift"; sourceTree = "<group>"; };
-		FF0BC18D2099582F0054B34D /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
-		FF0BC18F209958450054B34D /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		FF12400C20F4283300A1907D /* AuthUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUIViewController.swift; sourceTree = "<group>"; };
 		FF1BFBC920AE341600140952 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FF1FD6E720FEB6C7000931BB /* GroupLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLocationCell.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		FF251C8D1FF8D8160067AD40 /* UIColor+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
 		FF26BAA1204B9273008065E5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FF26BAA3204B92E3008065E5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		FF2B1C072097FB1400749210 /* GroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupService.swift; sourceTree = "<group>"; };
 		FF3935ED2042429B004D5677 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF3935F42044DAAA004D5677 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -111,9 +108,13 @@
 		FF8C6B9E1FF8DBE80052654F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FF8C6BA01FF98EFF0052654F /* ScheduleHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHomeController.swift; sourceTree = "<group>"; };
 		FF8C6BA21FF990BF0052654F /* ScheduleHomeController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScheduleHomeController+NavigationBar.swift"; sourceTree = "<group>"; };
-		FF8C6BA41FF992D40052654F /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		FF8D559620F8806B0007D912 /* GroupDescriptionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDescriptionController.swift; sourceTree = "<group>"; };
 		FF8D559820F880880007D912 /* GroupDescriptionController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GroupDescriptionController+NavigationBar.swift"; sourceTree = "<group>"; };
+		FF9215D6212A5EAB001968BE /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		FF9215D7212A5EAB001968BE /* ScheduleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
+		FF9215D9212A5EAC001968BE /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		FF9215DA212A5EAC001968BE /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
+		FF9215DB212A5EAC001968BE /* ProfileGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileGroupCell.swift; sourceTree = "<group>"; };
 		FFA8BA822058A0E500F505A1 /* Keyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFB29B3720840C770010A692 /* LoginsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginsViewController.swift; sourceTree = "<group>"; };
 		FFB29B3920840D890010A692 /* UIView+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utility .swift"; sourceTree = "<group>"; };
@@ -131,7 +132,6 @@
 		FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScheduleCell.swift; sourceTree = "<group>"; };
 		FFC22DBC210976EF001BE7EA /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		FFC25A0E2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditDescriptionController+Navigationbar.swift"; sourceTree = "<group>"; };
-		FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGroupCell.swift; sourceTree = "<group>"; };
 		FFCBC1D420C392A10016C793 /* CreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupFormController.swift; sourceTree = "<group>"; };
 		FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCustomCells.swift; sourceTree = "<group>"; };
 		FFCBC1D820C99B140016C793 /* EurekaCreateGroupFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaCreateGroupFormController.swift; sourceTree = "<group>"; };
@@ -229,10 +229,9 @@
 				FFB6987D20FC453F006CC01B /* Description */,
 				FF4E9BBC20F73AF7007025B1 /* GroupHome */,
 				FF4E9BB920F73AF7007025B1 /* GroupTableView */,
-				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
-				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
-				FF3C5BF1210183210082BAEC /* Schedule */,
-				FF3C5BF02101830F0082BAEC /* Profile */,
+				FF9215E1212A7B32001968BE /* GroupSchedule */,
+				FF9215D8212A5EAC001968BE /* Profile */,
+				FF9215D5212A5EAB001968BE /* Schedule */,
 			);
 			name = Views;
 			path = Flex/Views;
@@ -271,25 +270,6 @@
 			);
 			path = Services;
 			sourceTree = "<group>";
-		};
-		FF3C5BF02101830F0082BAEC /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				FF0BC18F209958450054B34D /* ProfileHeader.swift */,
-				FFC25A1021003D9C00E1CB75 /* ProfileGroupCell.swift */,
-				FF0BC18D2099582F0054B34D /* ProfileCell.swift */,
-			);
-			path = Profile;
-			sourceTree = SOURCE_ROOT;
-		};
-		FF3C5BF1210183210082BAEC /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				FF28578F2055B0CB005D1E29 /* ScheduleHeader.swift */,
-				FF8C6BA41FF992D40052654F /* ScheduleCell.swift */,
-			);
-			path = Schedule;
-			sourceTree = SOURCE_ROOT;
 		};
 		FF4E9BB920F73AF7007025B1 /* GroupTableView */ = {
 			isa = PBXGroup;
@@ -354,6 +334,34 @@
 			);
 			name = Supporting;
 			path = Flex/Supporting;
+			sourceTree = SOURCE_ROOT;
+		};
+		FF9215D5212A5EAB001968BE /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				FF9215D6212A5EAB001968BE /* ScheduleCell.swift */,
+				FF9215D7212A5EAB001968BE /* ScheduleHeader.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		FF9215D8212A5EAC001968BE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FF9215D9212A5EAC001968BE /* ProfileCell.swift */,
+				FF9215DA212A5EAC001968BE /* ProfileHeader.swift */,
+				FF9215DB212A5EAC001968BE /* ProfileGroupCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FF9215E1212A7B32001968BE /* GroupSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				FFC0A4A520EB409E007F39F7 /* GroupScheduleCell.swift */,
+				FFCBC1D620C756FE0016C793 /* EurekaCustomCells.swift */,
+			);
+			path = GroupSchedule;
 			sourceTree = SOURCE_ROOT;
 		};
 		FFB6987D20FC453F006CC01B /* Description */ = {
@@ -638,12 +646,13 @@
 				FF1FD6E820FEB6C7000931BB /* GroupLocationCell.swift in Sources */,
 				FFC0A4A620EB409E007F39F7 /* GroupScheduleCell.swift in Sources */,
 				FFEED1B720941A7B00ADDB08 /* NSDate+Time.swift in Sources */,
-				FFC25A1121003D9C00E1CB75 /* ProfileGroupCell.swift in Sources */,
 				FF8D559920F880880007D912 /* GroupDescriptionController+NavigationBar.swift in Sources */,
 				FF72017F20F00E1300522C45 /* GroupScheduleViewContorller+Service.swift in Sources */,
-				FF2857902055B0CB005D1E29 /* ScheduleHeader.swift in Sources */,
+				FF9215DC212A5EAC001968BE /* ScheduleCell.swift in Sources */,
 				FFB6988820FC45B5006CC01B /* EditDescriptionController.swift in Sources */,
+				FF9215DD212A5EAC001968BE /* ScheduleHeader.swift in Sources */,
 				FF3935EE2042429B004D5677 /* LoginViewController.swift in Sources */,
+				FF9215E0212A5EAC001968BE /* ProfileGroupCell.swift in Sources */,
 				FF251C521FF844E20067AD40 /* GroupHomeController.swift in Sources */,
 				FF12400D20F4283300A1907D /* AuthUIViewController.swift in Sources */,
 				FF0BC18C209957EE0054B34D /* ProfileViewController+NavigationBar.swift in Sources */,
@@ -658,7 +667,7 @@
 				FFC0A4A120EB2FF3007F39F7 /* GroupScheduleViewController.swift in Sources */,
 				FFC25A0F2100362700E1CB75 /* EditDescriptionController+Navigationbar.swift in Sources */,
 				FF26BAA2204B9273008065E5 /* ProfileViewController.swift in Sources */,
-				FF0BC18E2099582F0054B34D /* ProfileCell.swift in Sources */,
+				FF9215DF212A5EAC001968BE /* ProfileHeader.swift in Sources */,
 				FFC0A49E20EB207A007F39F7 /* CreateGroupFormController+NavigationBar.swift in Sources */,
 				FF1BFBCA20AE341600140952 /* AuthService.swift in Sources */,
 				FF6A4B5720F6187E001421F9 /* GroupTableViewController.swift in Sources */,
@@ -680,16 +689,15 @@
 				FFB29B3820840C770010A692 /* LoginsViewController.swift in Sources */,
 				FF3935F52044DAAA004D5677 /* UserService.swift in Sources */,
 				FFB6988320FC453F006CC01B /* DescriptionHeader.swift in Sources */,
+				FF9215DE212A5EAC001968BE /* ProfileCell.swift in Sources */,
 				FFE9578A20FFF93F00005039 /* Time.swift in Sources */,
 				FFE9578B20FFF93F00005039 /* User.swift in Sources */,
 				FF251C811FF8AC0A0067AD40 /* GroupHomeController+NavigationBar.swift in Sources */,
-				FF8C6BA51FF992D40052654F /* ScheduleCell.swift in Sources */,
 				FF4E9BC220F73AF7007025B1 /* GroupCell.swift in Sources */,
 				FF8D559720F8806B0007D912 /* GroupDescriptionController.swift in Sources */,
 				FFB29B3A20840D890010A692 /* UIView+Utility .swift in Sources */,
 				FF212A24209D8B3400F33FB0 /* UIImageView+Utility.swift in Sources */,
 				FFCBC1D720C756FE0016C793 /* EurekaCustomCells.swift in Sources */,
-				FF0BC190209958450054B34D /* ProfileHeader.swift in Sources */,
 				FF4E9BBF20F73AF7007025B1 /* GroupTableHeader.swift in Sources */,
 				FF8C6B9F1FF8DBE80052654F /* Constants.swift in Sources */,
 				FF6A4B5920F61A20001421F9 /* GroupTableViewController+NavigationBar.swift in Sources */,

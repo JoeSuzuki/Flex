@@ -38,12 +38,12 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
             cell.messageButton.addTarget(self, action: #selector(messageAction(sender:)), for: .touchUpInside)
             return cell
         case 1:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
+            return cell
+        default:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: viewId, for: indexPath) as! DescriptionViewCell
             cell.viewScheduleButton.tag = indexPath.row
             cell.viewScheduleButton.addTarget(self, action: #selector(buttonsAction(sender:)), for: .touchUpInside)
-            return cell
-        default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! DescriptionCell
             return cell
         }
     }
@@ -53,9 +53,9 @@ class GroupDescriptionController: UICollectionViewController,UICollectionViewDel
         case 0:
             return CGSize(width: view.frame.width, height: view.frame.height * 4 / 11)
         case 1:
-            return CGSize(width: view.frame.width, height: view.frame.height / 14)
-        default:
             return CGSize(width: view.frame.width, height: 245)
+        default:
+            return CGSize(width: view.frame.width, height: view.frame.height / 14)
         }
     }
     
