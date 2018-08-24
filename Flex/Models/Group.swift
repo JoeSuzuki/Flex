@@ -8,10 +8,8 @@
 
 import Foundation
 import UIKit
-import AWSDynamoDB
 
-@objcMembers
-class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+class Groups {
     var _userId: String?
     var _groupId: String?
     var _description: String?
@@ -32,19 +30,5 @@ class Groups: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     class func rangeKeyAttribute() -> String {
         return "_groupId"
-    }
-    
-    override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
-        return [
-            "_userId" : "userId",
-            "_groupId" : "groupId",
-            "_description" : "description",
-            "_groupName" : "groupName",
-            "_image" : "image",
-            "_location" : "location",
-            "_openDays" : "openDays",
-            "_owner" : "owner",
-            "_startCloseTime" : "startCloseTime",
-        ]
     }
 }

@@ -7,44 +7,20 @@
 //
 
 import UIKit
-import AWSMobileClient
-import AWSCore
-import AWSPinpoint
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var pinpoint: AWSPinpoint?
-
-    // Resume a previously signed-in authenticated session
-    // Add a AWSMobileClient call in application:open url
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        return AWSMobileClient.sharedInstance().interceptApplication(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
-    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = TabBarController()
         window?.makeKeyAndVisible()
         
-//        configureInitialRootViewController(for: window!)
-
-//        let homeController = GroupHomeController(collectionViewLayout: UICollectionViewFlowLayout())
-//        window?.rootViewController = UINavigationController(rootViewController: homeController)
-//        window?.rootViewController = TabBarController()
-//        window?.rootViewController = LoginsViewController()
-        
-        // Initialize Pinpoint
-        pinpoint = AWSPinpoint(configuration:
-            AWSPinpointConfiguration.defaultPinpointConfiguration(launchOptions: launchOptions))
-
-        //Check if connected with AWS
-        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
-        AWSDDLog.sharedInstance.logLevel = .info
-
-        // Create AWSMobileClient to connect with AWS
-        return AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
+        FirebaseApp.configure()
+        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '297835D8B1E0FEA261EE767EB26067ED'
-               BlueprintName = 'Spruce'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Spruce.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE2C8FE61D3FA8B40C1F73A8802A6E67"
+               BlueprintName = "Spruce"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "Spruce.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -1,87 +1,90 @@
 PODS:
-  - AWSAPIGateway (2.6.17):
-    - AWSCore (= 2.6.17)
-  - AWSAuthCore (2.6.17):
-    - AWSCore (= 2.6.17)
-  - AWSAuthUI (2.6.17):
-    - AWSAuthCore (= 2.6.17)
-    - AWSCore (= 2.6.17)
-  - AWSCognito (2.6.17):
-    - AWSCore (= 2.6.17)
-  - AWSCognitoIdentityProvider (2.6.17):
-    - AWSCognitoIdentityProviderASF (= 1.0.1)
-    - AWSCore (= 2.6.17)
-  - AWSCognitoIdentityProviderASF (1.0.1)
-  - AWSCore (2.6.17)
-  - AWSDynamoDB (2.6.17):
-    - AWSCore (= 2.6.17)
-  - AWSFacebookSignIn (2.6.17):
-    - AWSAuthCore (= 2.6.17)
-    - FBSDKCoreKit (~> 4.0)
-    - FBSDKLoginKit (~> 4.0)
-  - AWSMobileClient (2.6.17):
-    - AWSAuthCore (= 2.6.17)
-  - AWSPinpoint (2.6.17):
-    - AWSCore (= 2.6.17)
-  - AWSS3 (2.6.17):
-    - AWSCore (= 2.6.17)
-  - AWSUserPoolsSignIn (2.6.17):
-    - AWSAuthCore (= 2.6.17)
-    - AWSCognitoIdentityProvider (= 2.6.17)
-  - Bolts (1.9.0):
-    - Bolts/AppLinks (= 1.9.0)
-    - Bolts/Tasks (= 1.9.0)
-  - Bolts/AppLinks (1.9.0):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.9.0)
-  - Eureka (4.1.1)
-  - FBSDKCoreKit (4.34.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.34.0):
-    - FBSDKCoreKit
-  - ImageRow (3.0.0):
+  - Eureka (4.2.0)
+  - Firebase/Core (5.6.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.1.1)
+  - Firebase/CoreOnly (5.6.0):
+    - FirebaseCore (= 5.1.1)
+  - FirebaseAnalytics (5.1.1):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.1):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.2.1):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+  - GoogleAppMeasurement (5.1.1):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.2.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.2.2)
+  - GoogleUtilities/Logger (5.2.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.2.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.2.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.2.2)"
+  - GoogleUtilities/Reachability (5.2.2):
+    - GoogleUtilities/Logger
+  - ImageRow (3.1.0):
     - Eureka (~> 4.0)
-  - Kingfisher (4.7.0)
+  - Kingfisher (4.8.1)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
   - Spruce (1.0.0)
 
 DEPENDENCIES:
-  - AWSAPIGateway (~> 2.6.13)
-  - AWSAuthCore (~> 2.6.13)
-  - AWSAuthUI (~> 2.6.13)
-  - AWSCognito (~> 2.6.13)
-  - AWSDynamoDB (~> 2.6.13)
-  - AWSFacebookSignIn (~> 2.6.13)
-  - AWSMobileClient (~> 2.6.13)
-  - AWSPinpoint (~> 2.6.13)
-  - AWSS3 (~> 2.6.13)
-  - AWSUserPoolsSignIn (~> 2.6.13)
   - Eureka
+  - Firebase/Core
   - ImageRow
   - Kingfisher (~> 4.0)
   - Spruce (~> 1.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Eureka
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - ImageRow
+    - Kingfisher
+    - nanopb
+    - Spruce
+
 SPEC CHECKSUMS:
-  AWSAPIGateway: 0bf1a841609dbcabe94f2203ff98aa0f5f37f2f1
-  AWSAuthCore: 15a48ce8153e6b7b7df763e8df9d993c7797957e
-  AWSAuthUI: c275f3be411076b0aa33237cb9efc596c16aa631
-  AWSCognito: 2a3da30af7d731cfd1032812a052e65099bbe26a
-  AWSCognitoIdentityProvider: 9f15b1d0073c3585d791877c98e1315c368b4f18
-  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
-  AWSCore: 82fbb01d73a22cfae77ac2f03f6073a123092452
-  AWSDynamoDB: bbfc2583819099ccc0ba92eb54cb425049d4278b
-  AWSFacebookSignIn: b437c45a96a957dbf8ff206e8c51d5ec18bf75bb
-  AWSMobileClient: 7b8dd4ef7a7d5c08f258b547d061c3c2018d32d8
-  AWSPinpoint: e00eaa2a04a1c8176f1481391b32e43279471dd1
-  AWSS3: 00482eb3363cab1d4c3fd7b0bb7c117ae7264505
-  AWSUserPoolsSignIn: ba2e21e15527ba955194031fd40f02e1490630fe
-  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Eureka: b88fb930e42c79f8c03c373d0fcdc28c1d6c50ed
-  FBSDKCoreKit: 0ff57f093b85c8c9d5aba697d3edf68a8960ce78
-  FBSDKLoginKit: 8c78f57a145afb756e4755e69195ebe08a42466e
-  ImageRow: 048123c296de9a6ac3998c415a6706c45ce480af
-  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  Eureka: 0748c7bbb2560130e43c7bfa83e99c98854a1f42
+  Firebase: 75ea9e232eefa158c1049028030b8f661a2ccb62
+  FirebaseAnalytics: 993577e91157feb40945abedd6ab346d8a4b6ac8
+  FirebaseCore: cb9ee75e0894def766167c95a4d5a14b1c138269
+  FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4
+  GoogleAppMeasurement: f7507b39b70ad0bd80b3d81518b2f43868974307
+  GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
+  ImageRow: 1ea483078bfa3d880a7fc76fdfcddfd5f29a9e6b
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Spruce: 07ffdb990923f500111fcbf13d102e16075b230e
 
-PODFILE CHECKSUM: fde37d39e43f79382638ca809ffa67567f376769
+PODFILE CHECKSUM: fcb830d9dd95015c8382759e9e67c3111215d567
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.0.beta.1
