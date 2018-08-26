@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         let db = Firestore.firestore()
-        // [END default_firestore]
         print(db) // silence warning
 
         window = UIWindow(frame: UIScreen.main.bounds)

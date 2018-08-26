@@ -12,20 +12,22 @@ class GroupHomeController: UICollectionViewController,UICollectionViewDelegateFl
     
     let cellId = "cellId"
     let headerId = "headerId"
-    let nameArray = ["Joe Suzuki", "Steve Jobs", "Elon Musk"]
-    let companeyArray = ["Suzuki", "Apple", "SpaceX"]
+    let nameArray = ["Elon Musk", "Tim Cook", "Bill Gates"]
+    let companeyArray = ["SpaceX", "Apple", "Microsoft"]
 
     var timer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+//        self.navigationController?.navigationBar.prefersLargeTitles = true
+//        self.title = "Jo"
         
         collectionView?.backgroundColor = .backgroundGrey
         collectionView?.register(GroupCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(GroupHeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerId)
         
-        setupNavigationBarItems()
+//        setupNavigationBarItems()
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
