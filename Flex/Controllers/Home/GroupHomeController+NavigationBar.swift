@@ -17,31 +17,15 @@ extension GroupHomeController {
     }
     
     private func setupRemainNavItems() {
-//        let tittleImageView = UIImageView(image: #imageLiteral(resourceName: "Flex").withRenderingMode(.alwaysTemplate))
-//        tittleImageView.tintColor = .white
-//        tittleImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-//        tittleImageView.contentMode = .scaleAspectFit
-//        navigationItem.titleView = tittleImageView
-        
         navigationItem.title = "Flex"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.white]
-
-        navigationController?.navigationBar.barTintColor = .mainLightBlue
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationController?.navigationBar.largeTitleTextAttributes =
+            [NSAttributedStringKey.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.black]
+        
+        navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.isTranslucent = false
-
-        navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        
-        let navBarSeparatorView = UIView()
-        navBarSeparatorView.backgroundColor = .backgroundGrey
-        
-        view.addSubview(navBarSeparatorView)
-        
-        navBarSeparatorView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        navBarSeparatorView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-        navBarSeparatorView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
-        navBarSeparatorView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
-        navBarSeparatorView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
     }
     
     private func setupLeftNavItems() {
@@ -50,7 +34,7 @@ extension GroupHomeController {
         followButton.widthAnchor.constraint(equalToConstant: 25).isActive = true
         followButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
         followButton.addTarget(self, action: #selector(buttonActions), for: .touchUpInside)
-        
+
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
     }
     

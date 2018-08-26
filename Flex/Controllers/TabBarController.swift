@@ -34,7 +34,8 @@ class TabBarController: UITabBarController {
         
         groupNavController = UINavigationController(rootViewController: groupHomeController!)
         groupNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal))
-        
+        self.tabBar.barTintColor = UIColor.white
+
         scheduleNavController = UINavigationController(rootViewController: scheduleHomeController!)
         scheduleNavController.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal))
         
