@@ -7,6 +7,7 @@ target 'Flex' do
 
   # Pods for Flex  
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
   pod 'Kingfisher', '~> 4.0'
   
