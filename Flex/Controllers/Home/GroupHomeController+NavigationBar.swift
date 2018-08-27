@@ -22,7 +22,7 @@ extension GroupHomeController {
         
         navigationController?.navigationBar.largeTitleTextAttributes =
             [NSAttributedStringKey.foregroundColor: UIColor.black]
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 28),NSAttributedStringKey.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 26),NSAttributedStringKey.foregroundColor: UIColor.black]
         
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.isTranslucent = false
