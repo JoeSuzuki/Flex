@@ -21,10 +21,10 @@ extension GroupHomeController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         navigationController?.navigationBar.largeTitleTextAttributes =
-            [NSAttributedStringKey.foregroundColor: UIColor.black]
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 26),NSAttributedStringKey.foregroundColor: UIColor.black]
+            [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 26),NSAttributedStringKey.foregroundColor: UIColor.white]
         
-        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.barTintColor = Constants.Color.headerColor
         navigationController?.navigationBar.isTranslucent = false
     }
     

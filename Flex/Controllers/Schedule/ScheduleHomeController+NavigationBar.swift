@@ -23,7 +23,7 @@ extension ScheduleHomeController {
         tittleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = tittleImageView
         
-        navigationController?.navigationBar.barTintColor = .mainLightBlue
+        navigationController?.navigationBar.barTintColor = Constants.Color.headerColor
         navigationController?.navigationBar.isTranslucent = false
         
         navigationController?.navigationBar.shadowImage = UIImage()

@@ -15,4 +15,8 @@ struct Constants {
         static let name = "name"
         static let profileImageUrl = "profileImageUrl"
     }
+    struct Color {
+        static let headerColor = UIColor.appleOrange
+    }
 }
+
